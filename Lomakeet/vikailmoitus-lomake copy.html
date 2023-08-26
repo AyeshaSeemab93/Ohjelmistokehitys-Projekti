@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikailmoitus Lomake</title>
+   <style>
+    body{
+        margin-left: 2rem;
+        margin-top: 2rem;
+        font-family: Roboto;
+    }
+    h1{
+        color: #5B56A4;
+    }
+    p{
+        font-style: italic;
+        padding: 1rem 0rem;
+        font-size: 1.3rem;
+    }
+    form{
+        
+        border: none;
+        padding: 4rem;
+        box-shadow: 0 4px 8px 0 rgba(99, 99, 101, 0.651), 0 0px 20px 0 rgba(0, 0, 0, 0.565);
+        width: 50rem;
+        border-radius: 2rem;
+
+    }
+    /* section{
+        width: 30rem;   
+    } */
+    div{
+        margin: 0.3rem;
+    }
+    label{
+        font-size: 1.2rem;
+        color: #5B56A4;  
+    }
+   .flex{
+    max-width: 35rem;
+    margin-bottom: 1rem;
+    vertical-align: middle;
+    justify-content: center;
+    
+   }
+   .perusInput{
+       width:  25rem;
+       height: 1.5rem;
+        border-radius: 2rem;
+        border: solid;
+        border-width: 1px;
+        font-size: 1.2rem;
+        padding: 0.2rem 1rem;
+        border: none;
+        box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
+        float: right;
+        
+    }
+    textarea{
+        font-size: 1.2rem;
+        padding: 1rem;
+        border: none;
+        box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
+        border-radius: 2rem;
+        margin-top: 1rem;
+        margin-left: 8rem;
+        
+    }
+    .file{
+        color: #5B56A4;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 4rem;
+        margin-left: 2rem;
+
+    }
+    button{
+        border: none;
+        border-radius: 5rem;
+        padding:0.6rem 2rem;
+        font-size: 1.2rem;
+        color: white;
+        background-color: #5B56A4;
+        text-align: center;   
+    }
+   </style>
+</head>
+<body>
+    <h1>Vikailmoituslomake</h1>
+    <p>Voit täyttää kiireettömissä tapauksissa vikailmoituslomakkeen.Vikailmoitusten käsittelyaika asiakaspalvelussamme on normaaliarkena yhdestä kolmeen vuorokautta.
+    </p>
+    <p>
+    Jos asiasi on kiireellinen, soita aina vikailmoitusnumeroon <strong>XXXXXXXX</strong> tai vakavissa tilanteissa hätänumeroon 112.
+    </p>
+    <form>
+        <label for="sähkö">Verkko, jossa vika ilmenee*</label>
+        <div>
+            <label for="sähkö">Sähköverkko </label>
+            <input type="radio" class="radio" id="sähkö" value="sähkö" name="vikä" required>
+            <label for="lämpö">Kaukolämpöverkko</label>
+            <input type="radio" class="radio" id="lämpö" value="lämpö" name="vikä">
+        </div>
+        <br>
+        <div class="flex">
+            <label for="kuvaus">Vian Kuvaus:</label>
+            <br>
+            <textarea id="kuvaus" cols="33" rows="8" required></textarea>
+        </div>
+        <div class="flex">
+            <label for="address">Vikapaikan sijainti (lähiosoite ja kunta) *</label>
+            <textarea id="address" cols="33" rows="3" required></textarea>
+        </div>
+        <br>
+         <div class="flex">
+            <label for="name">Sukunimi*</label>
+            <input class="perusInput" type="text" name="user_name" id="name" required>
+        </div>
+        <br>
+        <div class="flex">
+            <label for="name">Etunimi*</label>
+            <input class="perusInput" type="text" name="user_name" id="name" required>
+        </div>
+        <br>
+         <div class="flex">
+            <label for="phone">Puhelin*</label>
+            <input class="perusInput" type="number" name="user_number" id="phone" required>
+      </div>
+      <br>
+      <div class="flex">
+        <label for="email">sähköposti*</label>
+        <input class="perusInput"  type="email" name="user_email" id="email" required>
+      </div>
+      <br>
+      <div class="flex">
+        <label for="address">Osoite*</label>
+        <input class="perusInput"  type="text" id="address" required>
+      </div>
+      <br>
+      <label>Click on the "Choose File" button to upload a file:</label>
+      <br>
+      <input class="file" type="file" id="myFile" name="filename">
+      <br>
+      <label for="sähkö">Ottakaa minuun yhteyttä</label>
+        <div>
+            <label for="valita">Kyllä</label>
+            <input type="radio" class="radio" id="valita" value="valitä" name="vikä">
+            <label for="ei">Ei</label>
+            <input type="radio" class="radio" id="ei" value="ei" name="vikä">
+        </div>
+    <p>Otamme yhteyttä kolmen päivän kuluessa, mikäli valitset kyllä. Kiireellisissä tilanteissa tulee soittaa vikapalvelunumeroon.</p>
+    <br>
+    <button type="submit">Lähetä</button>  
+    </form>
+           
+</body>
+</html>

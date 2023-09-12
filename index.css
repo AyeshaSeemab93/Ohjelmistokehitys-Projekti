@@ -1,41 +1,294 @@
-/* The color theme is selected from https://colorhunt.co  */
+@import url(MQ-Mobile.css);
+@import url(MQ-Tablet.css);
 
-.root {
-  --black: #040d12;
-  --white: #eeeded;
-  --yellow-1: #fff7d4;
-  --yellow-2: #ffd95a;
-  --browon: #c07f00;
-  --orange: #ff8400;
-  --green: #5b9a8b;
-}
-
-html {
-  font-size: 62.5%;
+:root {
+  --blue: #277bc0;
+  --yellow: #ffb200;
+  --orange: #ff9a3c;
+  --beige: #fff4cf;
+  --blue-box: #007fbf;
+  --blue-box-1: #a7e7f6;
 }
 
 body {
-  font-family: "Commissioner";
+  font-size: 56.2%;
+  background-color: var(--beige);
+  font-family: "Montserrat Subrayada", sans-serif;
 }
 
-main {
-  font-size: 2rem;
+.Wrapper {
+  width: 100%;
+  background-color: var(--beige);
+  overflow-x: hidden;
 }
-.first-sec {
-  height: 30rem;
+ul li {
+  cursor: pointer;
+}
+
+/* Navbar Styel */
+.navbar-box {
   text-align: center;
-  vertical-align: middle;
-  padding-top: 10rem;
-  color: #33495e;
-  font-weight: 500;
-  font-size: 10rem;
-  background-image: URL("./images/building-pastel-colors-balconies-beautiful-street.jpeg");
-}
-.first-content {
-  margin-top: 1rem;
-  word-spacing: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container {
+
+
+.logo {
+  width: 150px;
+  height: 80px;
+  object-fit: cover;
+}
+.box-nav{
   padding: 2rem;
+}
+.navbar{
+  background-color: #ff9a3c;
+
+}
+
+/* .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+} */
+
+.navbar-nav li {
+  margin: 0 1rem;
+  font-size:2rem;
+  font-weight: 900;
+}
+
+.navbar li {
+  font-size: 18px;
+}
+
+/* End Style Navbar */
+
+.slog-part {
+  background-color: #ff9a3c;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.slog-part h1 {
+  text-align: center;
+  margin: 3rem 0;
+  padding: 4rem 2rem;
+}
+
+.section-2 {
+  margin-top: 2rem;
+}
+
+.box-section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 20px;
+  box-shadow: 0 3px 7px 3px rgb(212, 212, 212);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+.section-2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 400px;
+  margin: 3rem 0px;
+}
+
+.box-section-2 p {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+.section-3 {
+  width: 100%;
+  height: 300px;
+  margin: 3rem 0;
+  background-color: var(--yellow);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.five {
+  font-size: 15px;
+  font-weight: 800;
+  padding: 1rem 1.3rem;
+  object-fit: cover;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+.linkiTie,
+.sec4-ilmoitus {
+  font-size: 18px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.section-4 {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Tähän-Käyttäjä {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.tähän-lyhyt {
+  font-size: 16px;
+}
+
+.section-5 {
+  width: 100%;
+  padding: 3rem;
+  margin: 3rem auto;
+}
+
+.container-grid {
+  padding: 0 4rem;
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px 20px;
+  grid-template-areas:
+    "area-01 area-04 area-07"
+    "area-01 area-04 area-07"
+    "area-01 area-05 area-07"
+    "area-02 area-05 area-08"
+    "area-02 area-06 area-08"
+    "area-03 area-06 area-08";
+}
+
+.area-04 {
+  grid-area: area-04;
+  background-color: var(--orange);
+}
+
+.area-05 {
+  grid-area: area-05;
+  background-color: var(--blue-box);
+}
+
+.area-06 {
+  grid-area: area-06;
+  background-color: var(--orange);
+}
+
+.area-07 {
+  grid-area: area-07;
+  background-color: var(--blue-box-1);
+}
+
+.area-08 {
+  grid-area: area-08;
+  background-color: var(--orange);
+}
+
+.area-03 {
+  grid-area: area-03;
+  background-color: var(--blue-box-1);
+}
+
+.area-02 {
+  grid-area: area-02;
+  background-color: var(--blue-box-1);
+}
+
+.area-01 {
+  grid-area: area-01;
+  background-color: var(--blue-box);
+}
+
+.text-center p {
+  font-size: 20px;
+}
+
+/*  start footer */
+
+.section-footer {
+  width: 100%;
+  height: 100%;
+  margin: 2rem auto;
+  background-color: #ff9a3c;
+}
+.img-footer {
+  width: 150px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.title-footer {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-footer li {
+  font-size: 1rem;
+  margin: 0 15px;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .title-footer li {
+    font-size: 15px;
+  }
+
+  .slog-part h1 {
+    font-size: 25px;
+  }
+
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px 10px;
+    grid-template-areas:
+      "area-01 area-02"
+      "area-03 area-04"
+      "area-05 area-06"
+      "area-07 area-08";
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .section-footer {
+    padding: 0 4rem;
+  }
+
+  .img-footer {
+    align-self: -1;
+  }
 }

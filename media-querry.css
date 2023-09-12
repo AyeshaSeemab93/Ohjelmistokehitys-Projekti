@@ -1,14 +1,34 @@
-@media only screen and (min-width: 768px){
-  body{
-    padding-top: 8rem;
+/* Media Queries Mobile  767*/
+@media screen and (max-width: 768px) {
+  .navbar-nav li:hover {
+    background-color: #ff9a3c31;
   }
-.nav-bar{
-  height: 6rem;
-  flex-direction: row;
-  position: fixed;
-  width: 100%;
-  top: 0; /*to keep on top of page*/
-}
+  .navbar-nav li {
+    margin: 5px 0 5px 15px;
+    padding: 5px 2px;
+    width: 100px;
+  }
+  .nav-box {
+    display: block;
+  }
 
+  .box1-icon {
+    background-color: var(--blue);
+    margin-left: 15px;
+    padding: 1rem;
+    justify-content: flex-end;
+  }
 
+  .slog-part h1 {
+    font-size: 20px;
+  }
+
+  .img-section-footer {
+    order: -1;
+    margin: 2rem 0;
+  }
+
+  .container-grid {
+    display: none;
+  }
 }

@@ -1,20 +1,59 @@
 @import url(MQ-Mobile.css);
 @import url(MQ-Tablet.css);
 
+/* FONTIT */
+
+h1 {
+  /* font-style: italic; */
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 36px;
+}
+li {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.linkki {
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
+}
+
+p{
+  font-size: 1.3rem;
+}
+
+/* Fontit loppuu */
+
 :root {
   --blue: #277bc0;
-  --yellow: #ffb200;
-  --orange: #ff9a3c;
-  --beige: #fff4cf;
-  --blue-box: #007fbf;
+  --yellow: #f4b63f;
+  --orange: #dc7848;
+  --beige: #fdf5d3;
+  --blue-box: #407abb;
   --blue-box-1: #a7e7f6;
+  --black: #212121;
 }
 
 body {
   font-size: 56.2%;
   background-color: var(--beige);
-  font-family: "Montserrat Subrayada", sans-serif;
-}
+  font-family: "Poppins";
+  color: var(--black);
+  }
 
 .Wrapper {
   width: 100%;
@@ -25,27 +64,35 @@ ul li {
   cursor: pointer;
 }
 
+
 /* Navbar Styel */
 .navbar-box {
   text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-
+.menu-left{
+  justify-content: left;
+}
+.menu-right{
+  justify-content: right;
+}
 
 .logo {
-  width: 150px;
-  height: 80px;
+  /* Hannikan muokkaamat */
+  width: 300px;
+  /* height: 80px; */
   object-fit: cover;
+  align-items: center;
+
 }
 .box-nav{
   padding: 2rem;
 }
 .navbar{
-  background-color: #ff9a3c;
-
+  background-color: var(--yellow);
+  /* Hannikan lisäämä: */
+  height: 11rem;
 }
 
 /* .navbar {
@@ -61,31 +108,32 @@ ul li {
 
 .navbar-nav li {
   margin: 0 1rem;
-  font-size:2rem;
-  font-weight: 900;
+  /* font-size:2rem; */
+  /* font-weight: 900; */
 }
 
 .navbar li {
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 /* End Style Navbar */
 
 .slog-part {
-  background-color: #ff9a3c;
-  padding-top: 2rem;
+  background-color: var(--yellow);
+  /* padding-top: 2rem; */
   display: flex;
   justify-content: center;
+  /* Hannikan lisäämät: */
+   padding-block-start: 11rem;
+   padding-block-end: 3rem;
+
 }
 
 .slog-part h1 {
   text-align: center;
   margin: 3rem 0;
-  padding: 4rem 2rem;
-}
+  /* padding: 4rem 2rem; */
 
-.section-2 {
-  margin-top: 2rem;
 }
 
 .box-section-2 {
@@ -94,18 +142,32 @@ ul li {
   align-items: center;
   flex-direction: column;
   margin: 10px 20px;
-  box-shadow: 0 3px 7px 3px rgb(212, 212, 212);
+  /* box-shadow: 0 3px 7px 3px rgb(212, 212, 212); */
+}
+
+.box-image{
+  height: 400px;
+  background-image: url(./images/Screenshot\ 2023-09-15\ at\ 20.15.40.png);
+  background-size: 300px;
+  color: var(--orange);
+  /* border: var(--orange) solid 5px; */
+  border-radius: 10px;
+  text-shadow: 0.5px 0.5px black;
 }
 
 .blue {
   background-color: var(--blue);
+  border-radius: 10px;
+  /* height: 100% ; lisätty */
 }
 .section-2 {
   display: flex;
   text-align: center;
   justify-content: center;
+  /* align-items: center; */
   height: 400px;
-  margin: 3rem 0px;
+  /* margin: 3rem 0px; */
+  margin: 4rem 0 2.8rem 0rem;
 }
 
 .box-section-2 p {
@@ -113,11 +175,13 @@ ul li {
   text-align: center;
   font-weight: 800;
   margin-top: 2rem;
+  height: 400px;
+  width: 300px;
 }
 
 .section-3 {
   width: 100%;
-  height: 300px;
+  height: 350px;
   margin: 3rem 0;
   background-color: var(--yellow);
   justify-content: center;
@@ -126,39 +190,63 @@ ul li {
   flex-direction: column;
 }
 
+.section-3 h2{
+  padding-bottom: 0.5rem;
+}
+.section-3 h3{
+  padding-bottom: 0.5rem;
+}
+
 .five {
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 800;
-  padding: 1rem 1.3rem;
+  padding: 0.5rem 0.8rem;
   object-fit: cover;
   text-align: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 50%;
-  background-color: aliceblue;
+  background-color: var(--orange);
 }
-.linkiTie,
+/* .linkkiTie,
 .sec4-ilmoitus {
   font-size: 18px;
   border-bottom: 1px solid black;
   cursor: pointer;
-}
+} */
 
 .section-4 {
   width: 60%;
   margin: auto;
+  padding-block-start: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.section-4 h2{
+  padding-bottom: 2rem;
+}
+.section-4 h1{
+  padding-bottom: 2rem;
+}
+.section-4 .Tähän-Käyttäjä, 
+.section-4 .tähän-lyhyt{
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
 .Tähän-Käyttäjä {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   text-align: center;
 }
 .tähän-lyhyt {
   font-size: 16px;
 }
+
+/* .takaisin-ylös {
+  padding-top: 1rem;
+} */
 
 .section-5 {
   width: 100%;

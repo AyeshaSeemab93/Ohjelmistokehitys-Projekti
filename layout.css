@@ -69,58 +69,54 @@ ul li {
 .navbar-box {
   text-align: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.menu-left{
-  justify-content: left;
-}
-.menu-right{
-  justify-content: right;
-}
+
 
 .logo {
   /* Hannikan muokkaamat */
   width: 300px;
   /* height: 80px; */
   object-fit: cover;
-  align-items: center;
-
 }
 .box-nav{
   padding: 2rem;
 }
 .navbar{
-  background-color: var(--yellow);
-  /* Hannikan lisäämä: */
-  height: 11rem;
+  background-color: #ff9a3c;
+
 }
 
-/* .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999999999;
+nav{
   width: 100%;
-
+  background-color:var(--orange);
+  padding: 20px;
+}
+.title-nav{
+  display: flex;
   justify-content: center;
   align-items: center;
 } */
 
 .navbar-nav li {
   margin: 0 1rem;
-  /* font-size:2rem; */
-  /* font-weight: 900; */
+  font-size:2rem;
+  font-weight: 900;
 }
 
 .navbar li {
-  /* font-size: 18px; */
+  font-size: 18px;
 }
+
+
 
 /* End Style Navbar */
 
 .slog-part {
-  background-color: var(--yellow);
-  /* padding-top: 2rem; */
+  background-color: #ff9a3c;
+  padding-top: 2rem;
   display: flex;
   justify-content: center;
   /* Hannikan lisäämät: */
@@ -132,11 +128,16 @@ ul li {
 .slog-part h1 {
   text-align: center;
   margin: 3rem 0;
-  /* padding: 4rem 2rem; */
+  padding: 4rem 2rem;
+}
 
+.section-2 {
+  margin-top: 2rem;
 }
 
 .box-section-2 {
+  width: 200px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,10 +165,8 @@ ul li {
   display: flex;
   text-align: center;
   justify-content: center;
-  /* align-items: center; */
   height: 400px;
-  /* margin: 3rem 0px; */
-  margin: 4rem 0 2.8rem 0rem;
+  margin: 3rem 0px;
 }
 
 .box-section-2 p {

@@ -1,17 +1,6 @@
 /* Media Queries Mobile  767*/
 @media screen and (max-width: 768px) {
-  .navbar-nav li:hover {
-    background-color: #ff9a3c31;
-  }
-  .navbar-nav li {
-    margin: 5px 0 5px 15px;
-    padding: 5px 2px;
-    width: 100px;
-  }
-  .nav-box{
-   display:block;
-  }
-
+ 
  
  
   .box1-icon {
@@ -34,7 +23,6 @@
   }
   
   .container-grid {
-
     display: none;
   }
   

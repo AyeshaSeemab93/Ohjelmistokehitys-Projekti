@@ -29,6 +29,15 @@ h3 {
   font-size: 20px;
 }
 
+.linkki-iso {
+  font-size: 26px;
+  text-transform: uppercase;
+  /* border-bottom: 1px solid black; */
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--black);
+}
+
 .linkki {
   font-size: 18px;
   text-transform: uppercase;
@@ -124,7 +133,7 @@ ul li {
   align-items: center;
   flex-direction: column;
   margin: 10px 20px;
-  /* box-shadow: 0 3px 7px 3px rgb(212, 212, 212); */
+  box-shadow: 0 3px 7px 3px rgb(131, 130, 130);
 }
 
 
@@ -136,7 +145,6 @@ ul li {
   color: var(--black);
   /* border: var(--orange) solid 5px; */
   border-radius: 10px;
-  text-shadow: 0.5px 0.5px white;
 }
 
 .blue {

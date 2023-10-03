@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huoltopyyntö</title>
+  <style>
+    html{
+      background-color: #FFFBEC;
+    }
+    main{
+      text-align: right;
+      margin-right: 2rem;
+    }
+    h1{
+      font-weight: 500;
+    }
+    .kuvaus{
+      display: flex;
+      justify-content: end;
+    }
+    button{
+      background-color: #90B1C9;
+      border: solid;
+      border-width: 1px;
+      padding: 0.5rem 1rem;
+    }
+  </style>
+</head>
+<body>
+ 
+ <main> 
+  <h1>HUOLTOPYYNTÖ</h1>
+  <form action="">
+    <label for="tyyppi">Huoltopyynnön tyyppi*</label> 
+    <select name="tyyppi" id="tyyppi"> 
+        <option value="asuntoa">Asuntoa koskeva vikailmoitus</option> 
+        <option value="vikailmoitus">Kiinteistön yhteisiä tiloja koskeva vikailmoitus</option> 
+        <option value="siivous">Kiinteistön yhteisiä tiloja koskeva siivous</option> 
+        <option value="Ulkoalueiden">Ulkoalueiden kunnossapito</option> 
+        <option value="Jätehuolto">Jätehuolto</option>
+        <option value="muut">Muut</option>
+    </select>
+    <br>
+    <br>
+    <div>
+      <label for="name">Mistä on kyse*</label>
+      <input type="text" name="user_name" id="name" required placeholder="Max 500 merkkiä">
+    </div>
+   
+  <br>
+  <div class="kuvaus">
+    <div>
+      <label for="kuvaus">Kuvaile ongelma*</label>
+    </div>
+    <div>
+      <textarea id="kuvaus" cols="33" rows="8" required placeholder="Kuvaus"></textarea>
+    </div>
+  </div>
+<br>
+<div>
+<label for="address">Osoite*</label>
+<input type="text" id="address" required>
+</div>
+<br>
+<div>
+  <label for="name">Sukunimi*</label>
+  <input type="text" name="user_name" id="name" required>
+</div>
+<br>
+<div>
+  <label for="Etunimi">Etunimi*</label>
+  <input type="text" name="user_name" id="Etunimi" required>
+</div>
+<br>
+<div>
+  <label for="phone">Puhelinnumero*</label>
+  <input type="number" name="user_number" id="phone" required>
+</div>
+<br>
+<div>
+  <label for="email">Sähköposti*</label>
+  <input type="email" name="user_email" id="email" required>
+</div>
+<br>
+<label for="eläimiä"><label for="eläimiä">Tarviiko huoltomiehen päästä asuntoon?*</label>
+<div>
+    <label for="eiäimiä">Kyllä</label required>
+    <input type="radio" class="radio" id="eiäimiä" value="eiäimiä" name="eiäimiä">
+    <label for="ei-eiäimiä">Ei</label>
+    <input type="radio" class="radio" id="ei-eiäimiä" value="ei-eiäimiä" name="eiäimiä">
+</div>
+<br>
+<label for="eläimiä"><label for="eläimiä">Voiko huoltomies tulla asuntoon yleisavaimella, jos asukas ei ole kotona?</label>
+        <div>
+            <label for="eiäimiä">Kyllä</label required>
+            <input type="radio" class="radio" id="eiäimiä" value="eiäimiä" name="eiäimiä">
+            <label for="ei-eiäimiä">Ei</label>
+            <input type="radio" class="radio" id="ei-eiäimiä" value="ei-eiäimiä" name="eiäimiä">
+        </div> 
+
+        <br>
+        <label for="eläimiä">Onko asunnossa lemmikkiejä?*</label>
+        <div>
+            <label for="eiäimiä">Ei ole kotieläimiä</label required>
+            <input type="radio" class="radio" id="eiäimiä" value="eiäimiä" name="eiäimiä">
+            <label for="ei-eiäimiä">On kotieläimiä</label>
+            <input type="radio" class="radio" id="ei-eiäimiä" value="ei-eiäimiä" name="eiäimiä">
+        </div> 
+        <br>
+        <brs>
+        <button type="submit">Lähetä</button>  
+      </form>
+    </main>
+  
+</body>
+</html>

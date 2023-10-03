@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yhteys</title>
+  <style>
+    html{
+      background-color: #FFFBEC;
+    }
+    h5{
+      background-color: #F9ECB6;
+      padding: 1rem;
+      border-radius: 3rem;
+      text-align: center;
+    }
+    
+    span{
+      text-decoration: underline;
+    }
+   .heading{ 
+      text-align: right;
+      font-weight: 500; 
+      margin-right: 5rem;
+    }
+    main{
+      text-align: right;
+      margin-right: 2rem;
+    }
+    input,select,textarea{
+      width: 20rem;
+    }
+    .Viesti {    
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  }
+  button{
+    margin-top: 2rem;
+      background-color: #90B1C9;
+      border: solid;
+      border-width: 1px;
+      padding: 0.5rem 1rem;
+    }
+  .final-info{
+    margin-top: 1rem;
+  }
+  .final-info > *{
+    padding: 0;
+    margin: 0;
+  }
+
+
+  </style>
+</head>
+<body>
+  <h5 class="link">JOS ASIASI KOSKEE VIKAILMOITUSTA JA HALUAT TEHDÄ HUOLTIPUUNNÖN, SIIRRY VIKAIMLOITUKSEN TEKOON <span>TÄSTÄ</span>.</h5>
+  <h1 class="heading">OTA YHTEYTTÄ ISÄNNÖITSIJÄÄN</h1>
+  <main>
+  <form action="">
+    <label for="tyyppi">Asia koskee*</label> 
+    <select name="tyyppi" id="tyyppi"> 
+        <option value="Palaute">Palaute</option> 
+        <option value="Tiedustelu">Tiedustelu</option> 
+        <option value="irtisanominen">Vuokrasopimuksen irtisanominen</option>
+        <option value="muut">Muut</option>
+    </select>
+    <br>
+    <br>
+    <div>
+      <label for="Etunimi">Etunimi*</label>
+      <input type="text" name="user_name" id="Etunimi" required>
+    </div>
+    <br>
+    <div>
+      <label for="name">Sukunimi*</label>
+      <input type="text" name="user_name" id="name" required>
+    </div>
+    <br>
+    <div>
+    <label for="address">Osoite*</label>
+    <input type="text" id="address" required>
+  </div>
+    <br>
+    <div>
+      <label for="phone">Puhelinnumero*</label>
+      <input type="number" name="user_number" id="phone" required>
+    </div>
+    <br>
+    <div>
+      <label for="date">Jos asiasi koskee vuokrasopimuksen irtisanomista, valitse irtisanomispäivä.</label>
+      <br>
+      <br>
+      <input type="date" name="date" id="date">
+    </div>
+    <br>
+    <div class="Viesti">
+      <label for="Viesti">Viesti*</label>
+      <div class="textarea-container">
+        <textarea id="Viesti" cols="33" rows="8" required placeholder="Max 5000 merkkiä"></textarea>
+      </div>
+    </div>
+    <button type="submit">Lähetä</button>
+    <div class="final-info">
+      <p>Isännöitsijätoimisto se ja sa</p>
+      <p>PL245</p>
+      <br>
+      <p>Puhelimitse palelemma arkisin kli 9.00-15.00</p>
+      <p>numerossa (09)3333 333</p>
+    </div>
+  </form>
+</main>
+</body>
+</html>

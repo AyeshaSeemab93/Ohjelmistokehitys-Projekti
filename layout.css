@@ -1,118 +1,13 @@
 @import url(MQ-Mobile.css);
 @import url(MQ-Tablet.css);
 
-/* FONTIT */
-
-h1 {
-  /* font-style: italic; */
-  text-transform: uppercase;
-  font-weight: 100;
-  font-size: 36px;
-}
-
-.slogan {
-  color: var(--blue);
-  font-style: italic;
-  text-transform: lowercase;
-}
-li {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 26px;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-.linkki-iso {
-  font-size: 26px;
-  text-transform: uppercase;
-  /* border-bottom: 1px solid black; */
-  cursor: pointer;
-  text-decoration: underline;
-  color: var(--black);
-}
-
-.linkki {
-  font-size: 18px;
-  text-transform: uppercase;
-  border-bottom: 1px solid black;
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--black);
-}
-
-p{
-  font-size: 16px;
-  line-height: 1.5rem;
-}
-
-/* Fontit loppuu */
-
-:root {
-  --blue: #277bc0;
-  --yellow: #f4b63f;
-  --orange: #dc7848;
-  --beige: #fdf5d3;
-  --blue-box: #407abb;
-  --blue-box-1: #a7e7f6;
-  --black: #212121;
-}
-
-body {
-  font-size: 56.2%;
-  background-color: var(--beige);
-  font-family: "Poppins";
-  color: var(--black);
-  }
-
 .Wrapper {
   width: 100%;
   background-color: var(--beige);
   overflow-x: hidden;
 }
-ul li {
-  cursor: pointer;
-}
 
 
-/* Navbar Styel */
-.navbar-box {
-  text-align: center;
-  display: flex;
-}
-
-.menu-left{
-  justify-content: left;
-}
-.menu-right{
-  justify-content: right;
-}
-
-.logo {
-  width: 350px;
-  /* object-fit: cover; */
-  align-items: center;
-  padding-right: 5rem;
-}
-.box-nav{
-  padding: 0;
-}
-.navbar{
-  background-color: var(--yellow);
-  height: 11rem;
-}
-
-.navbar-nav li {
-  margin: 0 1rem;
-}
-
-/* End Style Navbar */
 
 .slog-part {
   background-color: var(--yellow);
@@ -182,7 +77,7 @@ ul li {
   flex-direction: column;
 }
 
-.section-3 h2{
+.section-3 h1{
   padding-bottom: 0.5rem;
 }
 .section-3 h3{
@@ -305,40 +200,7 @@ ul li {
   font-size: 20px;
 }
 
-/*  start footer */
 
-.section-footer {
-  width: 100%;
-  height: 100%;
-  margin: 2rem auto;
-  background-color: var(--yellow);
-  margin-block-end: -1rem;
-}
-.img-footer {
-  width: 150px;
-  height: 70px;
-  object-fit: cover;
-}
-
-.title-footer {
-  width: 100%;
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.title-footer li {
-  font-size: 1rem;
-  margin: 0 15px;
-}
-
-.color {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 @media screen and (max-width: 1100px) {
   .title-footer li {

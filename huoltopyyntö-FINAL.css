@@ -2,6 +2,7 @@
 p, label {
   font-size: 16px;
   line-height: 1.5rem;
+  text-align: center;
 }
 
 .linkki-huolto {
@@ -129,7 +130,6 @@ p, label {
 
    
 .button-container {
-    /* width: 46rem; */
     margin-block-end: 5rem;
     text-align: center;
     display: flex;
@@ -138,8 +138,9 @@ p, label {
     flex-basis: 0;
     flex-grow: 1;
     justify-content: right;
-    /* width: 27rem; */
+    width: 17rem;
     padding-top: 1.5rem;
+    margin-right: 12rem;
 
 }
 

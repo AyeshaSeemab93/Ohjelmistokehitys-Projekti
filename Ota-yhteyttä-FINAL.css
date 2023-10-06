@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --blue: #277bc0;
     --yellow: #f4b63f;
     --orange: #dc7848;
@@ -9,7 +9,6 @@
   }
   
   h2 {
-    /* font-style: italic; */
     text-transform: uppercase;
     font-weight: 100;
     font-size: 36px;
@@ -39,7 +38,6 @@
   .linkki-iso {
     font-size: 26px;
     text-transform: uppercase;
-    /* border-bottom: 1px solid black; */
     cursor: pointer;
     text-decoration: underline;
     color: var(--black);
@@ -53,16 +51,19 @@
     text-decoration: none;
     color: var(--black);
   }
+  */
   
   p, label {
     font-size: 16px;
     line-height: 1.5rem;
+    text-align: center;
   }
 
   .linkki-huolto {
     color: var(--black);
-  }
-  
+    text-decoration: underline;
+  } 
+
   /* Fontit loppuu */
   
   body {
@@ -86,6 +87,7 @@
 
     .vikailmoitus {
         text-align: center;
+        margin-top: 0.5rem;
     }
 
     .otsikko {
@@ -131,7 +133,7 @@
 
       #tyyppi {
         width:  30rem;
-         height: 1.9rem;
+         height: 2rem;
           border-radius: 5px;
           border: solid;
           border-width: 1px;
@@ -144,7 +146,7 @@
       
      input{
           width:  30rem;
-         height: 1.5rem;
+         height: 2rem;
           border-radius: 5px;
           border: solid;
           border-width: 1px;
@@ -212,11 +214,13 @@
         flex-wrap: wrap;
         flex-basis: 0;
         flex-grow: 1;
-        width: 30.5rem;
+        width: 100%;
+        /* width: 30.5rem; */
         /* padding-block-start: 3rem; */
         align-items: right;
-        margin: 0 30rem;
+        /* margin: 0 30rem; */
         padding-top: 6rem;
+  
       }
 
       .yhteystiedot > * {

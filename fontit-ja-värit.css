@@ -52,17 +52,17 @@ h2 {
 
     .button {
         border-radius: 4px;
+        border: var(--blue);
         padding: 0.6rem 2rem;
         font-family: 'Poppins';
         font-size: 20px;
         text-transform: uppercase;
         color: white;
         background-color: var(--blue);
-        border-bottom: 1px solid black;
+        /* border-bottom: 1px solid black; */
         cursor: pointer;
         text-decoration: none;
         text-align: center;
-        /* justify-content: right; */
         box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
     }
   
@@ -81,7 +81,6 @@ h2 {
     --yellow: #f4b63f;
     --orange: #dc7848;
     --beige: #fdf5d3;
-    --blue-box: #407abb;
     --blue-box-1: #a7e7f6;
     --black: #212121;
   }

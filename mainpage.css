@@ -90,6 +90,7 @@
   padding: 0.5rem 0.8rem;
   object-fit: cover;
   text-align: center;
+  color: var(--beige);
   /* border: 1px solid black; */
   border-radius: 50%;
   background-color: var(--blue);
@@ -163,7 +164,7 @@
 
 .area-05 {
   grid-area: area-05;
-  background-color: var(--blue-box);
+  background-color: var(--blue);
 }
 
 .area-06 {
@@ -193,11 +194,15 @@
 
 .area-01 {
   grid-area: area-01;
-  background-color: var(--blue-box);
+  background-color: var(--blue);
 }
 
 .text-center p {
   font-size: 20px;
+}
+
+.linkki-lisää {
+  margin-bottom: 2rem;
 }
 
 

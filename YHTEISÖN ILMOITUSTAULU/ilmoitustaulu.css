@@ -1,6 +1,15 @@
+:root {
+  --blue: #277bc0;
+  --yellow: #f4b63f;
+  --orange: #dc7848;
+  --beige: #fdf5d3;
+  --blue-box-1: #a7e7f6;
+  --black: #212121;
+}
+
 body{
   margin: 20px;
-  background-color: pink;
+  background-color: var()
  
   text-align: center;
 

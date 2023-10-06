@@ -9,11 +9,14 @@
 
 body{
   margin: 20px;
-  background-color: var()
- 
+  background-color: var(--beige);
   text-align: center;
-
 }
+
+H1 {
+  margin-block-end: ;
+}
+
 #app{
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);/*all sticky notes of width 200 px and no of notes depend on the size of screen */

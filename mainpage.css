@@ -13,8 +13,8 @@
   background-color: var(--yellow);
   display: flex;
   justify-content: center;
-  padding-block-start: 11rem;
-  padding-block-end: 3rem;
+  padding-block-start: 12rem;
+  padding-block-end: 4rem;
 }
 
 .slog-part h1 {

@@ -70,7 +70,7 @@ h2 {
   .slogan {
     color: var(--blue);
     font-style: italic;
-    text-transform: lowercase;
+    text-transform: none;
   }
   
   

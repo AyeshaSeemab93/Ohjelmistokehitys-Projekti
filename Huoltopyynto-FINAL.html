@@ -90,7 +90,7 @@
 </div>
 <div>
   <label for="phone">Puhelinnumero*</label>
-  <input class="kenttä"type="number" name="user_number" id="phone" required>
+  <input class="kenttä" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-45-678" required />
 </div>
 <div>
   <label for="email">Sähköposti*</label>
@@ -98,37 +98,37 @@
 </div>
 
 <div class="valinnat">
- <label for="eläimiä" class="kysymys1">Tarviiko huoltomiehen päästä asuntoon?*</label>
-        <div class="kyllä-ei">
-            <label for="eläimiä">Kyllä</label required>
-            <input type="radio" class="radio" id="eläimiä" value="eläimiä" name="eläimiä">
-            <label for="ei-eläimiä">Ei</label>
-            <input type="radio" class="radio" id="ei-eläimiä" value="ei-eläimiä" name="eläimiä">
-        </div>
+  <label for="eläimiä" class="kysymys1">Tarviiko huoltomiehen päästä asuntoon?*</label class="kyllä-ei">
+    <div>
+      <input type="radio" class="radio" id="eiäimiä" value="eiäimiä" name="eiäimiä">
+      <label for="eiäimiä">Kyllä</label required>
+      <input type="radio" class="radio" id="ei-eiäimiä" value="ei-eiäimiä" name="eiäimiä">
+      <label for="ei-eiäimiä">Ei</label>  
+    </div>
 
-   <label for="eläimiä" class="kysymys2">Voiko huoltomies tulla asuntoon yleisavaimella, jos asukas ei ole kotona?</label>
-        <div class="kyllä-ei">
-            <label for="eläimiä">Kyllä</label required>
-            <input type="radio" class="radio" id="eläimiä" value="eläimiä" name="eläimiä">
-            <label for="ei-eläimiä">Ei</label>
-            <input type="radio" class="radio" id="ei-eläimiä" value="ei-eläimiä" name="eläimiä">
-        </div> 
+  <label for="kotona" class="kysymys2">Voiko huoltomies tulla asuntoon yleisavaimella, jos asukas ei ole kotona?</label>
+    <div class="kyllä-ei">
+      <input type="radio" class="radio" id="kotona" value="kotona" name="kotona">
+      <label for="kotona">Kyllä</label required>
+      <input type="radio" class="radio" id="ei-kotona" value="ei-kotona" name="kotona">
+      <label for="ei-kotona">Ei</label>
+    </div> 
 
-    <label for="eläimiä" class="kysymys3">Onko asunnossa lemmikkiejä?*</label>
-        <div class="kyllä-ei">
-            <label for="eläimiä">Kyllä</label required>
-            <input type="radio" class="radio" id="eläimiä" value="eläimiä" name="eläimiä">
-            <label for="ei-eläimiä">Ei</label>
-            <input type="radio" class="radio" id="ei-eläimiä" value="ei-eläimiä" name="eläimiä">
-        </div> 
-      </div>
+  <label for="lemmikkiejä?" class="kysymys3">Onko asunnossa lemmikkiejä?*</label>
+    <div class="kyllä-ei">
+      <input type="radio" class="radio" id="lemmikkiejä" value="lemmikkiejä" name="lemmikkiejä">
+      <label for="lemmikkiejä">Ei ole lemmikkiejä</label required>
+      <input type="radio" class="radio" id="ei-lemmikkiejä" value="ei-lemmikkiejä" name="lemmikkiejä">
+      <label for="ei-lemmikkiejä">On lemmikkiejä</label>
+    </div> 
+  </div>
         
-       </section>
-        <!-- <brs> -->
-          <section class="button-container">
-        <button class="button" type="submit">Lähetä</button> 
-      </section> 
-      </form>
+   </section>
+  <!-- <brs> -->
+    <section class="button-container">
+  <button class="button" type="submit">Lähetä</button> 
+</section> 
+</form>
     <!-- </main> -->
 
             <!-- start Footer -->

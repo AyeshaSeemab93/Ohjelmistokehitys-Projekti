@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800">
-  <link rel="stylesheet" href="/fontit-ja-värit.css">
-  <link rel="stylesheet" href="/header-footer.css">
+
+
+  <link rel="stylesheet" href="../Varaaus/fontit-ja-värit.css">
+  <link rel="stylesheet" href="../Varaaus/header-footer.css">
+  <link rel="stylesheet" href="../Varaaus/layout.css">
   <link rel="stylesheet" href="huoltopyyntö-FINAL.css">
 
+
   <title>Huoltopyyntö</title>
-  
+
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-md box-nav fixed-top">
+
+  <nav>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="checkBtn">Menu</label>
+    <ul class="title-nav">
+        <li> <a>Koti </a> </li>
+        <li> <a>Tiedottet </a> </li>
+        <li> <a>Dokomenti </a> </li>
+        <li><img src="../Logos/HappyNest_logo.png" class="logo"></li>
+        <li> <a>Koti </a> </li>
+        <li> <a>Tiedottet </a> </li>
+        <li> <a>Dokomenti </a> </li>
+
+    </ul>
+</nav>
+  <!-- <nav class="navbar navbar-expand-md box-nav fixed-top">
 
     <button class="navbar-toggler box1-icon" data-toggle="collapse" data-target="#navbarMenue">
-        Menu
+      Menu
     </button>
 
     <div class="collapse navbar-collapse navbar-box menu-left" id="navbarMenue">
-        <ul class="navbar-nav">
-            <li>Tiedotteet</li>
-            <li>Meistä</li>
-            <li>Dokumentit</li>
-            <li>Ilmoitustaulu</li>
-        </ul>
+      <ul class="navbar-nav">
+        <li>Tiedotteet</li>
+        <li>Meistä</li>
+        <li>Dokumentit</li>
+        <li>Ilmoitustaulu</li>
+      </ul>
     </div>
 
     <div class="logo"><a href="./mainpage.html">
@@ -36,147 +58,150 @@
     </div>
 
     <div class="collapse navbar-collapse navbar-box menu-right" id="navbarMenue">
-        <ul class="navbar-nav nav-right">
-            <li>Varauskalenteri</li>
-            <li><a href="./Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
-            <li><a href="./Ota-yhteyttä-FINAL.html">Yhteydenotto</a></li>
-        </ul>
+      <ul class="navbar-nav nav-right">
+        <li>Varauskalenteri</li>
+        <li><a href="./Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
+        <li><a href="./Ota-yhteyttä-FINAL.html">Yhteydenotto</a></li>
+      </ul>
     </div>
-  
 
 
 
 
-</nav>
-   
-    <!-- Navbar End -->
- 
- <!-- <main>  -->
+
+  </nav> -->
+
+  <!-- Navbar End -->
+
+  <!-- <main>  -->
   <h1 class="otsikko">HUOLTOPYYNTÖ</h1>
   <form action="">
     <section class="tiedot">
-    <div>
-      <label class="asia-koskee" for="tyyppi">Huoltopyynnön tyyppi*</label> 
-      <select name="tyyppi" id="tyyppi"> 
-        <option value="asuntoa">Asuntoa koskeva vikailmoitus</option> 
-        <option value="vikailmoitus">Kiinteistön yhteisiä tiloja koskeva vikailmoitus</option> 
-        <option value="siivous">Kiinteistön yhteisiä tiloja koskeva siivous</option> 
-        <option value="Ulkoalueiden">Ulkoalueiden kunnossapito</option> 
-        <option value="Jätehuolto">Jätehuolto</option>
-        <option value="muut">Muut</option>
-      </select>
-    </div>
-    <div>
-      <label for="name">Mistä on kyse*</label>
-      <input class="kenttä" type="text" name="user_name" id="name" required placeholder="Enintään 30 merkkiä">
-    </div>
-  <!-- <div class="kuvaus"> -->
-    <div class="viesti">
-      <label for="kuvaus">Kuvaile ongelma*</label>
-      <textarea id="kuvaus" cols="33" rows="8" required placeholder="Enintään 5000 merkkiä"></textarea>
-    </div>
-  <!-- </div> -->
-<div>
-<label for="address">Osoite*</label>
-<input class="kenttä" type="text" id="address" required>
-</div>
-<div>
-  <label for="name">Sukunimi*</label>
-  <input class="kenttä"type="text" name="user_name" id="name" required>
-</div>
-<div>
-  <label for="Etunimi">Etunimi*</label>
-  <input class="kenttä"type="text" name="user_name" id="Etunimi" required>
-</div>
-<div>
-  <label for="phone">Puhelinnumero*</label>
-  <input class="kenttä" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-45-678" required />
-</div>
-<div>
-  <label for="email">Sähköposti*</label>
-  <input class="kenttä"type="email" name="user_email" id="email" required>
-</div>
-
-<div class="valinnat">
-  <label for="eläimiä" class="kysymys1">Tarviiko huoltomiehen päästä asuntoon?*</label class="kyllä-ei">
-    <div class="kyllä-ei">
-      <input type="radio" class="radio" id="eiäimiä" value="eiäimiä" name="eiäimiä">
-      <label for="eiäimiä">Kyllä</label required>
-      <input type="radio" class="radio" id="ei-eiäimiä" value="ei-eiäimiä" name="eiäimiä">
-      <label for="ei-eiäimiä">Ei</label>  
-    </div>
-
-  <label for="kotona" class="kysymys2">Voiko huoltomies tulla asuntoon yleisavaimella, jos asukas ei ole kotona?</label>
-    <div class="kyllä-ei">
-      <input type="radio" class="radio" id="kotona" value="kotona" name="kotona">
-      <label for="kotona">Kyllä</label required>
-      <input type="radio" class="radio" id="ei-kotona" value="ei-kotona" name="kotona">
-      <label for="ei-kotona">Ei</label>
-    </div> 
-
-  <label for="lemmikkiejä?" class="kysymys3">Onko asunnossa lemmikkiejä?*</label>
-    <div class="kyllä-ei">
-      <input type="radio" class="radio" id="lemmikkiejä" value="lemmikkiejä" name="lemmikkiejä">
-      <label for="lemmikkiejä">Kyllä</label required>
-      <input type="radio" class="radio" id="ei-lemmikkiejä" value="ei-lemmikkiejä" name="lemmikkiejä">
-      <label for="ei-lemmikkiejä">Ei</label>
-    </div> 
-  </div>
-        
-   </section>
-  <!-- <brs> -->
-    <section class="button-container">
-  <button class="button" type="submit">Lähetä</button> 
-</section> 
-</form>
-    <!-- </main> -->
-
-            <!-- start Footer -->
-            <div class="section-footer">
-              <div class="row for-queri-footer">
-  
-                  <div class="col-md-5 color">
-                      <div class="row">
-                          <ul class="title-footer">
-                              <li>KOTI</li>
-                              <li>TIEDOTTEET</li>
-                              <li>DOKUMENTIT</li>
-                          </ul>
-                      </div>
-                      <div class="row mt-3">
-                          <ul class="title-footer">
-                              <li>HAPPYNESTIN VISIO</li>
-                              <li>MUUTA</li>
-                          </ul>
-                      </div>
-                  </div>
-  
-                  <div class="col-md-2 my-sm-5 text-center img-section-footer"><img class="img-footer"
-                          src="Logos/HappyNest_logo.png" alt=""></div>
-  
-                  <div class="col-md-5 color creat-margin-right">
-                      <div class="row">
-                          <ul class="title-footer">
-                              <li>VARAUKSET</li>
-                              <li>ILMOITUSTAULU</li>
-                              <li><a href="./Lomakeet/Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
-                          </ul>
-                      </div>
-                      <div class="row mt-3">
-                          <ul class="title-footer">
-                              <li><a href="./Lomakeet/Ota-yhteyttä-FINAL.html">Yhteydenotto</a></li>
-                              <li>MUUTA</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
+      <div>
+        <label class="asia-koskee" for="tyyppi">Huoltopyynnön tyyppi*</label>
+        <select name="tyyppi" id="tyyppi">
+          <option value="asuntoa">Asuntoa koskeva vikailmoitus</option>
+          <option value="vikailmoitus">Kiinteistön yhteisiä tiloja koskeva vikailmoitus</option>
+          <option value="siivous">Kiinteistön yhteisiä tiloja koskeva siivous</option>
+          <option value="Ulkoalueiden">Ulkoalueiden kunnossapito</option>
+          <option value="Jätehuolto">Jätehuolto</option>
+          <option value="muut">Muut</option>
+        </select>
       </div>
-  
-  
-  
-  
-      <!-- End Footer -->
-  
+      <div>
+        <label for="name">Mistä on kyse*</label>
+        <input class="kenttä" type="text" name="user_name" id="name" required placeholder="Enintään 30 merkkiä">
+      </div>
+      <!-- <div class="kuvaus"> -->
+      <div class="viesti">
+        <label for="kuvaus">Kuvaile ongelma*</label>
+        <textarea id="kuvaus" cols="33" rows="8" required placeholder="Enintään 5000 merkkiä"></textarea>
+      </div>
+      <!-- </div> -->
+      <div>
+        <label for="address">Osoite*</label>
+        <input class="kenttä" type="text" id="address" required>
+      </div>
+      <div>
+        <label for="name">Sukunimi*</label>
+        <input class="kenttä" type="text" name="user_name" id="name" required>
+      </div>
+      <div>
+        <label for="Etunimi">Etunimi*</label>
+        <input class="kenttä" type="text" name="user_name" id="Etunimi" required>
+      </div>
+      <div>
+        <label for="phone">Puhelinnumero*</label>
+        <input class="kenttä" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-45-678"
+          required />
+      </div>
+      <div>
+        <label for="email">Sähköposti*</label>
+        <input class="kenttä" type="email" name="user_email" id="email" required>
+      </div>
+
+      <div class="valinnat">
+        <label for="eläimiä" class="kysymys1">Tarviiko huoltomiehen päästä asuntoon?*</label class="kyllä-ei">
+        <div class="kyllä-ei">
+          <input type="radio" class="radio" id="eiäimiä" value="eiäimiä" name="eiäimiä">
+          <label for="eiäimiä">Kyllä</label required>
+          <input type="radio" class="radio" id="ei-eiäimiä" value="ei-eiäimiä" name="eiäimiä">
+          <label for="ei-eiäimiä">Ei</label>
+        </div>
+
+        <label for="kotona" class="kysymys2">Voiko huoltomies tulla asuntoon yleisavaimella, jos asukas ei ole
+          kotona?</label>
+        <div class="kyllä-ei">
+          <input type="radio" class="radio" id="kotona" value="kotona" name="kotona">
+          <label for="kotona">Kyllä</label required>
+          <input type="radio" class="radio" id="ei-kotona" value="ei-kotona" name="kotona">
+          <label for="ei-kotona">Ei</label>
+        </div>
+
+        <label for="lemmikkiejä?" class="kysymys3">Onko asunnossa lemmikkiejä?*</label>
+        <div class="kyllä-ei">
+          <input type="radio" class="radio" id="lemmikkiejä" value="lemmikkiejä" name="lemmikkiejä">
+          <label for="lemmikkiejä">Kyllä</label required>
+          <input type="radio" class="radio" id="ei-lemmikkiejä" value="ei-lemmikkiejä" name="lemmikkiejä">
+          <label for="ei-lemmikkiejä">Ei</label>
+        </div>
+      </div>
+
+    </section>
+    <!-- <brs> -->
+    <section class="button-container">
+      <button class="button" type="submit">Lähetä</button>
+    </section>
+  </form>
+  <!-- </main> -->
+
+  <!-- start Footer -->
+  <div class="section-footer">
+    <div class="row for-queri-footer">
+
+      <div class="col-md-5 color">
+        <div class="row">
+          <ul class="title-footer">
+            <li>KOTI</li>
+            <li>TIEDOTTEET</li>
+            <li>DOKUMENTIT</li>
+          </ul>
+        </div>
+        <div class="row mt-3">
+          <ul class="title-footer">
+            <li>HAPPYNESTIN VISIO</li>
+            <li>MUUTA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-2 my-sm-5 text-center img-section-footer"><img class="img-footer"
+          src="Logos/HappyNest_logo.png" alt=""></div>
+
+      <div class="col-md-5 color creat-margin-right">
+        <div class="row">
+          <ul class="title-footer">
+            <li>VARAUKSET</li>
+            <li>ILMOITUSTAULU</li>
+            <li><a href="./Lomakeet/Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
+          </ul>
+        </div>
+        <div class="row mt-3">
+          <ul class="title-footer">
+            <li><a href="./Lomakeet/Ota-yhteyttä-FINAL.html">Yhteydenotto</a></li>
+            <li>MUUTA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <!-- End Footer -->
+
 </body>
+
 </html>

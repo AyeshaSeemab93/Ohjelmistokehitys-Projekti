@@ -1,168 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800">
-    <link rel="stylesheet" href="/fontit-ja-värit.css">
-    <link rel="stylesheet" href="/header-footer.css">
-    <link rel="stylesheet" href="./Ota-yhteyttä-FINAL.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800">
 
-    <title>Palautetta Lomake</title>
+  <link rel="stylesheet" href="../Varaaus/fontit-ja-värit.css">
+  <link rel="stylesheet" href="../Varaaus/header-footer.css">
+  <link rel="stylesheet" href="../Varaaus/layout.css">
+  <link rel="stylesheet" href="./Ota-yhteyttä-FINAL.css">
 
-  </head>
+  <title>Palautetta Lomake</title>
+
+</head>
+
 <body>
+  <nav>
 
+    <input type="checkbox" id="check">
+    <label for="check" class="checkBtn">Menu</label>
+    <ul class="title-nav">
+        <li> <a>Koti </a> </li>
+        <li> <a>Tiedottet </a> </li>
+        <li> <a>Dokomenti </a> </li>
+        <li><img src="./Logos/HappyNest_logo.png" class="logo"></li>
+        <li> <a>Koti </a> </li>
+        <li> <a>Tiedottet </a> </li>
+        <li> <a>Dokomenti </a> </li>
+
+    </ul>
+</nav>
+
+  <!-- <nav class="navbar navbar-expand-md box-nav fixed-top">
+
+    <button class="navbar-toggler box1-icon" data-toggle="collapse" data-target="#navbarMenue">
+      Menu
+    </button>
+
+    <div class="collapse navbar-collapse navbar-box menu-left" id="navbarMenue">
+      <ul class="navbar-nav">
+        <li>Tiedotteet</li>
+        <li>Meistä</li>
+        <li>Dokumentit</li>
+        <li>Ilmoitustaulu</li>
+      </ul>
+    </div>
+
+    <div class="logo"><a href="./mainpage.html">
+        <img src="./Logos/HappyNest_logo.png" class="logo d-none d-md-block mx-5" alt="Happynestin logo"></a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-box menu-right" id="navbarMenue">
+      <ul class="navbar-nav nav-right">
+        <li>Varauskalenteri</li>
+        <li><a href="./Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
+        <li><a href="./Ota-yhteyttä-FINAL.html">Yhteydenotto</a></li>
+      </ul>
+    </div>
+
+
+
+
+
+  </nav> -->
+
+  <!-- Navbar End -->
   <div class="Wrapper">
-    <nav class="navbar navbar-expand-md box-nav fixed-top">
-
-      <button class="navbar-toggler box1-icon" data-toggle="collapse" data-target="#navbarMenue">
-          Menu
-      </button>
-
-      <div class="collapse navbar-collapse navbar-box menu-left" id="navbarMenue">
-          <ul class="navbar-nav">
-              <li>Tiedotteet</li>
-              <li>Meistä</li>
-              <li>Dokumentit</li>
-              <li>Ilmoitustaulu</li>
-          </ul>
-      </div>
-
-      <div class="logo"><a href="./mainpage.html">
-          <img src="./Logos/HappyNest_logo.png" class="logo d-none d-md-block mx-5" alt="Happynestin logo"></a>
-      </div>
-
-      <div class="collapse navbar-collapse navbar-box menu-right" id="navbarMenue">
-          <ul class="navbar-nav nav-right">
-              <li>Varauskalenteri</li>
-              <li><a href="./Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
-              <li><a href="./Ota-yhteyttä-FINAL.html">Yhteydenotto</a></li>
-          </ul>
-      </div>
-    
-
-
-
-
-  </nav>
-   
-    <!-- Navbar End -->
-
     <section class="vikailmoitus-box">
-      <h3 class="vikailmoitus"><a href="./Huoltopyynto-FINAL.html" class="linkki-huolto">Jos asiasi koskee vikailmoitusta ja haluat tehdä huoltopyynnön, ota yhteyttä huoltoon tästä</a>.</h3>
+      <h3 class="vikailmoitus"><a href="./Huoltopyynto-FINAL.html" class="linkki-huolto">Jos asiasi koskee
+          vikailmoitusta ja haluat tehdä huoltopyynnön, ota yhteyttä huoltoon tästä</a>.</h3>
     </section>
 
     <h1 class="otsikko">Ota yhteyttä isännöitsijään</h1>
     <form>
-    <section class="tiedot">
-    
-      <div>
-        <label class="asia-koskee" for="tyyppi">Asia koskee*:</label>
-        <select name="tyyppi" id="tyyppi"> 
-          <option value="Valitse-aihe">Valitse aihe</option> 
-          <option value="Palaute">Palaute</option> 
-          <option value="Tiedustelu">Tiedustelu</option> 
-          <option value="irtisanominen">Vuokrasopimuksen irtisanominen</option>
-          <option value="muut">Muut</option>
-        </select>
-      </div>
-      <div>
-        <label for="name">Etunimi*</label>
-        <input type="text" name="user_name" id="name" required>
-      </div>
-      <div>
-        <label for="phone">Sukunimi*</label>
-        <input type="number" name="user_number" id="phone" required>
-      </div>
-      <div>
-        <label for="email">Osoite*</label>
-        <input type="email" name="user_email" id="email" required>
-      </div>
-      <div>
-        <label for="address">Puhelin*</label>
-        <input type="text" id="address" required>
-      </div>
-      <div>
-        <label for="address">Sähköposti*</label>
-        <input type="text" id="address" required>
-      </div>
-      <div class="irtisanomispäivä">
-        <label class="ehto" for="date">Jos asiasi koskee vuokrasopimuksen irtisanomista, valitse irtisanomispäivä.</label>
-        <!-- <br>
+      <section class="tiedot">
+
+        <div>
+          <label class="asia-koskee" for="tyyppi">Asia koskee*:</label>
+          <select name="tyyppi" id="tyyppi">
+            <option value="Valitse-aihe">Valitse aihe</option>
+            <option value="Palaute">Palaute</option>
+            <option value="Tiedustelu">Tiedustelu</option>
+            <option value="irtisanominen">Vuokrasopimuksen irtisanominen</option>
+            <option value="muut">Muut</option>
+          </select>
+        </div>
+        <div>
+          <label for="name">Etunimi*</label>
+          <input type="text" name="user_name" id="name" required>
+        </div>
+        <div>
+          <label for="phone">Sukunimi*</label>
+          <input type="number" name="user_number" id="phone" required>
+        </div>
+        <div>
+          <label for="email">Osoite*</label>
+          <input type="email" name="user_email" id="email" required>
+        </div>
+        <div>
+          <label for="address">Puhelin*</label>
+          <input type="text" id="address" required>
+        </div>
+        <div>
+          <label for="address">Sähköposti*</label>
+          <input type="text" id="address" required>
+        </div>
+        <div class="irtisanomispäivä">
+          <label class="ehto" for="date">Jos asiasi koskee vuokrasopimuksen irtisanomista, valitse
+            irtisanomispäivä.</label>
+          <!-- <br>
         <br> -->
-        <input type="date" name="date" id="date">
-      </div>
-    <!-- </section>
+          <input type="date" name="date" id="date">
+        </div>
+        <!-- </section>
       <section> -->
-      <div class="viesti">
-        <label for="message">Viesti:</label>
-        <textarea id="Viesti" cols="33" rows="8" required placeholder="Enintään 5000 merkkiä"></textarea>
-        </textarea>
-      </div>
-    </section>
-           
-    <div class="buttonDiv">
+        <div class="viesti">
+          <label for="message">Viesti:</label>
+          <textarea id="Viesti" cols="33" rows="8" required placeholder="Enintään 5000 merkkiä"></textarea>
+          </textarea>
+        </div>
+      </section>
+
+      <div class="buttonDiv">
         <button class="button" type="reset">Tyhjennä</button>
         <button class="button" type="submit">Lähetä</button>
-    </div>
+      </div>
     </form>
     <section class="yhteystiedot">
-    <p>Isännöitsijätoimisto Se ja Se,<br>PL 123</p>
-    <p>Löydät meidät sosiaalisesta mediasta.<br>Isännöitsijätoimisto Se ja Se<br>@sejase</p>
-    <p class="viimeinen-kappale">Puhelimitse palvelemme arkisin klo 9-15<br>numerossa +358 2 123 4567</p>
+      <p>Isännöitsijätoimisto Se ja Se,<br>PL 123</p>
+      <p>Löydät meidät sosiaalisesta mediasta.<br>Isännöitsijätoimisto Se ja Se<br>@sejase</p>
+      <p class="viimeinen-kappale">Puhelimitse palvelemme arkisin klo 9-15<br>numerossa +358 2 123 4567</p>
     </section>
 
-            <!-- start Footer -->
-            <div class="section-footer">
-              <div class="row for-queri-footer">
-  
-                  <div class="col-md-5 color">
-                      <div class="row">
-                          <ul class="title-footer">
-                              <li>KOTI</li>
-                              <li>TIEDOTTEET</li>
-                              <li>DOKUMENTIT</li>
-                          </ul>
-                      </div>
-                      <div class="row mt-3">
-                          <ul class="title-footer">
-                              <li>HAPPYNESTIN VISIO</li>
-                              <li>MUUTA</li>
-                          </ul>
-                      </div>
-                  </div>
-  
-                  <div class="col-md-2 my-sm-5 text-center img-section-footer"><img class="img-footer"
-                          src="Logos/HappyNest_logo.png" alt=""></div>
-  
-                  <div class="col-md-5 color creat-margin-right">
-                      <div class="row">
-                          <ul class="title-footer">
-                              <li>VARAUKSET</li>
-                              <li>ILMOITUSTAULU</li>
-                              <li><a href="./Lomakeet/Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
-                          </ul>
-                      </div>
-                      <div class="row mt-3">
-                          <ul class="title-footer">
-                              <li><a href="./Lomakeet/Ota-yhteyttä-FINAL.html">Yhteydenotto</a></li>
-                              <li>MUUTA</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
+    <!-- start Footer -->
+    <div class="section-footer">
+      <div class="row for-queri-footer">
+
+        <div class="col-md-5 color">
+          <div class="row">
+            <ul class="title-footer">
+              <li>KOTI</li>
+              <li>TIEDOTTEET</li>
+              <li>DOKUMENTIT</li>
+            </ul>
           </div>
+          <div class="row mt-3">
+            <ul class="title-footer">
+              <li>HAPPYNESTIN VISIO</li>
+              <li>MUUTA</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-2 my-sm-5 text-center img-section-footer"><img class="img-footer"
+            src="Logos/HappyNest_logo.png" alt=""></div>
+
+        <div class="col-md-5 color creat-margin-right">
+          <div class="row">
+            <ul class="title-footer">
+              <li>VARAUKSET</li>
+              <li>ILMOITUSTAULU</li>
+              <li><a href="./Lomakeet/Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
+            </ul>
+          </div>
+          <div class="row mt-3">
+            <ul class="title-footer">
+              <li><a href="./Lomakeet/Ota-yhteyttä-FINAL.html">Yhteydenotto</a></li>
+              <li>MUUTA</li>
+            </ul>
+          </div>
+        </div>
       </div>
-  
-  
-  
-  
-      <!-- End Footer -->
-              
+    </div>
+  </div>
+
+
+
+
+  <!-- End Footer -->
+
 </body>
+
 </html>

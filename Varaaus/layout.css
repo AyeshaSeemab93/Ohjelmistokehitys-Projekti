@@ -1,5 +1,8 @@
 @import url(MQ-Mobile.css);
 @import url(MQ-Tablet.css);
+@import url(fontit-ja-värit.css);
+@import url(header-footer.css);
+@import url(reservaitio.css);
 
 .Wrapper {
   width: 100%;
@@ -37,7 +40,7 @@
 .box-image {
   height: 400px;
   /* background-image: url(./images/Screenshot\ 2023-09-15\ at\ 20.15.40.png); */
-  background-image: url(./images/Screenshot\ 2023-09-15\ at\ 20.03.52.png);
+  background-image: url(../images/Screenshot\ 2023-09-15\ at\ 20.03.52.png);
   background-size: 300px;
   color: var(--black);
   /* border: var(--orange) solid 5px; */

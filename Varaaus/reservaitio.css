@@ -26,7 +26,8 @@ body {
   margin: 4rem auto;
   text-align: center;
 }
-.reservaition-box {
+.reservaition-box,
+.pesukone-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,25 +41,26 @@ body {
 .reservaition-box P {
   font-size: 30px;
 }
-.reservaition-box:hover {
+.reservaition-box:hover ,
+.pesukone-box:hover {
   background-color: var(--blue-box-1);
   box-shadow: 3px 6px 5px gainsboro;
 }
 
-.pesukone-box {
+
+
+/* .pesukone-box h1 {
+  font-size: 20px;
   margin: 1rem;
   background-color: var(--orange);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   text-align: center;
-  padding: 2rem;
   cursor: pointer;
-}
+  padding: 2rem 1rem;
 
-.pesukone-box h1 {
-  font-size: 20px;
-}
+} */
+
+
 
 .pesukone_container {
   display: none;
@@ -80,7 +82,7 @@ body {
   cursor: pointer;
 }
 .sauna-box p {
-  font-size: 24px;
+  font-size: 20px;
 }
 .sauna-container {
   margin-top: 5rem;

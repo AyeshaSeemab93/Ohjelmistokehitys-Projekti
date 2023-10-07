@@ -5,30 +5,26 @@ body {
   background-color: var(--);
 }
 :root {
-    --blue: #277bc0;
-    --yellow: #f4b63f;
-    --orange: #dc7848;
-    --beige: #fdf5d3;
-    --blue-box: #407abb;
-    --blue-box-1: #a7e7f6;
-    --black: #212121;
-    --purple:#ad5fc9;
-  
-  
-  }
-
+  --blue: #277bc0;
+  --yellow: #f4b63f;
+  --orange: #dc7848;
+  --beige: #fdf5d3;
+  --blue-box: #407abb;
+  --blue-box-1: #a7e7f6;
+  --black: #212121;
+  --purple: #ad5fc9;
+}
 
 /* Header******************************************** */
 .reservaition {
   width: 100%;
-  height: 200px;
   background-color: var(--yellow);
 }
 
 /* body Box Reservaition *****************/
-.varaa-vuoro h1{
-    margin: 4rem auto;
-    text-align: center;
+.varaa-vuoro h1 {
+  margin: 4rem auto;
+  text-align: center;
 }
 .reservaition-box {
   display: flex;
@@ -41,15 +37,13 @@ body {
   cursor: pointer;
   transition: all 0.4s ease-out;
 }
-.reservaition-box P{
-    font-size: 30PX;
+.reservaition-box P {
+  font-size: 30px;
 }
-.reservaition-box:hover{
-    background-color:var(--blue-box-1);
-    box-shadow: 3px 6px 5px gainsboro;
-
+.reservaition-box:hover {
+  background-color: var(--blue-box-1);
+  box-shadow: 3px 6px 5px gainsboro;
 }
-
 
 .pesukone-box {
   margin: 1rem;
@@ -66,203 +60,191 @@ body {
   font-size: 20px;
 }
 
-
-.pesukone_container{
-    display: none;
-
- }
-
- .sauna-container{
-    display: none;
-
- }
-
-.sauna-box{
-    height: 100px;
-    background-color: var(--orange);
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 1rem;
-    cursor: pointer;
-
-    
-}
-.sauna-box p{
-    font-size: 24px;
-}
-.sauna-container{
-    margin-top: 5rem;
+.pesukone_container {
+  display: none;
 }
 
-.sauna-1{
-    float: right;
+.sauna-container {
+  display: none;
 }
 
-.omatvaraukset{
-    padding: 2rem;
-    cursor: pointer;
+.sauna-box {
+  height: 100px;
+  background-color: var(--orange);
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  cursor: pointer;
 }
-.omatvaraukset P{
-    font-size: 30PX;
-    text-align: center;
+.sauna-box p {
+  font-size: 24px;
 }
-.omatvaraukset-container{
-    margin: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-padding: 2rem 0;
-    
+.sauna-container {
+  margin-top: 5rem;
 }
 
+.sauna-1 {
+  float: right;
+}
+
+.omatvaraukset {
+  padding: 2rem;
+  cursor: pointer;
+}
+.omatvaraukset P {
+  font-size: 30px;
+  text-align: center;
+}
+.omatvaraukset-container {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
 
 /* modal style******************* */
-.modulBox{
-    width: 40%;
-    background-color: var(--blue);
-    overflow: auto;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 30px;
-    position: fixed;
-    padding: 2rem;
-    
+.modulBox {
+  width: 40%;
+  background-color: var(--blue);
+  overflow: auto;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  position: fixed;
+  padding: 2rem;
 }
-.modulBox p{
-    font-size: 18px;
+.modulBox p {
+  font-size: 18px;
 }
 
-.modulcontainer{
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
+.modulcontainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
 /* .active{
     display:flex;
 } */
 
-.modal-shadow{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(220, 220, 220, 0.506);
+.modal-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(220, 220, 220, 0.506);
 }
 
-
-
-.btnmodal{
-    height: max-content;
-    background-color: var(--orange);
-    font-size: 18px;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-
+.btnmodal {
+  height: max-content;
+  background-color: var(--orange);
+  font-size: 18px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-
-@media screen and (min-width:767px) and (max-width:1100px) {
-    .reservaition-box p{
-        font-size: 20px;
-
-    } 
-   .omatvaraukset p{
+@media screen and (min-width: 767px) and (max-width: 1100px) {
+  .reservaition-box p {
     font-size: 20px;
-   }
-  
-    
+  }
+  .omatvaraukset p {
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width:766px) {
-    .omatvaraukset{
-        width: 60%;
-    }
-    .sauna-main-box{
-        padding-top:0px
-     }
-    
+@media screen and (max-width: 766px) {
+  .omatvaraukset {
+    width: 60%;
+  }
+  .sauna-main-box {
+    padding-top: 0px;
+  }
 }
-
 
 /* modal-2****************************************** */
 
-.calendar-container{
-width: 40%;
-margin: 1rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
+.calendar-container {
+  width: 40%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
 }
 
-.ative-calender{
-    display: block;
+.ative-calender {
+  display: block;
 }
 
-.modal-2{
-    width: 50%;
-    margin: 0 auto;
-    display: none;
-    background-color: var(--orange);
-    padding: 3rem;
+.modal-2 {
+  width: 50%;
+  margin: 0 auto;
+  display: none;
+  background-color: var(--orange);
+  padding: 3rem;
 }
 
-.active{
-    display:block;
+.active {
+  display: block;
 }
 
-.modulBox-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.modulBox-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.modulBox-2 p{
-    font-size: 14px;
+.modulBox-2 p {
+  font-size: 14px;
 }
 
-.omat-box{
-    background-color: var(--beige);
-    width: 80%;
-    height:300Px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.omat-box {
+  background-color: var(--beige);
+  width: 80%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.peruuta-btn{
-    width:50%;
-    background-color: var(--blue-box);
-    padding: 1.4rem;
-    border: none;
-    color: white;
-    font-size: 1rem;
+.peruuta-btn {
+  width: 50%;
+  background-color: var(--blue-box);
+  padding: 1.4rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
 }
-
 
 /* style calendar******************* */
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
 
 .month {
   padding: 70px 25px;
   width: 100%;
-  background:var(--orange);
+  background: var(--orange);
   text-align: center;
 }
 
@@ -314,27 +296,38 @@ body {font-family: Verdana, sans-serif;}
   width: 13.6%;
   text-align: center;
   margin-bottom: 5px;
-  font-size:12px;
+  font-size: 12px;
   color: #777;
 }
 
 .days li .active {
   padding: 5px;
-  background:var(--orange);
-  color: white !important
+  background: var(--orange);
+  color: white !important;
 }
 
 /* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
 }
 
 @media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
 }
 /* ************' end style calendar***************** */

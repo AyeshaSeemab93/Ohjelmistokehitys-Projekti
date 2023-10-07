@@ -1,0 +1,202 @@
+:root {
+  --blue: #277bc0;
+  --yellow: #f4b63f;
+  --orange: #dc7848;
+  --beige: #fdf5d3;
+  --blue-box-1: #a7e7f6;
+  --black: #212121;
+  --purple: #ad5fc9;
+  --pink: #E86594;
+}
+
+body{
+  margin: 20px;
+  background-color: var(--beige);
+  text-align: center;
+}
+
+H1 {
+  margin: 10rem 0 2rem;
+}
+H3 {
+  margin: 0 0 2rem;
+}
+
+p {
+  margin: 0 5rem 2rem;
+}
+
+/* FORM */
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 4rem 4rem;
+}
+
+.form-container > * {
+  padding: 0 3rem;
+  text-align: left;
+}
+
+.button-container {
+  padding-top: 3rem;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 0;
+  flex-grow: 1; */
+  width: 27.5rem;
+}
+
+.button {
+  margin-left: 21.5rem;
+}
+.oikea-palsta {
+  padding-top: 3rem;
+}
+
+#viestikenttä {
+  padding: 2.5rem 2.5rem;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+
+.color-is-for {
+  font-size: 20px;
+  text-align: center;
+}
+
+.color-explanation {
+  margin: 1rem 0;
+}
+
+
+/* RADIO BUTTONS STYLE */
+
+label {
+  /* display: inline-block; */
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  box-sizing: border-box;
+  appearance: none;
+  /* background: white; */
+  outline: 2px solid #333;
+  /* border: 1px solid var(--black); */
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  /* display: inline-block; */
+  vertical-align: top;
+}
+
+/* orange */
+#orange[type="radio"] {
+  background: var(--orange);
+}
+#orange[type='radio']:checked {
+  background:var(--orange) url(../icons/check-solid.svg);
+  background-repeat: no-repeat;
+  border: 3px solid var(--orange);
+}
+
+/* blue */
+#blue[type="radio"] {
+  background: var(--blue);
+}
+#blue[type='radio']:checked {
+  background:var(--blue) url(../icons/check-solid.svg);
+  background-repeat: no-repeat;
+  border: 3px solid var(--blue);
+}
+
+/* light-blue */
+#light-blue[type="radio"] {
+  background: var(--blue-box-1);
+}
+#light-blue[type='radio']:checked {
+  background:var(--blue-box-1) url(../icons/check-solid.svg);
+  background-repeat: no-repeat;
+  border: 3px solid var(--blue-box-1);
+}
+/* pink */
+#pink[type="radio"] {
+  background: var(--pink);
+}
+#pink[type='radio']:checked {
+  background:var(--pink) url(../icons/check-solid.svg);
+  background-repeat: no-repeat;
+  border: 3px solid var(--pink);
+}
+
+
+/* END RADIO BUTTON */
+
+
+.placeholder {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+figBox {
+  padding-bottom: 20%;
+  width: 20%;
+  background-color: bisque;
+}
+
+figure img {
+  width: 20%;
+  position:absolute;
+}
+
+
+
+/* 
+#app{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 330px);all sticky notes of width 200 px and no of notes depend on the size of screen */
+  /*   padding: 2.5rem;
+  gap: 2.4rem;
+  justify-content: center;
+ 
+}
+.note{
+  
+  height: 330px;
+  box-sizing: border-box;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.15);
+  resize: none;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.add-note{
+  height: 330px;
+  border: none;
+  outline: none;
+  background: rgba(0,0,0,0.1);
+  border-radius: 5px;
+  font-size: 50px;
+  color:  rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-note:hover{
+  background: rgba(0,0,0,0.2);
+
+}
+
+} */

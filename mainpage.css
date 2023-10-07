@@ -57,6 +57,35 @@
   margin: 4rem 0 2.8rem 0rem;
 }
 
+
+.box-image {
+  height: 400px;
+  /* background-image: url(./images/Screenshot\ 2023-09-15\ at\ 20.15.40.png); */
+  background-image: url(./images/Screenshot\ 2023-09-15\ at\ 20.03.52.png);
+  background-size: 300px;
+  color: var(--black);
+  /* border: var(--orange) solid 5px; */
+  border-radius: 10px;
+}
+
+
+.blue {
+  background-color: var(--orange);
+  border-radius: 10px;
+  /* height: 100% ; lisätty */
+}
+.section-2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
+
+  /* margin: 3rem 0px; */
+  margin: 4rem 0 2.8rem 0rem;
+}
+
+
+
 .box-section-2 p {
   font-size: 15px;
   text-align: center;
@@ -102,6 +131,11 @@
   cursor: pointer;
 } */
 
+.sec4-ilmoitus {
+  font-size: 18px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
 .section-4 {
   width: 60%;
   margin: auto;
@@ -127,6 +161,19 @@
 .Tähän-Käyttäjä {
   /* font-size: 1.3rem; */
   text-align: center;
+}
+
+.linkki-ilmoitus {
+
+  margin: 0 auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
+  width: 250px;
+  display: flex;
 }
 
 /* .takaisin-ylös {
@@ -231,6 +278,7 @@
   }
 }
 
+
 @media screen and (min-width: 769px) and (max-width: 1100px) {
   .section-footer {
     padding: 0 4rem;
@@ -239,4 +287,86 @@
   .img-footer {
     align-self: -1;
   }
+  .section-footer {
+    padding: 0 4rem;
+  }
+
+  .img-footer {
+    align-self: -1;
+  }
+  .title-footer li {
+    font-size: 15px;
+  }
+
+  .slog-part h1 {
+    font-size: 25px;
+  }
+
+  .title-nav li a {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+  .slogan {
+    font-size: 30px;
+    text-align: center;
+    padding: 2rem;
+  }
+  .slog-part {
+    padding: 10px 0;
+  }
+
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px 10px;
+    grid-template-areas:
+      "area-01 area-02"
+      "area-03 area-04"
+      "area-05 area-06"
+      "area-07 area-08";
+  }
+
+
+  .img-footer{
+    width:120px;
+    height: auto;
+  }
+
+
+
+  .section-2 a{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px 10px;
+    grid-template-areas:
+      "area-01"
+      "area-02"
+      "area-03"
+      "area-04"
+      "area-05"
+      "area-06"
+      "area-07"
+      "area-08";
+  }
+
+  .title-footer li {
+    font-size: 12px;
+  }
+  .slogan {
+    font-size: 30px;
+    text-align: center;
+    padding: 2rem;
+  }
+
+
+  
 }

@@ -34,32 +34,37 @@
 <form action="" class="form-container">
 
     <div class="vasen-palsta">
-    <label for="Jätä viesti naapureillesi"></label>
+    <label for="viestikenttä"><h3 class="kehote">Jätä viesti naapureillesi</h3></label>
     <textarea name="" id="viestikenttä" cols="40" rows="13" required maxlength="450" placeholder="Enintään 450 merkkiä"></textarea>
 
+    
+
         <section class="button-container">
-            <button class="button" type="submit">Julkaise</button> 
+          <input id=”filename” placeholder=”Nimesi” />
+            <button class="button" type="button" id="download">Julkaise</button> 
         </section> 
     </div>
+  
+
 
     <div class="oikea-palsta">
      
-        <h3>Valitse ilmoituksen väri aiheen mukaan</h3>
-        <label for="">
+        <h3 class="valitseVäri">Valitse ilmoituksen väri aiheen mukaan</h3>
+        <label for="orange">
             <input type="radio" id="orange" name="color" value="orange">
             <!-- <span class="orange"></span> -->
             <label for="orange" class="color-is-for">Kutsu</label>
             <p class="color-explanation">Lenkkiseuraa, päiväkahvit, roskienkeruutalkoot. Kutsu naapurisi mukaan!</p>
         </label>
         
-        <label for="">
+        <label for="blue">
             <input type="radio" id="blue" name="color" value="blue">
             <!-- <span class="blue"></span> -->
             <label for="blue" class="color-is-for">Ilmoitus</label>
             <p class="color-explanation">Järjestätkö juhlat tai haluat varoittaa naapureitasi muusta meluhaitasta?</p>
         </label>
 
-        <label for="">
+        <label for="light-blue">
             <input type="radio" id="light-blue" name="color" value="light-blue">
             <!-- <span class="light-blue"></span> -->
             <label for="light-blue" class="color-is-for">Avunpyyntö</label>
@@ -68,7 +73,7 @@
                 Tarvitsetko kantoapua? Ehkä naapurisi voivat auttaa.</p>
         </label>
        
-        <label for="">
+        <label for="pink">
             <input type="radio" id="pink" name="color" value="pink">
             <!-- <span class="pink"></span> -->
             <label for="pink" class="color-is-for">Ystävällinen huomautus</label>
@@ -83,7 +88,12 @@
     </div>
 </form>
 
-<section class="placeholder">
+<section class="placeholderNotes">
+  <figBox>
+    <figure>
+    </figure>
+</figBox>
+<figBox>
 
 </section>
 

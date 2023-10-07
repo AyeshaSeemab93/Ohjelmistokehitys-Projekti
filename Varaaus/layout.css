@@ -16,7 +16,7 @@
   justify-content: center;
   /* padding-block-start: 11rem; */
   /* padding-block-end: 3rem; */
-  padding: 2rem 0;
+  padding:0 1rem;
 }
 
 .slog-part h1 {
@@ -265,21 +265,15 @@
     font-size: 25px;
   }
 
-  .title-nav li a {
-    font-size: 18px;
-  }
 
-  .logo {
-    width: 150px;
-  }
+
+ 
   .slogan {
     font-size: 30px;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
   }
-  .slog-part {
-    padding: 10px 0;
-  }
+  
 
   .container-grid {
     grid-template-columns: repeat(2, 1fr);

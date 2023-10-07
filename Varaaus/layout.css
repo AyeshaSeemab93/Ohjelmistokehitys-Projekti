@@ -232,9 +232,7 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .title-footer li {
-    font-size: 15px;
-  }
+  
 
   .slog-part h1 {
     font-size: 25px;
@@ -267,9 +265,7 @@
   .img-footer {
     align-self: -1;
   }
-  .title-footer li {
-    font-size: 15px;
-  }
+ 
 
   .slog-part h1 {
     font-size: 25px;
@@ -318,9 +314,7 @@
       "area-08";
   }
 
-  .title-footer li {
-    font-size: 12px;
-  }
+ 
   .slogan {
     font-size: 30px;
     text-align: center;

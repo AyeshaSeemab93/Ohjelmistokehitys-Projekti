@@ -9,21 +9,21 @@ console.log(valinta);
 
 
 
-// function changeColor(){
 
-// const tekstikenttä = document.getElementsByTagName("textarea");
+var str,
+element = document.getElementById("filename");
+if (element != null) {
+    str = element.value;
+}
+else {
+    str = null;
+}
+
+console.log(str);
 
 
-// const firstColor = tekstikenttä[0];
-// const secondColor = tekstikenttä[1];
-// const thirdColor = tekstikenttä[2];
-// const fourthColor = tekstikenttä[3];
 
-// firstColor.style.background = "#dc7848";
-// secondColor.style.background = "#dc7848",
-// thirdColor.style.background = "#a7e7f6";
-// fourthColor.style.background = "#E86594";
-// }
+//CHANGE COLOR
 
 
 valinta[1].addEventListener("click", () => {
@@ -51,7 +51,7 @@ function changeColor(color) {
   lappu.style.opacity = "0.8";
 
   switch (color) {
-  case 0:
+  case 1:
       lappu.style.background = "#dc7848";
       break;
   case 2:
@@ -67,87 +67,62 @@ function changeColor(color) {
   }
 }
 
+// change colour end
+
+
+function getInput() {
+
+  window.userInput = document.getElementById('viestikenttä').value;
+  window.userInputName = document.querySelector('.filename').value;
+  console.log(userInput);
+  console.log(userInputName);
+  // alertUserInput();
+}
+
+// function alertUserInput() {
+//   alert(userInput);
+// }
+var userInput = "hello";
+var userInputName = "world";
+var subButton = document.querySelector("button");
+// subButton.addEventListener('click', userInput, false);
+
+console.log(subButton);
+subButton.addEventListener("click", getInput);
 
 
 
 
+    // PUBLISH NOTE
 
 
+  const noteboard = document.body.querySelector(".placeholderNotes");
+  console.log(noteboard);
+
+  subButton.addEventListener("click", () => {
+
+  const newNote = document.createElement("div");
+  const noteText = document.createElement("p");
+  const noteName = document.createElement("p");
+  newNote.classList.add("newNote");
+  noteText.classList.add("noteText");
+  noteName.classList.add("noteName");
+  noteText.textContent = userInput;
+  noteName.textContent = userInputName;
+  noteboard.appendChild(newNote);
+  newNote.appendChild(noteText);
+  newNote.appendChild(noteName);
+  newNote.style.background = lappu.style.background;
+  newNote.style.opacity = "0.8";
+
+  window.userInputName = document.getElementById('filename').value;
+
+});
 
 
-
-function downloadFile(content) {
-  const element = document.createElement("a");
-  
-  //A blob is a data type that can store binary data
-  // “type” is a MIME type
-  // It can have a different value, based on a file you want to save
-  const blob = new Blob([content], { type: "plain/text" });
-  //createObjectURL() static method creates a DOMString containing a URL representing the object given in the parameter.
-  const fileUrl = URL.createObjectURL(blob);
-  
-  //setAttribute() Sets the value of an attribute on the specified element.
-  element.setAttribute("href", fileUrl); //file location
-  element.setAttribute("download", filename); // file name
-  element.style.display = "none";
-  
-  //use appendChild() method to move an element from one element to another
-  document.body.appendChild(element);
-  element.click();
-  
-  //The removeChild() method of the Node interface removes a child node from the DOM and returns the removed node
-  document.body.removeChild(element);
-};
-window.onload = () => {
-  document.getElementById("download").
-  addEventListener("click", e => {
-    
-    //The value of the file name input box
-    const filename = document.getElementById("filename").value;
-    
-    //The value of what has been input in the textarea
-    const content = document.getElementById("text").value;
-    
-    // The && (logical AND) operator indicates whether both operands are true. If both operands have nonzero values, the result has the value 1 . Otherwise, the result has the value 0.
-    
-    if (filename && content) {
-      downloadFile(filename, content);
-    }
-
-    // MUN LISÄÄMÄT
-
-    console.log(content);
-
-    const noteboard = document.body.querySelector("placeholderNotes");
-    console.log(noteboard);
-    
-    const newNote = document.createElement("div");
-    console.log(newNote);
-    
-    newNote.firstChild.data = content;
-    
-    newNote.classList.add("newNote");
-    noteboard.appendChild(newNote);
-
-    // MUN LISÄÄMÄT LOPPU
-
-  });
-};
+// Make radio required
+// is the note permanent?
 
 
+// PUBLISH NOTE MAIN PAGE
 
-
-
-
-// newNote.setAttribute("class","newNote");
-
-
-
-
-
-const julkaise = document.getElementsByTagName("button");
-
-julkaise.onClick = () => {
-  newNote.appendChild(content);
-  
-};

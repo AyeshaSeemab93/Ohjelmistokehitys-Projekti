@@ -24,7 +24,7 @@
 
   <h1>YHTEISÖN ILMOITUSTAULU</h1>
   <h3>Foorumi, jossa voit kommunikoida naapureidesi kanssa</h3>
-  <p>
+  <p class="selitys">
       Tervetuloa Yhteisönne ilmoitustaululle, digitaaliseen tilaan, jossa voit edistää naapurisuhteita ja käsitellä asuntoihin liittyviä asioita. Olitpa huolissasi, sinulla on ystävällinen pyyntö tai haluat vain olla yhteydessä naapuriisi, tämä taulu on sinun foorumisi. Jaa, yhdistä ja luo harmoninen elinympäristö. Äänelläsi on tässä väliä!
    </p>
   
@@ -34,13 +34,13 @@
 <form action="" class="form-container">
 
     <div class="vasen-palsta">
-    <label for="viestikenttä"><h3 class="kehote">Jätä viesti naapureillesi</h3></label>
-    <textarea name="" id="viestikenttä" cols="40" rows="13" required maxlength="450" placeholder="Enintään 450 merkkiä"></textarea>
+    <label for="viestikenttä"><h3 class="kehote"required>Jätä viesti naapureillesi</h3></label>
+    <textarea name="" id="viestikenttä" cols="40" rows="13"required maxlength="450" placeholder="Enintään 450 merkkiä" ></textarea>
 
     
 
         <section class="button-container">
-          <input id=”filename” placeholder=”Nimesi” />
+          <input id=”filename” class="filename" placeholder=”Nimesi” />
             <button class="button" type="button" id="download">Julkaise</button> 
         </section> 
     </div>
@@ -88,13 +88,10 @@
     </div>
 </form>
 
-<section class="placeholderNotes">
-  <figBox>
-    <figure>
-    </figure>
-</figBox>
-<figBox>
-
+<section class="placeholderContainer"> 
+  <div class="placeholderNotes">
+</div>
+   
 </section>
 
 

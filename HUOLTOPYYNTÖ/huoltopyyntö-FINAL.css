@@ -1,12 +1,20 @@
 p,
-label {
+label, .file {
   font-size: 16px;
   line-height: 1.5rem;
   text-align: center;
 }
-
 .linkki-huolto {
   color: var(--black);
+}
+.file{
+  
+  margin: auto;
+  margin-left: -2rem;
+  cursor: pointer;
+
+
+
 }
 
 .otsikko {
@@ -142,4 +150,5 @@ textarea {
 
 .button {
   margin-top: 1rem;
+  border: none;
 }

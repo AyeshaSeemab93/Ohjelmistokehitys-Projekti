@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../Varaaus/layout.css">
   <link rel="stylesheet" href="huoltopyyntö-FINAL.css">
 
+  <script src="huoltopyyntö.js"></script>
 
   <title>Huoltopyyntö</title>
 
@@ -76,7 +77,7 @@
 
   <!-- <main>  -->
   <h1 class="otsikko">HUOLTOPYYNTÖ</h1>
-  <form action="">
+  <form action="" id="myForm" onsubmit="handleSubmit(event)">>
     <section class="tiedot">
       <div>
         <label class="asia-koskee" for="tyyppi">Huoltopyynnön tyyppi*</label>
@@ -99,6 +100,15 @@
         <textarea id="kuvaus" cols="33" rows="8" required placeholder="Enintään 5000 merkkiä"></textarea>
       </div>
       <!-- </div> -->
+
+         <!-- <div class="kuvaus"> -->
+          <div class="viesti">
+            <label style=" margin: auto;">Lataa tiedosto:</label>
+            <input class="file" type="file" id="myFile" name="filename">
+          </div>
+          <!-- </div> -->
+    
+
       <div>
         <label for="address">Osoite*</label>
         <input class="kenttä" type="text" id="address" required>
@@ -113,7 +123,7 @@
       </div>
       <div>
         <label for="phone">Puhelinnumero*</label>
-        <input class="kenttä" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-45-678"
+        <input class="kenttä" id="phone" name="phone" placeholder="12345678"
           required />
       </div>
       <div>
@@ -154,6 +164,9 @@
       <button class="button" type="submit">Lähetä</button>
     </section>
   </form>
+
+
+
   <!-- </main> -->
 
   <!-- start Footer************************************** -->

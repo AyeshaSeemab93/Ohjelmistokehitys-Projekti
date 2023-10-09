@@ -105,7 +105,7 @@ textarea {
   border-radius: 5px;
   width: 30rem;
   font-family: "Poppins";
-  padding-left: 1rem;
+  padding: 0.5rem 1rem;
 }
 .kenttä {
   height: 1.9rem;
@@ -145,22 +145,27 @@ textarea.focus, textarea:focus {
   margin: auto;
 }
 
-/* .kyllä-ei {
-        width: 13rem;
-        margin-left: auto;
-    } */
+.kyllä-ei {
+       /* margin-right: 12.5rem; */
+       /* marign: 1rem 12.5rem 1rem 0; */
+       margin: 1rem 0;
+       width: 30rem;
+       text-align: center;
+    }
 
 .kysymys1 {
-  margin-right: 5rem;
+  text-align: center;
+  width: 30rem;
 }
+
 .kysymys2 {
-  margin-right: 0;
+  margin-right: -1rem;
+  width: 42rem;
+  text-align: right;
 }
 .kysymys3 {
-  margin-right: 8rem;
-}
-.kyllä-ei {
-  margin-right: 12.5rem;
+  text-align: center;
+  width: 30rem;
 }
 
 .button-container {
@@ -171,10 +176,9 @@ textarea.focus, textarea:focus {
   flex-wrap: nowrap;
   flex-basis: 0;
   flex-grow: 1;
-  justify-content: right;
-  width: 17rem;
+  justify-content: center;
+  width: 30rem;
   padding-top: 1.5rem;
-  margin-right: 12rem;
 }
 
 .button {

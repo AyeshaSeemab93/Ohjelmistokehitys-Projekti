@@ -15,6 +15,15 @@ body{
   text-align: center;
 }
 
+.kuvaus {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+flex-basis: 0;
+flex-grow: 1;
+align-items: center;
+}
+
 H1 {
   margin: 10rem 0 2rem;
 }
@@ -24,6 +33,8 @@ H3 {
 
 .selitys {
   margin: 0 5rem 2rem;
+  width: 70rem;
+  
 }
 
 /* FORM */
@@ -35,11 +46,13 @@ H3 {
   flex-basis: 0;
   flex-grow: 1;
   padding: 4rem 4rem;
+  justify-content: center;
 }
 
 .form-container > * {
-  padding: 0 3rem;
+  padding: 3rem 3rem 0 3rem;
   text-align: left;
+  width: 40rem;
 }
 
 .button-container {
@@ -85,12 +98,12 @@ input {
      border: none;
 }
 
-.oikea-palsta {
+/* .oikea-palsta {
   padding-top: 4rem;
-}
+} */
 
 .valitseVäri {
-  margin: 2rem 0;
+  margin: 0 0 3rem 0;
 }
 
 .color-is-for {

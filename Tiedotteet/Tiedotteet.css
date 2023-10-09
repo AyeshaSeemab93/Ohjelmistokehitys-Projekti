@@ -1,0 +1,89 @@
+main{
+
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  font-family: Verdana, sans-serif;
+}
+.sec-one{
+  text-align: center;
+}
+.notification-num{
+  width: 45px;
+  height: 45px;
+  background-color:#B861D2;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 43px;
+  font-weight: bold;  
+  margin: 0 5px; /* Adjust the margin to control the spacing around the bubble */
+
+}
+.holder{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 1.5rem 0;
+}
+button{
+  border: none;
+  background-color: #2B7EC1;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+
+}
+.box{
+  background-color: #DC7848;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+.tiedote-box{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.circle{
+  background-color: #B861D2;
+  height: 40px;
+  min-width: 40px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+  align-self: center;
+  border-radius: 5rem;
+}
+.info{
+  background-color: white;
+  padding: 1rem;
+
+}
+.info *{
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+.para{
+  margin: 1rem 0rem;
+}
+a{
+  color: black;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+.tick-box{
+  background-color: white;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+  align-self: center;
+  height: 40px;
+  min-width: 40px;
+  cursor: pointer;
+}
+.lisää{
+  text-align: center;
+
+}

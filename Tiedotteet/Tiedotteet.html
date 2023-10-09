@@ -41,7 +41,7 @@
         <h1>TALOYHTIÖ TIEDOTTAA</h1>
         <h3>Lukemattomia tiedotteita</h3>
         <div class="holder"><div id="notif" class="notification-num">5</div></div>
-        <button>MERKITSE KAIKKI LUETUKSI</button>
+        <button onclick="ReadAll()">MERKITSE KAIKKI LUETUKSI</button>
         <br>
         <button>MERKITSE VALITUT LUETUKSI</button>
     </section>
@@ -52,7 +52,7 @@
             <p class="nimi">ISÄNNOITSIJÄ TIEDOTTAA</p>
             <p class="date">6.10.23</p>
             <p class="aihe">Asunnoissa tehdään suihkukaappien ovien uusiminen aikavälillä 13.11. - 2.12.2023</p>
-            <p class="para">Valmistusvirheen vuoksi taloyhtiö on päättänyt uusia kaikkien suihkukaappien ovet. Työ kestää yhen päivän per asunto. Asukkaan ei tarvitse olla paikalla...</p>
+            <p class="para">Valmistusvirheen vuoksi taloyhtiö on päättänyt uusia kaikkien suihkukaappien ovet. Työ kestää yhen päivän per asunto. Asukkaan ei tarvitse olla paikalla.Työntekijät käyttävät omia avaimiaan päästäkseen asuntoon...</p>
             <a href="">Lue lisää</a>
         </div>
         <div class="tick-box" onclick="toggleTick(this)"></div>
@@ -100,13 +100,15 @@
             <p class="nimi">ISÄNNOITSIJÄ TIEDOTTAA</p>
             <p class="date">6.10.23</p>
             <p class="aihe">Asunnoissa tehdään suihkukaappien ovien uusiminen aikavälillä 13.11. - 2.12.2023</p>
-            <p class="para">Valmistusvirheen vuoksi taloyhtiö on päättänyt uusia kaikkien suihkukaappien ovet. Työ kestää yhen päivän per asunto. Asukkaan ei tarvitse olla paikalla...</p>
+            <p class="para">Valmistusvirheen vuoksi taloyhtiö on päättänyt uusia kaikkien suihkukaappien ovet. Työ kestää yhen päivän per asunto. Asukkaan ei tarvitse olla paikalla.Työntekijät käyttävät omia avaimiaan päästäkseen asuntoon...</p>
             <a href="">Lue lisää</a>
         </div>
         <div class="tick-box" onclick="toggleTick(this)"></div>
     </Section> 
+
     
-    <div class="lisää">LATAA LISÄÄ TIEDOTTEITA</div>
+    
+    <div class="lisää"><a href="">LATAA LISÄÄ TIEDOTTEITA</a></div>
   </section>
 </main>
 
@@ -155,20 +157,32 @@
 
 <!-- End Footer******************************** -->
 <script>
-var notificationNum = document.getElementById("notif");
+let notificationNum = document.getElementById("notif");
+
+
 
 function toggleTick(element){
+    let circle = element.parentElement.querySelector(".circle");
     if(element.textContent === "✔")
         {element.textContent = "";
         notificationNum.textContent = (parseInt(notificationNum.textContent) + 1).toString();
+        circle.style.backgroundColor = "#B861D2";
     }
     else{
         element.textContent = "✔"
         notificationNum.textContent =(parseInt(notificationNum.textContent) - 1).toString();
+        circle.style.backgroundColor = "#DC7848";
 
     }
 }
 
+function ReadAll(){
+    notificationNum.textContent = 0;
+    var circles = document.querySelectorAll(".circle");
+    circles.forEach(function(circle){
+        circle.style.backgroundColor = "#DC7848";
+    }) 
+}
 </script>
 </body>
 

@@ -123,8 +123,11 @@ subButton.addEventListener("click", getInput);
   window.userInputName = document.getElementById('filename').value;
 
 });
-
+ 
 }
+// else {
+//   alert("Täytä puuttuvat kentät!");
+// }
   }
 
 

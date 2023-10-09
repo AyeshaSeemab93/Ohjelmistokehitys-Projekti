@@ -101,6 +101,8 @@ subButton.addEventListener("click", getInput);
 
   subButton.addEventListener("click", () => {
 
+    const notes = getNotes();  
+
   const newNote = document.createElement("div");
   const noteText = document.createElement("p");
   const noteName = document.createElement("p");
@@ -119,33 +121,38 @@ subButton.addEventListener("click", getInput);
 
 });
 
+// STORING DATA
+
+
+
+//adding new note to the existing array of notes
+// function addNote(){  //EI EHKÄ TARVI, LISÄÄ ON CLICK
+  //get the existing array and add into it
+  const notes = getNotes();                   //TARVII
+  //creating new note
+  // const noteObject = {                                            //Ei tarvi
+  //   id:  Math.floor(Math.random()*1000), //generating random id  //Ei tarvi
+  //   content: "" //default content is empty string                 //Ei tarvi
+  // };
+  // //call the fucntion to create elements for it
+  // const noteElement = createNoteElement(noteObject.id, noteObject.content); //Ei tarvi
+ 
+
+  
+  notes.push(userInput, userInputName);     //TARVII onclick?   noteObject?
+  saveNotes(notes);         //TARVII
+  // }
+  
+
 
 function getNotes(){
   return JSON.parse(localStorage.getItem("stickynotes-notes")|| "[]" );
 }
 
-
 function saveNotes(notes){
   localStorage.setItem("stickynotes-notes", JSON.stringify(notes) );
 }
 
-//adding new note to the existing array of notes
-function addNote(){
-//get the existing array and add into it
-const notes = getNotes();
-//creating new note
-const noteObject = {
-  id:  Math.floor(Math.random()*1000), //generating random id
-  content: "" //default content is empty string
-};
-//call the fucntion to create elements for it
-const noteElement = createNoteElement(noteObject.id, noteObject.content);
-//insert new note before button(addNoteButton)
-notesContainer.insertBefore(noteElement, addNoteButton);
-
-notes.push(noteObject);
-saveNotes(notes);
-}
 
 
 // Make radio required

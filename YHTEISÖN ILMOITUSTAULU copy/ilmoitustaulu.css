@@ -191,5 +191,10 @@ input[type='radio'] {
   margin: 1rem;
   padding: 2rem;
   /* display: grid; */
+  /* padding: 2.5rem 2.5rem; */
+  font-size: 20px;
+  border-radius: 5px;
+     box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
+     border: none;
 
 }

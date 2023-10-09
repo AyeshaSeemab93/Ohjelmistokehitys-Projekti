@@ -81,7 +81,7 @@
     <section class="tiedot">
       <div>
         <label class="asia-koskee" for="tyyppi">Huoltopyynnön tyyppi*</label>
-        <select name="tyyppi" id="tyyppi">
+        <select name="tyyppi" id="tyyppi"oninvalid="this.setCustomValidity('Valitse huoltopyynnön tyyppi')" oninput="setCustomValidity('')">
           <option value="asuntoa">Asuntoa koskeva vikailmoitus</option>
           <option value="vikailmoitus">Kiinteistön yhteisiä tiloja koskeva vikailmoitus</option>
           <option value="siivous">Kiinteistön yhteisiä tiloja koskeva siivous</option>
@@ -92,12 +92,12 @@
       </div>
       <div>
         <label for="name">Mistä on kyse*</label>
-        <input class="kenttä" type="text" name="user_name" id="name" required placeholder="Enintään 30 merkkiä">
+        <input class="kenttä" type="text" name="user_name" id="name" required placeholder="Enintään 30 merkkiä" oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')">
       </div>
       <!-- <div class="kuvaus"> -->
       <div class="viesti">
         <label for="kuvaus">Kuvaile ongelma*</label>
-        <textarea id="kuvaus" cols="33" rows="8" required maxlength="5000" placeholder="Enintään 5000 merkkiä"></textarea>
+        <textarea id="kuvaus" cols="33" rows="8" required maxlength="5000" placeholder="Enintään 5000 merkkiä" oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')"></textarea>
       </div>
       <!-- </div> -->
 
@@ -111,31 +111,31 @@
 
       <div>
         <label for="address">Osoite*</label>
-        <input class="kenttä" type="text" id="address" required>
+        <input class="kenttä" type="text" id="address" required oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')">
       </div>
       <div>
         <label for="name">Sukunimi*</label>
-        <input class="kenttä" type="text" name="user_name" id="name" required>
+        <input class="kenttä" type="text" name="user_name" id="name" required oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')">
       </div>
       <div>
         <label for="Etunimi">Etunimi*</label>
-        <input class="kenttä" type="text" name="user_name" id="Etunimi" required>
+        <input class="kenttä" type="text" name="user_name" id="Etunimi" required oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')">
       </div>
       <div>
         <label for="phone">Puhelinnumero*</label>
         <input class="kenttä" id="phone" name="phone" placeholder=""
-          required />
+          required oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')" />
       </div>
       <div>
         <label for="email">Sähköposti*</label>
-        <input class="kenttä" type="email" name="user_email" id="email" required>
+        <input class="kenttä" type="email" name="user_email" id="email" required oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')">
       </div>
 
       <div class="valinnat">
         <label for="eläimiä" class="kysymys1">Tarvitseeko huoltomiehen päästä asuntoon?*</label class="kyllä-ei">
         <div class="kyllä-ei">
           <input type="radio" class="radio" id="eläimiä" value="eläimiä" name="eläimiä">
-          <label for="eläimiä">Kyllä</label required>
+          <label for="eläimiä">Kyllä</label required oninvalid="this.setCustomValidity('Valitse vaihtoehto')" oninput="setCustomValidity('')">
           <input type="radio" class="radio" id="ei-eläimiä" value="ei-eläimiä" name="eläimiä">
           <label for="ei-eläimiä">Ei</label>
         </div>
@@ -144,7 +144,7 @@
           kotona?</label>
         <div class="kyllä-ei">
           <input type="radio" class="radio" id="kotona" value="kotona" name="kotona">
-          <label for="kotona">Kyllä</label required>
+          <label for="kotona">Kyllä</label required oninvalid="this.setCustomValidity('Valitse vaihtoehto')" oninput="setCustomValidity('')">
           <input type="radio" class="radio" id="ei-kotona" value="ei-kotona" name="kotona">
           <label for="ei-kotona">Ei</label>
         </div>
@@ -152,7 +152,7 @@
         <label for="lemmikkiejä?" class="kysymys3">Onko asunnossa lemmikkiejä?*</label>
         <div class="kyllä-ei">
           <input type="radio" class="radio" id="lemmikkiejä" value="lemmikkiejä" name="lemmikkiejä">
-          <label for="lemmikkiejä">Kyllä</label required>
+          <label for="lemmikkiejä">Kyllä</label required oninvalid="this.setCustomValidity('Valitse vaihtoehto')" oninput="setCustomValidity('')">
           <input type="radio" class="radio" id="ei-lemmikkiejä" value="ei-lemmikkiejä" name="lemmikkiejä">
           <label for="ei-lemmikkiejä">Ei</label>
         </div>

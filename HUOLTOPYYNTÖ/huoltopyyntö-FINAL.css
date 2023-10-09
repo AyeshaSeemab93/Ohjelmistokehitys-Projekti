@@ -110,6 +110,31 @@ textarea {
   font-family: "Poppins";
   padding-left: 1rem;
 }
+.kenttä {
+  height: 1.9rem;
+}
+input.active, input:active {
+  outline: 0;
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+
+input.focus, input:focus {
+  outline: 0;
+  border: none;
+}
+
+textarea.active, textarea:active {
+  outline: 0;
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+textarea.focus, textarea:focus {
+  outline: 0;
+  border: none;
+}
 
 .valinnat {
   display: flex;
@@ -124,6 +149,8 @@ textarea {
 }
 
 .kyllä-ei {
+       /* margin-right: 12.5rem; */
+       /* marign: 1rem 12.5rem 1rem 0; */
        margin: 1rem 0;
        width: 30rem;
        text-align: center;
@@ -153,8 +180,8 @@ textarea {
   flex-basis: 0;
   flex-grow: 1;
   justify-content: center;
-
   width: 30rem;
+  padding-top: 1.5rem;
 }
 
 .button {

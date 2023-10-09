@@ -190,6 +190,34 @@ const deleteTodos = (todos, e) => {
 
 
 
+function getNotes(){
+  return JSON.parse(localStorage.getItem("stickynotes-notes")|| "[]" );
+}
+
+
+function saveNotes(notes){
+  localStorage.setItem("stickynotes-notes", JSON.stringify(notes) );
+}
+
+//adding new note to the existing array of notes
+function addNote(){
+//get the existing array and add into it
+const notes = getNotes();
+//creating new note
+const noteObject = {
+  id:  Math.floor(Math.random()*1000), //generating random id
+  content: "" //default content is empty string
+};
+//call the fucntion to create elements for it
+const noteElement = createNoteElement(noteObject.id, noteObject.content);
+//insert new note before button(addNoteButton)
+notesContainer.insertBefore(noteElement, addNoteButton);
+
+notes.push(noteObject);
+saveNotes(notes);
+}
+
+
 // Make radio required
 // is the note permanent?
 

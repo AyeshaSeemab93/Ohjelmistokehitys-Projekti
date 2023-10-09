@@ -123,22 +123,9 @@ subButton.addEventListener("click", getInput);
   window.userInputName = document.getElementById('filename').value;
 
 });
-<<<<<<< HEAD
- 
-}
-// else {
-//   alert("Täytä puuttuvat kentät!");
-// }
-  }
-=======
-// }
-//   else {
-//   alert("Please enter a value")
-//   // break;
-// }
-}
 
->>>>>>> 36fb100 (required fields and radio button function added)
+}
+  }
 
 
 // STORING DATA

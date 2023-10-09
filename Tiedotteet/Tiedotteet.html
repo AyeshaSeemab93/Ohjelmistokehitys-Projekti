@@ -182,6 +182,11 @@ function ReadAll(){
     circles.forEach(function(circle){
         circle.style.backgroundColor = "#DC7848";
     }) 
+    var elements = document.querySelectorAll(".tick-box");
+    elements.forEach(function(element){
+        element.textContent = "✔"
+    }
+    )
 }
 </script>
 </body>

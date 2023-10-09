@@ -21,15 +21,19 @@
     }
 
       .vikailmoitus-box {
-        background-color: var(--orange);
-        padding: 1rem;
         display: flex;
         flex-basis: 0;
         flex-grow: 1;
         flex-wrap: nowrap;
         justify-content: center;
-        margin: 5rem 12rem 5rem 12rem;
         align-items: center;
+        
+      }
+      .vikailmoitus-inner-box {
+        width: 60rem;
+        background-color: var(--orange);
+        padding: 1rem;
+        margin: 5rem 12rem 5rem 12rem;
       }
 
     .vikailmoitus {
@@ -157,7 +161,7 @@
           border-radius: 5px;
           width: 30rem;
           font-family: 'Poppins';
-          padding-left: 1rem;
+          padding: 0.5rem 1rem;
       }
 
       .button {

@@ -95,14 +95,17 @@ subButton.addEventListener("click", getInput);
 
     // PUBLISH NOTE
 
-
+  validateTextBox();
   const noteboard = document.body.querySelector(".placeholderNotes");
   console.log(noteboard);
 
+
+  function validateTextBox() {
+    if (document.getElementById("viestikenttä","").value != "" || document.querySelector('.filename').value != "") { 
+    
   subButton.addEventListener("click", () => {
 
-    const notes = getNotes();  
-
+    
   const newNote = document.createElement("div");
   const noteText = document.createElement("p");
   const noteName = document.createElement("p");
@@ -120,38 +123,71 @@ subButton.addEventListener("click", getInput);
   window.userInputName = document.getElementById('filename').value;
 
 });
+// }
+//   else {
+//   alert("Please enter a value")
+//   // break;
+// }
+}
+
+
 
 // STORING DATA
 
+localStorage.setItem('userInput','userInputName');
 
+localStorage.getItem('userInput','userInputName');
 
-//adding new note to the existing array of notes
-// function addNote(){  //EI EHKÄ TARVI, LISÄÄ ON CLICK
-  //get the existing array and add into it
-  const notes = getNotes();                   //TARVII
-  //creating new note
-  // const noteObject = {                                            //Ei tarvi
-  //   id:  Math.floor(Math.random()*1000), //generating random id  //Ei tarvi
-  //   content: "" //default content is empty string                 //Ei tarvi
-  // };
-  // //call the fucntion to create elements for it
-  // const noteElement = createNoteElement(noteObject.id, noteObject.content); //Ei tarvi
- 
+// localStorage.removeItem('userInput','userInputName');
+// localStorage.clear();
 
-  
-  notes.push(userInput, userInputName);     //TARVII onclick?   noteObject?
-  saveNotes(notes);         //TARVII
-  // }
-  
-
-
-function getNotes(){
-  return JSON.parse(localStorage.getItem("stickynotes-notes")|| "[]" );
+const getTodos = () => {
+  let todos;
+  if(localStorage.getItem('todos') === null){
+      todos = [];
+  }else {
+      todos = JSON.parse(localStorage.getItem('todos'));
+  }
+  return todos;
 }
 
-function saveNotes(notes){
-  localStorage.setItem("stickynotes-notes", JSON.stringify(notes) );
+const saveTodos = inputData => {
+  const todos = getTodos();
+  todos.push(inputData);
+  localStorage.setItem('todos', JSON.stringify(todos));
 }
+
+saveTodos(input.value);
+
+const addTodos = e => {
+  e.preventDefault();
+
+  let li = document.createElement('li');
+  li.textContent =  input.value;
+  saveTodos(input.value);
+  todosUl.appendChild(li);
+  input.value = '';
+}
+
+const deleteTodos = (todos, e) => {
+  const targetLi = todos.indexOf(e.target.textContent);
+  todos.splice(targetLi, 1);
+  localStorage.setItem('todos', JSON.stringify(todos));
+}
+
+
+//   const notes = getNotes();  
+//   notes.push(userInput, userInputName);     //TARVII onclick?   noteObject?
+//   saveNotes(notes); 
+
+
+// function getNotes(){
+//   return JSON.parse(localStorage.getItem("stickynotes-notes")|| "[]" );
+// }
+
+// function saveNotes(notes){
+//   localStorage.setItem("stickynotes-notes", JSON.stringify(notes) );
+// }
 
 
 

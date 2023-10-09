@@ -21,12 +21,13 @@
 
 
 
-
+<section class="kuvaus">
   <h1>YHTEISÖN ILMOITUSTAULU</h1>
   <h3>Foorumi, jossa voit kommunikoida naapureidesi kanssa</h3>
   <p class="selitys">
       Tervetuloa Yhteisönne ilmoitustaululle, digitaaliseen tilaan, jossa voit edistää naapurisuhteita ja käsitellä asuntoihin liittyviä asioita. Olitpa huolissasi, sinulla on ystävällinen pyyntö tai haluat vain olla yhteydessä naapuriisi, tämä taulu on sinun foorumisi. Jaa, yhdistä ja luo harmoninen elinympäristö. Äänelläsi on tässä väliä!
    </p>
+</section>
   
 <!-- form alkaa -->
 
@@ -34,14 +35,14 @@
 <form action="" class="form-container">
 
     <div class="vasen-palsta">
-    <label for="viestikenttä"><h3 class="kehote"required>Jätä viesti naapureillesi</h3></label>
+    <label for="viestikenttä"><h3 class="kehote">Jätä viesti naapureillesi</h3></label>
     <textarea name="" id="viestikenttä" cols="40" rows="13"required maxlength="450" placeholder="Enintään 450 merkkiä" ></textarea>
 
     
 
         <section class="button-container">
-          <input id=”filename” class="filename" placeholder=”Nimesi” />
-            <button class="button" type="button" id="download">Julkaise</button> 
+          <input id=”filename” class="filename" type="text" required placeholder=Nimesi>
+            <button class="button" type="submit" id="download">Julkaise</button> 
         </section> 
     </div>
   
@@ -50,37 +51,37 @@
     <div class="oikea-palsta">
      
         <h3 class="valitseVäri">Valitse ilmoituksen väri aiheen mukaan</h3>
-        <label for="orange">
-            <input type="radio" id="orange" name="color" value="orange">
+        <!-- <label for="orange"> -->
+            <input type="radio" id="orange" name="color" value="orange" required>
             <!-- <span class="orange"></span> -->
             <label for="orange" class="color-is-for">Kutsu</label>
             <p class="color-explanation">Lenkkiseuraa, päiväkahvit, roskienkeruutalkoot. Kutsu naapurisi mukaan!</p>
-        </label>
+        <!-- </label> -->
         
-        <label for="blue">
-            <input type="radio" id="blue" name="color" value="blue">
+        <!-- <label for="blue"> -->
+            <input type="radio" id="blue" name="color" value="blue" >
             <!-- <span class="blue"></span> -->
             <label for="blue" class="color-is-for">Ilmoitus</label>
             <p class="color-explanation">Järjestätkö juhlat tai haluat varoittaa naapureitasi muusta meluhaitasta?</p>
-        </label>
+        <!-- </label> -->
 
-        <label for="light-blue">
+        <!-- <label for="light-blue"> -->
             <input type="radio" id="light-blue" name="color" value="light-blue">
             <!-- <span class="light-blue"></span> -->
             <label for="light-blue" class="color-is-for">Avunpyyntö</label>
             <p class="color-explanation">Loppuiko suola kesken ruoanlaiton? 
                 Tarvitsetko lainaksi tikkaita tai ruuvimeisseliä? 
                 Tarvitsetko kantoapua? Ehkä naapurisi voivat auttaa.</p>
-        </label>
+        <!-- </label> -->
        
-        <label for="pink">
+        <!-- <label for="pink"> -->
             <input type="radio" id="pink" name="color" value="pink">
             <!-- <span class="pink"></span> -->
             <label for="pink" class="color-is-for">Ystävällinen huomautus</label>
             <p class="color-explanation">Yhdessäelo kerrostalossa voi joskus tuoda eteen haasteita. 
                 Jätä ystävällinen viesti, jossa kerrot toiveesi yhdessäelon helpottamiseksi.
                 </p>
-        </label>
+        <!-- </label> -->
             
 
 

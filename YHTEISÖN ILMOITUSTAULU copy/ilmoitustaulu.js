@@ -123,13 +123,9 @@ subButton.addEventListener("click", getInput);
   window.userInputName = document.getElementById('filename').value;
 
 });
-// }
-//   else {
-//   alert("Please enter a value")
-//   // break;
-// }
-}
 
+}
+  }
 
 
 // STORING DATA

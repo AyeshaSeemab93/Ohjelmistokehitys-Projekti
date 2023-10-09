@@ -2,6 +2,7 @@ main{
 
   margin: 1.5rem;
   font-size: 1.5rem;
+  font-family: Verdana, sans-serif;
 }
 .sec-one{
   text-align: center;
@@ -70,7 +71,7 @@ button{
 a{
   color: black;
   text-decoration: underline;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .tick-box{
   background-color: white;

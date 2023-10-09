@@ -36,12 +36,12 @@
 
     <div class="vasen-palsta">
     <label for="viestikenttä"><h3 class="kehote">Jätä viesti naapureillesi</h3></label>
-    <textarea name="" id="viestikenttä" cols="40" rows="13"required maxlength="450" placeholder="Enintään 450 merkkiä" ></textarea>
+    <textarea name="" class="viestikenttä" id="viestikenttä" cols="40" rows="13"required maxlength="450" placeholder="Enintään 450 merkkiä" oninvalid="this.setCustomValidity('Ethän jätä tyhjää ilmoitusta?')" oninput="setCustomValidity('')"></textarea>
 
     
 
         <section class="button-container">
-          <input id=”filename” class="filename" type="text" required placeholder=Nimesi>
+          <input id=”filename” class="filename" type="text" required placeholder=Nimesi oninvalid="this.setCustomValidity('Hei! unohdit nimesi!')" oninput="setCustomValidity('')">
             <button class="button" type="submit" id="download">Julkaise</button> 
         </section> 
     </div>
@@ -52,7 +52,7 @@
      
         <h3 class="valitseVäri">Valitse ilmoituksen väri aiheen mukaan</h3>
         <!-- <label for="orange"> -->
-            <input type="radio" id="orange" name="color" value="orange" required>
+            <input type="radio" id="orange" name="color" value="orange" required oninvalid="this.setCustomValidity('Väri unohtui!')" oninput="setCustomValidity('')">
             <!-- <span class="orange"></span> -->
             <label for="orange" class="color-is-for">Kutsu</label>
             <p class="color-explanation">Lenkkiseuraa, päiväkahvit, roskienkeruutalkoot. Kutsu naapurisi mukaan!</p>

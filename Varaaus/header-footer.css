@@ -35,6 +35,16 @@ nav {
   padding: 10px 0;
 }
 
+.checkBtn.active, .checkBtn:active {
+  outline: 0;
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+.checkBtn.focus, .checkBtn:focus {
+  outline: 0;
+  border: none;
+}
+
 .title-nav {
   display: flex;
   justify-content: center;

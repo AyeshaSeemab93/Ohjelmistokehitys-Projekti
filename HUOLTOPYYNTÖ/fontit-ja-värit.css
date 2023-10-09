@@ -66,6 +66,15 @@ h2 {
         box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
     }
   
+    .button.active, .button:active {
+      outline: 0;
+      border: none;
+      box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+   }
+    .button.focus, .button:focus {
+      outline: 0;
+      border: none;
+   }
 
   .slogan {
     color: var(--blue);

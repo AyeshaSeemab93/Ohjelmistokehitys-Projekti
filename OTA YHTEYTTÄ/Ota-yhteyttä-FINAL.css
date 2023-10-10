@@ -20,7 +20,7 @@
     color: var(--black);
     }
 
-      .vikailmoitus-box {
+      /* .vikailmoitus-box {
         display: flex;
         flex-basis: 0;
         flex-grow: 1;
@@ -28,12 +28,12 @@
         justify-content: center;
         align-items: center;
         
-      }
+      } */
       .vikailmoitus-inner-box {
-        width: 60rem;
+        width: 100%;
         background-color: var(--orange);
         padding: 1rem;
-        margin: 5rem 12rem 5rem 12rem;
+        margin-bottom: 5rem;
       }
 
     .vikailmoitus {
@@ -175,9 +175,10 @@
     flex-wrap: nowrap;
     flex-basis: 0;
     flex-grow: 1;
-    justify-content: right;
+    justify-content: center;
     /* width: 27rem; */
     padding: 1.5rem 0;
+    width: 100%;
 }
 
       .yhteystiedot {
@@ -217,6 +218,75 @@
         color: var(--black);
         margin-bottom: 1rem;
       }
+
+      /* TABLET */
+
+@media only screen and (max-width: 769px) {
+   
+  .vikailmoitus-inner-box {
+    padding: 1rem 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .otsikko {
+    font-size: 25px;
+    margin-left: 1rem;
+  }
+
+  .buttonDiv {
+    justify-content: right;
+    margin-right: 20rem;
+  }
+
+  .yhteystiedot {
+    margin-left: 3rem;
+  }
+  .kehote {
+    margin-bottom: 1rem;
+  }
+  
+    .linkki-huolto {
+      color: var(--black);
+    }
+    
+      
+  .logo-container-aloitussivu {
+    margin: 1rem 0 2rem;
+}
+  .logo-aloitussivu {
+    width: 250px;
+  }
+
+  .tiedot {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: 2rem;
+}
+   
+      #taloyhtio {
+        width:  28rem;
+         height: 1.5rem;
+          font-size: 14px;
+      }
+
+    .kenttä {
+      width:  30rem;
+    
+        font-size: 0.8rem;
+    }
+
+  .section-2 a{
+    font-size: 20px;
+  }
+
+  .button-container {
+  margin-left: 10.5rem;
+  padding-top: 0;
+}
+}
 
        /* MOBILE */
 

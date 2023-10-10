@@ -297,7 +297,11 @@ textarea.focus, textarea:focus {
     display: flex;
   }
 
+.kysymys2 {
+  width: 25rem;
+  text-align: center;
 
+}
 
   .otsikko {
     font-size: 25px;
@@ -332,6 +336,19 @@ form {
   padding-bottom: 0;
 }
 
+#tyyppi {
+  width: 22rem;
+}
+
+textarea {
+  width: 22rem;
+}
+.file {
+  width: 15rem;
+
+}
+
+
 label {
   padding: 10px 1rem;
   margin-bottom: 0;
@@ -351,6 +368,9 @@ label {
     }
     .button-container {
       margin-block-end: 1rem;
+      
+      width: 15rem;
+      margin-right: 11.5rem;
     }
 
     .button {

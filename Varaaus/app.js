@@ -51,49 +51,55 @@ pyykkitupaElem.addEventListener("click", () => {
 });
 
 pesukoneBox.forEach((pesu) => {
-  pesu.addEventListener("click", () => {
+  pesu.addEventListener("click", (event) => {
     calendarContainer.classList.add("active");
+    let pesukoneName=event.target.value
   });
 });
+
 
 saunavuoroElem.addEventListener("click", () => {
   saunaContainer.classList.toggle("sauna-container");
 });
 
 saunaBox.forEach((box) => {
-  box.addEventListener("click", () => {
+  box.addEventListener("click", (event) => {
     calendarContainer.classList.toggle("active");
   });
 });
 
 showReservaition.forEach((day) => {
-  day.addEventListener("click", (event) => {
-    modal2.classList.add("active");
 
-    let dayValue = event.target.textContent;
-    let divElem = document.createElement("div");
-    divElem.className = "omat-box";
-
-    let h2Elem = document.createElement("h2");
-    h2Elem.innerHTML = "PESUKONE";
-
-    let pday = document.createElement("p");
-    pday.innerHTML = `PÄIVÄ: ${today}`;
-
-    let pkelo = document.createElement("p");
-    pkelo.innerHTML = `KLO: ${dayValue}`;
-
-    let btnElem = document.createElement("button");
-    btnElem.innerHTML = "PERUUTA VARAUS";
-    btnElem.className = "peruuta-btn";
-    btnElem.addEventListener("click", () => {
-      modal2.innerHTML = "";
-      modal2.style.display = "none";
-    });
-    divElem.append(h2Elem, pday, pkelo, btnElem);
-    modulBox2.append(divElem);
-    console.log(dayValue);
-  });
+    day.addEventListener("click", (event) => {
+      modal2.classList.add("active");
+  
+      let dayValue = event.target.textContent;
+      let divElem = document.createElement("div");
+      divElem.className = "omat-box";
+  
+      let h2Elem = document.createElement("h2");
+      h2Elem.innerHTML = 'PYYKKITUA 1'
+  
+      let pday = document.createElement("p");
+      pday.innerHTML = `PÄIVÄ: ${today}`;
+  
+      let pkelo = document.createElement("p");
+      pkelo.innerHTML = `KLO: ${dayValue}`;
+  
+      let btnElem = document.createElement("button");
+      btnElem.innerHTML = "PERUUTA VARAUS";
+      btnElem.className = "peruuta-btn";
+      btnElem.addEventListener("click", () => {
+        modal2.innerHTML = "";
+        modal2.style.display = "none";
+      });
+      divElem.append(h2Elem, pday, pkelo, btnElem);
+      modulBox2.append(divElem);
+      console.log(dayValue);
+    })
+    
+ 
+  
 });
 
 // });

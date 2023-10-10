@@ -177,8 +177,7 @@ textarea.focus, textarea:focus {
   flex-basis: 0;
   flex-grow: 1;
   justify-content: center;
-  width: 30rem;
-  padding-top: 1.5rem;
+  width: 100%;
 }
 
 .button {
@@ -220,7 +219,9 @@ textarea.focus, textarea:focus {
    
   .otsikko {
     font-size: 25px;
-    margin: 3rem 0;
+   text-align: left;
+
+    margin: 3rem 15rem;
   }
 
   .kehote {
@@ -263,34 +264,25 @@ textarea.focus, textarea:focus {
   .section-2 a{
     font-size: 20px;
   }
-}
-.button-container {
-  /* margin-left: 10.5rem; */
+
+  .button-container {
+  margin-left: 10.5rem;
   padding-top: 0;
 }
+}
+
 
  /* MOBILE */
 
  @media only screen and (max-width: 427px) {
 
-.logo-container-aloitussivu {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-} 
-
-.logo-container-aloitussivu {
-    margin: 1rem 0;
-}
-  .logo-aloitussivu {
-    width: 250px;
-    display: flex;
+  .otsikko {
+    text-align: center;
   }
 
 .kysymys2 {
   width: 25rem;
   text-align: center;
-
 }
 
   .otsikko {

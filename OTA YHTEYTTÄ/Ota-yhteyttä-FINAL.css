@@ -217,3 +217,104 @@
         color: var(--black);
         margin-bottom: 1rem;
       }
+
+       /* MOBILE */
+
+ @media only screen and (max-width: 427px) {
+
+  .logo-container-aloitussivu {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+  } 
+  
+  .logo-container-aloitussivu {
+      margin: 1rem 0;
+  }
+    .logo-aloitussivu {
+      width: 250px;
+      display: flex;
+    }
+  
+  .kysymys2 {
+    width: 25rem;
+    text-align: center;
+  
+  }
+  
+    .otsikko {
+      font-size: 25px;
+      margin: 3rem 0 2rem 0;
+    }
+  
+    .kehote {
+      margin-bottom: 1rem;
+    }
+    
+      .linkki-huolto {
+        color: var(--black);
+      }
+  
+  form {
+    justify-content:center;
+    align-items: center;
+  } 
+  
+  .tiedot > * {
+    /* padding-block-end: 1rem; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0.3rem;
+  }
+    .tiedot {
+      flex-direction: column;
+      margin-right: 0;
+  }
+  .syöte {
+    padding-bottom: 0;
+  }
+  
+  #tyyppi {
+    width: 22rem;
+  }
+  
+  textarea {
+    width: 22rem;
+  }
+  .file {
+    width: 15rem;
+  
+  }
+  
+  
+  label {
+    padding: 10px 1rem;
+    margin-bottom: 0;
+  }
+     
+        #taloyhtio {
+          width:  22rem;
+           height: 1.5rem;
+            font-size: 14px;
+        }
+  
+      .kenttä {
+        width:  22rem;
+        height: 1.5rem;
+          font-size: 0.8rem;
+          /* margin-top: 0.2rem; */
+      }
+      .button-container {
+        margin-block-end: 1rem;
+        
+        width: 15rem;
+        margin-right: 11.5rem;
+      }
+  
+      .button {
+        margin: 0 0.5rem;
+          margin-top: 0;
+      }
+  
+  }

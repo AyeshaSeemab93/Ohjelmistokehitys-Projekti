@@ -37,7 +37,9 @@
     margin: 0 1rem;
   }
   
-
+  a:hover{
+    color: var(--purple);
+  }
 
   /*  start footer */
   .section-footer {

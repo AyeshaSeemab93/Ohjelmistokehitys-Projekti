@@ -77,7 +77,7 @@
 
   <!-- <main>  -->
   <h1 class="otsikko">HUOLTOPYYNTÖ</h1>
-  <form action="" id="myForm" onsubmit="handleSubmit(event)">>
+  <form action="" id="myForm" onsubmit="handleSubmit(event)">
     <section class="tiedot">
       <div>
         <label class="asia-koskee" for="tyyppi">Huoltopyynnön tyyppi*</label>
@@ -90,57 +90,58 @@
           <option value="muut">Muut</option>
         </select>
       </div>
-      <div>
-        <label for="name">Mistä on kyse*</label>
+      <div class="syöte">
+        <label for="name" class="asia-koskee" >Mistä on kyse*</label>
         <input class="kenttä" type="text" name="user_name" id="name" required placeholder="Enintään 30 merkkiä" oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')">
       </div>
       <!-- <div class="kuvaus"> -->
-      <div class="viesti">
-        <label for="kuvaus">Kuvaile ongelma*</label>
+      <div class="viesti syöte">
+        <label for="kuvaus" class="asia-koskee" >Kuvaile ongelma*</label>
         <textarea id="kuvaus" cols="33" rows="8" required maxlength="5000" placeholder="Enintään 5000 merkkiä" oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')"></textarea>
       </div>
       <!-- </div> -->
 
          <!-- <div class="kuvaus"> -->
-          <div class="viesti">
-            <label class="lataaKuva">Lataa tiedosto</label>
+      <div class="viesti syöte">
+            <label class="lataaKuva asia-koskee">Lataa tiedosto</label>
             <input class="file" type="file" id="myFile" name="filename">
-          </div>
+      </div>
           <!-- </div> -->
     
 
-      <div>
-        <label for="address">Osoite*</label>
+      <div class="syöte">
+        <label for="address" class="asia-koskee" >Osoite*</label>
         <input class="kenttä" type="text" id="address" required oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')">
       </div>
-      <div>
-        <label for="name">Sukunimi*</label>
+      <div class="syöte">
+        <label for="name" class="asia-koskee" >Sukunimi*</label>
         <input class="kenttä" type="text" name="user_name" id="name" required oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')">
       </div>
-      <div>
-        <label for="Etunimi">Etunimi*</label>
+      <div class="syöte">
+        <label for="Etunimi" class="asia-koskee" >Etunimi*</label>
         <input class="kenttä" type="text" name="user_name" id="Etunimi" required oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')">
       </div>
-      <div>
-        <label for="phone">Puhelinnumero*</label>
+      <div class="syöte">
+        <label for="phone" class="asia-koskee" >Puhelinnumero*</label>
         <input class="kenttä" id="phone" name="phone" placeholder=""
           required oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')" />
       </div>
-      <div>
-        <label for="email">Sähköposti*</label>
+      <div class="syöte">
+        <label for="email" class="asia-koskee" >Sähköposti*</label>
         <input class="kenttä" type="email" name="user_email" id="email" required oninvalid="this.setCustomValidity('Täytä tarvittavat kentät!')" oninput="setCustomValidity('')">
       </div>
 
-      <div class="valinnat">
-        <label for="eläimiä" class="kysymys1">Tarvitseeko huoltomiehen päästä asuntoon?*</label class="kyllä-ei">
+      <div class="valinnat syöte">
+        <label for="eläimiä" class="kysymys1 asia-koskee">Tarvitseeko huoltomiehen päästä asuntoon?*</label>
         <div class="kyllä-ei">
           <input type="radio" class="radio" id="eläimiä" value="eläimiä" name="eläimiä">
           <label for="eläimiä">Kyllä</label required oninvalid="this.setCustomValidity('Valitse vaihtoehto')" oninput="setCustomValidity('')">
           <input type="radio" class="radio" id="ei-eläimiä" value="ei-eläimiä" name="eläimiä">
           <label for="ei-eläimiä">Ei</label>
         </div>
-
-        <label for="kotona" class="kysymys2">Voiko huoltomies tulla asuntoon yleisavaimella, jos asukas ei ole
+      </div>
+      <div class="valinnat syöte">
+        <label for="kotona" class="kysymys2 asia-koskee">Voiko huoltomies tulla asuntoon yleisavaimella, jos asukas ei ole
           kotona?</label>
         <div class="kyllä-ei">
           <input type="radio" class="radio" id="kotona" value="kotona" name="kotona">
@@ -148,15 +149,19 @@
           <input type="radio" class="radio" id="ei-kotona" value="ei-kotona" name="kotona">
           <label for="ei-kotona">Ei</label>
         </div>
-
-        <label for="lemmikkiejä?" class="kysymys3">Onko asunnossa lemmikkiejä?*</label>
+      </div>
+      
+      <div class="valinnat syöte">
+        <label for="lemmikkiejä?" class="kysymys1 asia-koskee">Onko asunnossa lemmikkejä?*</label>
         <div class="kyllä-ei">
           <input type="radio" class="radio" id="lemmikkiejä" value="lemmikkiejä" name="lemmikkiejä">
           <label for="lemmikkiejä">Kyllä</label required oninvalid="this.setCustomValidity('Valitse vaihtoehto')" oninput="setCustomValidity('')">
           <input type="radio" class="radio" id="ei-lemmikkiejä" value="ei-lemmikkiejä" name="lemmikkiejä">
           <label for="ei-lemmikkiejä">Ei</label>
         </div>
+       
       </div>
+
 
     </section>
     <!-- <brs> -->

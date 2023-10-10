@@ -227,11 +227,8 @@
     margin: 0.5rem 0 0.5rem 8.5rem;
     width: 30rem;
    }
-   
-  .vikailmoitus-inner-box {
-    padding: 1rem 3rem;
-    margin-bottom: 4rem;
-  }
+
+
 
   .otsikko {
     font-size: 25px;
@@ -246,12 +243,11 @@
   .yhteystiedot {
     margin-left: 3rem;
   }
-  .kehote {
-    margin-bottom: 1rem;
-  }
+
   
     .linkki-huolto {
       color: var(--black);
+      width: 30rem;
     }
     
 
@@ -282,25 +278,14 @@
        /* MOBILE */
 
  @media only screen and (max-width: 427px) {
+  .vikailmoitus {
+    margin: 0.5rem 0 0.5rem 0;
+    width: 20rem;
+   }
 
-  .logo-container-aloitussivu {
-      display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-  } 
-  
-  .logo-container-aloitussivu {
-      margin: 1rem 0;
-  }
-    .logo-aloitussivu {
-      width: 250px;
-      display: flex;
-    }
-  
-  .kysymys2 {
-    width: 25rem;
-    text-align: center;
-  
+  .vikailmoitus-inner-box {
+    padding: 1rem 3rem;
+    margin-bottom: 4rem;
   }
   
     .otsikko {
@@ -320,7 +305,12 @@
     justify-content:center;
     align-items: center;
   } 
-  
+  .kenttä {
+    width:  22rem;
+    height: 1.9rem;
+      font-size: 0.8rem;
+      /* margin-top: 0.2rem; */
+  }
   .tiedot > * {
     /* padding-block-end: 1rem; */
     flex-direction: column;
@@ -343,12 +333,14 @@
   textarea {
     width: 22rem;
   }
-  .file {
+  /* .file {
     width: 15rem;
   
+  } */
+  
+  .ehto {
+    width: 22rem;
   }
-  
-  
   label {
     padding: 10px 1rem;
     margin-bottom: 0;
@@ -360,22 +352,19 @@
             font-size: 14px;
         }
   
-      .kenttä {
-        width:  22rem;
-        height: 1.5rem;
-          font-size: 0.8rem;
-          /* margin-top: 0.2rem; */
-      }
-      .button-container {
+    
+      .buttonDiv {
         margin-block-end: 1rem;
-        
-        width: 15rem;
-        margin-right: 11.5rem;
+        margin-right: 5.5rem;
       }
   
       .button {
         margin: 0 0.5rem;
           margin-top: 0;
+      }
+
+      .yhteystiedot {
+        margin-left: 0;
       }
   
   }

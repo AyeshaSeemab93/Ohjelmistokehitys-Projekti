@@ -202,17 +202,26 @@ p, label {
    /* MOBILE */
   
    @media only screen and (max-width: 427px) {
- 
-    .logo-container-aloitussivu {
+  
+  .logo-container-aloitussivu {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+  } 
+  
+  .logo-container-aloitussivu {
       margin: 1rem 0;
   }
     .logo-aloitussivu {
-      width: 150px;
+      width: 250px;
+      display: flex;
     }
+
+
 
     .otsikko {
       font-size: 25px;
-      margin: 6rem 0 3rem;
+      margin: 3rem 0 2rem 0;
     }
 
     .kehote {
@@ -228,20 +237,24 @@ p, label {
     align-items: center;
  } 
 
-
-.tiedot {
-
-}
   .tiedot > * {
-    padding-block-end: 1rem;
+    /* padding-block-end: 1rem; */
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
+    margin: 0 0 0.3rem;
   }
     .tiedot {
       flex-direction: column;
       margin-right: 0;
+  }
+  .syöte {
+    padding-bottom: 0;
+  }
+
+  label {
+    padding: 10px 1rem;
+    margin-bottom: 0;
   }
      
         #taloyhtio {
@@ -254,9 +267,15 @@ p, label {
         width:  22rem;
         height: 1.5rem;
           font-size: 0.8rem;
+          /* margin-top: 0.2rem; */
       }
       .button-container {
-        margin-block-end: 3rem;
+        margin-block-end: 1rem;
+      }
+
+      .button {
+        margin: 0 0.5rem;
+          margin-top: 0;
       }
 
   }

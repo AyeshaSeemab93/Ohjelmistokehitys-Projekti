@@ -16,7 +16,7 @@
 <body>
 
 
-    <h1 class="otsikko">Aloitussivu</h1>
+    <!-- <h1 class="otsikko">Aloitussivu</h1> -->
 
     <div class="logo-container-aloitussivu">
         <img src="./Logos/logo-white-background.png" class="logo-aloitussivu d-none d-md-block mx-5" alt="Happynestin logo">
@@ -26,7 +26,7 @@
     <form action="./mainpage.html">
         
         <p>Kirjaudu tai luo itselle oma tili</p>
-        <p>Kirjaudu omalle tilille</p>
+        <p class="kehote">Kirjaudu omalle tilille</p>
             <br/>
             <section class="tiedot">   
             <div>
@@ -40,15 +40,13 @@
                 <label class="asia-koskee" for="tunnus">Käyttäjätunnus</label>
                 <input class="kenttä" type="username" name="username" id="username" required>
               </div>
-              <br>
               <div>
                 <label class="asia-koskee" for="email">Salasana</label>
                 <input class="kenttä" type="password" name="password" id="password" required>
               </div>
-              <br>
             </section>  
               <div class="button-container">
-                <button class="button" type="reset">Reset</button>
+                <button class="button" type="reset">Tyhjennä</button>
                 <button class="button" type="submit">Lähetä</button>
             </div>        
     </form>

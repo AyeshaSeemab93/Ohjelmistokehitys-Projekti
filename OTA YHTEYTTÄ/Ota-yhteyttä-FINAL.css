@@ -222,6 +222,10 @@
       /* TABLET */
 
 @media only screen and (max-width: 769px) {
+   .vikailmoitus {
+    margin: 0.5rem 0 0.5rem 8.5rem;
+    width: 30rem;
+   }
    
   .vikailmoitus-inner-box {
     padding: 1rem 3rem;
@@ -230,7 +234,7 @@
 
   .otsikko {
     font-size: 25px;
-    margin-left: 1rem;
+    margin-left: 6rem;
   }
 
   .buttonDiv {
@@ -249,13 +253,6 @@
       color: var(--black);
     }
     
-      
-  .logo-container-aloitussivu {
-    margin: 1rem 0 2rem;
-}
-  .logo-aloitussivu {
-    width: 250px;
-  }
 
   .tiedot {
     display: flex;
@@ -265,16 +262,9 @@
     flex-grow: 1;
     margin-right: 2rem;
 }
-   
-      #taloyhtio {
-        width:  28rem;
-         height: 1.5rem;
-          font-size: 14px;
-      }
 
     .kenttä {
       width:  30rem;
-    
         font-size: 0.8rem;
     }
 

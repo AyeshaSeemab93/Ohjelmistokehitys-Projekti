@@ -1,11 +1,8 @@
+ul li {
+  cursor: pointer;
+}
 
-  
-  ul li {
-    cursor: pointer;
-  }
-  
-  
-  /* Navbar Styel */
+/* Navbar Styel */
 .logo {
   width: 200px;
   object-fit: cover;
@@ -16,10 +13,9 @@ nav {
   width: 100%;
   background-color: var(--yellow);
   padding: 1rem 0;
-  position:sticky;
+  position: sticky;
   top: 0;
   z-index: 99999;
-
 }
 
 #check {
@@ -46,7 +42,7 @@ nav {
   font-size: 20px;
 }
 .title-nav li a {
-  font-size: 20px;
+  font-size: 15px;
 }
 .title-nav li a:hover {
   border-bottom: 2px solid white;
@@ -80,11 +76,9 @@ nav {
   }
 }
 
-
 /* End Style Navbar */
 
-
-  /*  start footer */
+/*  start footer */
 
 .section-footer {
   width: 100%;
@@ -94,13 +88,11 @@ nav {
   padding: 3rem;
 }
 
-.img-footer{
-  width: 250px;
+.img-footer {
+  width: 200px;
   object-fit: cover;
   text-align: left;
-
 }
-
 
 .title-footer {
   width: 100%;
@@ -111,7 +103,7 @@ nav {
 }
 
 .title-footer li {
-  font-size:20px ;
+  font-size: 15px;
   margin: 0 15px;
 }
 
@@ -122,21 +114,16 @@ nav {
   align-items: center;
 }
 
-
-@media screen and (min-width: 769px) and (max-width:1100px){
-  
-  .title-nav li a{
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .title-nav li a {
     font-size: 10px;
   }
 
-  .logo{
+  .logo {
     width: 130px;
   }
 
-  .title-footer li{
+  .title-footer li {
     font-size: 12px;
   }
-
-
-  
 }

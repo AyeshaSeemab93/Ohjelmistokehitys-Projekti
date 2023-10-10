@@ -1,21 +1,8 @@
-// const scrolElem = document.querySelector("#scrol");
-
-// window.addEventListener("scroll", function () {
-//   let scrolTop = window.scrollY;
-//   let documentHeight = document.body.clientHeight;
-//   let windoheighth = window.innerHeight;
-
-//   let scrolPerecent = scrolTop / (documentHeight - windoheighth);
-//   let scrollPerecentRound = Math.round(scrolPerecent * 100);
-//   scrolElem.style.width = scrollPerecentRound + "%";
-// });
-
 const pyykkitupaElem = document.querySelector("#pyykkitupa");
 const saunavuoroElem = document.querySelector("#saunavuoro");
 const saunaContainer = document.querySelector(".sauna-container");
 const pesukoneContainer = document.querySelector(".pesukone_container");
 const omatvarauksetElem = document.querySelector(".omatvaraukset");
-const modulcontainer = document.querySelector(".modulcontainer");
 const btnmodal = document.querySelector(".btnmodal");
 const modal2 = document.querySelector(".modal-2");
 const pesukoneBox = document.querySelectorAll(".pesukone-box");
@@ -59,10 +46,7 @@ const months = [
 //   calendarContainer.classList.toggle("active");
 // });
 
-
-
 pyykkitupaElem.addEventListener("click", () => {
-  console.log('first')
   pesukoneContainer.classList.toggle("pesukone_container");
 });
 
@@ -71,10 +55,6 @@ pesukoneBox.forEach((pesu) => {
     calendarContainer.classList.toggle("active");
   });
 });
-
-
-
-
 
 saunavuoroElem.addEventListener("click", () => {
   saunaContainer.classList.toggle("sauna-container");
@@ -86,16 +66,10 @@ saunaBox.forEach((box) => {
   });
 });
 
-modulcontainer.addEventListener("click", () => {
-  modulcontainer.classList.remove("active");
-});
-
-// omatvarauksetElem.addEventListener("click", () => {
-// ****************
 showReservaition.forEach((day) => {
-
   day.addEventListener("click", (event) => {
-  modal2.classList.toggle("active");
+    console.log("first");
+    modal2.classList.toggle("active");
 
     let dayValue = event.target.textContent;
     let divElem = document.createElement("div");
@@ -105,26 +79,23 @@ showReservaition.forEach((day) => {
     h2Elem.innerHTML = "PESUKONE";
 
     let pday = document.createElement("p");
-    pday.innerHTML =`PÄIVÄ: ${today}`
+    pday.innerHTML = `PÄIVÄ: ${today}`;
 
     let pkelo = document.createElement("p");
-    pkelo.innerHTML =`KLO: ${dayValue}`
+    pkelo.innerHTML = `KLO: ${dayValue}`;
 
-    let btnElem=document.createElement('button')
-    btnElem.innerHTML='PERUUTA VARAUS'
-    btnElem.className='peruuta-btn'
+    let btnElem = document.createElement("button");
+    btnElem.innerHTML = "PERUUTA VARAUS";
+    btnElem.className = "peruuta-btn";
 
-
-    divElem.append(h2Elem, pday, pkelo,btnElem);
+    divElem.append(h2Elem, pday, pkelo, btnElem);
     modulBox2.append(divElem);
-
-
-    
 
     console.log(dayValue);
   });
-});
 
+
+});
 
 
 // });

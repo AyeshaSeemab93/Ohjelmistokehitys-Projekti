@@ -11,7 +11,12 @@ p, label {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin: 2rem;
+    margin: 13rem 0 5rem;
+
+}
+
+.kehote {
+  margin-bottom: 3rem;
 }
 
   .linkki-huolto {
@@ -76,7 +81,7 @@ p, label {
   
       .kenttä {
           width:  30rem;
-         height: 1.5rem;
+         height: 1.9rem;
           border-radius: 5px;
           border: solid;
           border-width: 1px;
@@ -85,6 +90,18 @@ p, label {
           border: none;
           box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
           font-family: 'Poppins';
+      }
+
+      input.active, input:active {
+        outline: 0;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+      }
+      
+      
+      input.focus, input:focus {
+        outline: 0;
+        border: none;
       }
       .viesti {
           display: flex;

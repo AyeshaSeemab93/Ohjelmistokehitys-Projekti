@@ -9,12 +9,9 @@ label, .file {
   color: var(--black);
 }
 .file{
-  
-  /* margin: auto; */
-  /* margin-left: -2rem; */
   cursor: pointer;
   width: 30rem;
-  /* padding-left: 2rem; */
+
 }
 
 .lataaKuva {
@@ -148,8 +145,6 @@ textarea.focus, textarea:focus {
 }
 
 .kyllä-ei {
-       /* margin-right: 12.5rem; */
-       /* marign: 1rem 12.5rem 1rem 0; */
        margin: 1rem 0;
        width: 30rem;
        text-align: center;
@@ -179,7 +174,7 @@ textarea.focus, textarea:focus {
   flex-basis: 0;
   flex-grow: 1;
   justify-content: center;
-  /* width: 100%; */
+
   width: 30rem;
 }
 
@@ -264,7 +259,7 @@ textarea.focus, textarea:focus {
 
  @media only screen and (max-width: 427px) {
 
- 
+
   .otsikko {
     text-align: center;
     justify-content: center;
@@ -280,21 +275,12 @@ textarea.focus, textarea:focus {
     margin: 3rem 0 2rem 0;
   }
 
-  .kehote {
-    margin-bottom: 1rem;
-  }
-  
     .linkki-huolto {
       color: var(--black);
     }
 
-form {
-  justify-content:center;
-  align-items: center;
-} 
 
 .tiedot > * {
-  /* padding-block-end: 1rem; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -317,32 +303,27 @@ textarea {
 }
 .file {
   width: 15rem;
-
 }
 
+.kyllä-ei {
+  margin: 0;
+}
 
 label {
   padding: 10px 1rem;
   margin-bottom: 0;
 }
    
-      #taloyhtio {
-        width:  22rem;
-         height: 1.5rem;
-          font-size: 14px;
-      }
+
 
     .kenttä {
       width:  22rem;
       height: 1.9rem;
         font-size: 0.8rem;
-        /* margin-top: 0.2rem; */
     }
+    
     .button-container {
-      margin-block-end: 3rem;
-      
-      width: 15rem;
-      margin-right: 11.5rem;
+      margin: 2rem 11.5rem 3rem;
     }
 
     .button {

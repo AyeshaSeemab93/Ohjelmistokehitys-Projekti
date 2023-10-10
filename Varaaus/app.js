@@ -52,7 +52,7 @@ pyykkitupaElem.addEventListener("click", () => {
 
 pesukoneBox.forEach((pesu) => {
   pesu.addEventListener("click", () => {
-    calendarContainer.classList.toggle("active");
+    calendarContainer.classList.add("active");
   });
 });
 
@@ -68,8 +68,7 @@ saunaBox.forEach((box) => {
 
 showReservaition.forEach((day) => {
   day.addEventListener("click", (event) => {
-    console.log("first");
-    modal2.classList.toggle("active");
+    modal2.classList.add("active");
 
     let dayValue = event.target.textContent;
     let divElem = document.createElement("div");
@@ -87,16 +86,15 @@ showReservaition.forEach((day) => {
     let btnElem = document.createElement("button");
     btnElem.innerHTML = "PERUUTA VARAUS";
     btnElem.className = "peruuta-btn";
-
+    btnElem.addEventListener("click", () => {
+      modal2.innerHTML = "";
+      modal2.style.display = "none";
+    });
     divElem.append(h2Elem, pday, pkelo, btnElem);
     modulBox2.append(divElem);
-
     console.log(dayValue);
   });
-
-
 });
-
 
 // });
 

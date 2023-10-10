@@ -84,7 +84,14 @@
   margin: 4rem 0 2.8rem 0rem;
 }
 
+.box-section-2:hover {
+  background-color: var(--blue-box-1);
+  box-shadow: 3px 6px 5px gainsboro;
+} 
 
+a:hover{
+  color: var(--purple);
+}
 
 .box-section-2 p {
   font-size: 15px;
@@ -97,7 +104,7 @@
 
 .section-3 {
   width: 100%;
-  height: 350px;
+  height: 380px;
   margin: 3rem 0;
   background-color: var(--yellow);
   justify-content: center;
@@ -107,16 +114,21 @@
 }
 
 .section-3 h1{
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
 }
 .section-3 h3{
   padding-bottom: 0.5rem;
 }
 
+.taloyhtiöTiedottaa {
+  margin-bottom: 1rem;
+}
+
 .five {
   font-size: 25px;
   font-weight: 800;
-  padding: 0.5rem 0.8rem;
+  margin: 1rem 0 2rem;
+  padding: 0.7rem 0.9rem;
   object-fit: cover;
   text-align: center;
   color: var(--beige);

@@ -23,6 +23,10 @@ main{
   font-size: 1.5rem;
   font-family: "Poppins";
 }
+a:hover{
+  color: var(--purple);
+}
+
 .sec-one{
   text-align: center;
 }
@@ -36,7 +40,6 @@ main{
   line-height: 43px;
   font-weight: bold;  
   margin: 0 5px; /* Adjust the margin to control the spacing around the bubble */
-
 }
 .holder{
   display: flex;

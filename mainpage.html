@@ -24,14 +24,14 @@
         <input type="checkbox" id="check">
         <label for="check" class="checkBtn">Menu</label>
         <ul class="title-nav">
-            <li> <a>TIEDOTTET </a> </li>
-            <li> <a> MEISTÄ</a> </li>
-            <li> <a>DOKUMENTIT </a> </li>
-            <li> <a>ILMOITUSTAULU </a> </li>
-            <li><img src="./Logos/HappyNest_logo.png" class="logo"></li>
-            <li> <a>VARAUSKALENTERI </a> </li>
-            <li> <a>HUOLTOPYYNTÖ </a> </li>
-            <li> <a>YHTEYDENOTTO </a> </li>
+            <li> <a href="./Tiedotteet/Tiedotteet.html">TIEDOTTEET </a> </li>
+            <li> <a href="./Brändi/HappyNest-Brändi.html"> MEISTÄ</a> </li>
+            <li> <a href="./TEHTÄVÄLISTA/tehtävälista.html">TEHTÄVÄT</a> </li>
+            <li> <a href="./YHTEISÖN ILMOITUSTAULU copy/ilmoitustaulu.html">ILMOITUSTAULU </a> </li>
+            <li><a href="./mainpage.html"><img src="./Logos/HappyNest_logo.png" class="logo"></a></li>
+            <li> <a href="./Varaaus/reservaition.html">VARAUSKALENTERI </a> </li>
+            <li> <a href="./HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ </a> </li>
+            <li> <a href="./OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO </a> </li>
 
         </ul>
     </nav>
@@ -84,11 +84,20 @@
                     <!-- <h2>Varaa Vuoro</h2> -->
                     <a href="./Varaaus/reservaition.html" class="linkki-iso">Varaa vuoro</a>
                 </div>
-                <div class="col-md-3 box-section-2 box-image">
-                    <!-- <a href="" class="linkki-iso">yhteisön ilmoitustaulu</a> -->
+                <div class="col-md-3 box-section-2 box-image imageWrapper">
+                   
+                 <a href="./YHTEISÖN ILMOITUSTAULU copy/ilmoitustaulu.html" class="image-community">
+                <figure  class="background">   <p class="teksti">Siirry ilmoitustaululle</p><img class="image" src="./images/Screenshot 2023-09-15 at 20.03.52.png" /></figure>
+               <!-- <div class="hide">Siirry ilmoitustaululle</div> -->
+                </div> 
+                <div class="overlay">
                 </div>
+            </a>
+                    <!-- <div class="col-md-3 box-section-2 box-image"> -->
+                    <!-- <a href="" class="linkki-iso">yhteisön ilmoitustaulu</a> -->
+                <!-- </div> -->
                 <div class="col-md-3 box-section-2 blue">
-                    <a href="./Huoltopyynto-FINAL.html" class="linkki-iso">tee vikailmoitus</a>
+                    <a href="./HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html" class="linkki-iso">tee vikailmoitus</a>
                     <!-- muutettu h2, oli ennen p -->
                 </div>
             </div>
@@ -96,10 +105,10 @@
         <!-- Start Sectin-3 -->
         <div class="row">
             <div class="section-3">
-                <h1>Taloyhtiö Tiedottaa</h1>
+                <h1 class="taloyhtiöTiedottaa">Taloyhtiö Tiedottaa</h1>
                 <h3>Uusia tiedoitteita</h3>
                 <p class="five">99+</p>
-                <a href="" class="linkki">Linkki tiedotteisiin</a>
+                <a href="./Tiedotteet/Tiedotteet.html" class="linkki">Linkki tiedotteisiin</a>
             </div>
         </div>
         <!-- Section-4 -->
@@ -107,18 +116,12 @@
             <div class="row">
                 <div class="section-4">
                     <h1>YHTEISÖN ILMOITUSTAULU</h1>
-                    <h2 class="slogan-section-4 slogan">Slogan tai muu vastaava tähän</h2>
-                    <p class="tähän-lyhyt">Tähän lyhyt selostus Ilmoitustaulun ideasta , mihin taulua käytetään ja
-                        millaiseen käyttöön kannustetaan.Tähän lyhyt selostus Ilmoitustaulun ideasta , mihin taulua
-                        käytetään ja
-                        millaiseen käyttöön kannustetaan.
+                    <h2 class="slogan-section-4 slogan">Kaikkien asukkaiden yhteinen koti</h2>
+                    <p class="tähän-lyhyt">Yhteisönne ilmoitustaulu on digitaalinen tilan, jossa voit edistää naapurisuhteita ja käsitellä asuntoihin liittyviä asioita. Luo ja jaa harmoninen elinympäristö. Äänelläsi on väliä!
                     </p>
-                    <p class="Tähän-Käyttäjä">" Tähän käyttäjäkokemus tyyliin Tämä ilmoitustaulu on ehdottomasti parasta
-                        meidän
-                        talossa ! Parasta asua
-                        tässä yhteisössä " -Eeva </p>
+                    <p class="Tähän-Käyttäjä">"Meillä on koti tässä rakennuksessa, mutta HappyNest on tehnyt koko rakennuksesta meidän kaikkien asukkaiden kodin. Parasta HappyNestissä on, että se on tuonut meidät asukkaat yhteen ja tarjonnut alustan, joka todella vahvistaa yhteisöllisyyttä." -Eeva </p>
                     <div class="linkki-ilmoitus">
-                        <a href="" class="linkki">Linkki ilmoitusten tekoon</a>
+                        <a href="./YHTEISÖN ILMOITUSTAULU copy/ilmoitustaulu.html" class="linkki">Linkki ilmoitusten tekoon</a>
                     </div>
                 </div>
             </div>
@@ -143,7 +146,7 @@
                     <a href="" class="linkki lisää-ilmoituksia">lataa lisää ilmoituksia</a>
                 </div>
                 <div class="linkki-ylös">
-                    <a href="" class="linkki takaisin-ylös">takaisin ylös</a>
+                    <a href="./mainpage.html" class="linkki takaisin-ylös">takaisin ylös</a>
                 </div>
             </div>
 
@@ -154,33 +157,35 @@
                         <div class="col-md-5 color">
                             <div class="row">
                                 <ul class="title-footer">
-                                    <li>KOTI</li>
-                                    <li>TIEDOTTEET</li>
-                                    <li>DOKUMENTIT</li>
-                                </ul>
+                                    <li><a href="./mainpage.html">KOTI</a></li>
+                                    <li><a href="./Tiedotteet/Tiedotteet.html">TIEDOTTEET</a></li>
+                                    <li><a href="./TEHTÄVÄLISTA/tehtävälista.html"></a>TEHTÄVÄT</li>
+                                <!-- </ul>
                             </div>
                             <div class="row mt-3">
-                                <ul class="title-footer">
-                                    <li>HAPPYNESTIN VISIO</li>
-                                    <li>MUUTA</li>
+                                <ul class="title-footer"> -->
+                                    
+                                    <li><a href="./YHTEISÖN ILMOITUSTAULU copy/ilmoitustaulu.html"></a>ILMOITUSTAULU</li>
+                                    
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-2 my-sm-5 text-center img-section-footer">
-                            <img class="img-footer" src="./Logos/HappyNest_logo.png" alt="">
+                            <a href="./mainpage.html"><img class="img-footer" src="./Logos/HappyNest_logo.png" alt=""></a>
                         </div>
                         <div class="col-md-5 color creat-margin-right">
                             <div class="row">
                                 <ul class="title-footer">
-                                    <li>VARAUKSET</li>
-                                    <li>ILMOITUSTAULU</li>
-                                    <li><a href="./Lomakeet/Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
-                                </ul>
+                                    <li><a href="./Brändi/HappyNest-Brändi.html">MEISTÄ</a></li>
+                                    <li><a href="./HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html"></a>HUOLTOPYYNTÖ</li>
+                                    <li><a href="./Varaaus/reservaition.html"></a>VARAUKSET</li>
+                                    
+                                    
+                                <!-- </ul>
                             </div>
                             <div class="row mt-3">
-                                <ul class="title-footer">
-                                    <li><a href="./Lomakeet/Ota-yhteyttä-FINAL.html">Yhteydenotto</a></li>
-                                    <li>MUUTA</li>
+                                <ul class="title-footer"> -->
+                                    <li><a href="./OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -180,7 +180,8 @@ textarea.focus, textarea:focus {
   flex-basis: 0;
   flex-grow: 1;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
+  width: 30rem;
 }
 
 .button {
@@ -230,24 +231,9 @@ textarea.focus, textarea:focus {
   .otsikko {
     font-size: 25px;
    text-align: left;
+   justify-content: left;
 
     margin: 3rem 15rem;
-  }
-
-  .kehote {
-    margin-bottom: 1rem;
-  }
-  
-    .linkki-huolto {
-      color: var(--black);
-    }
-    
-      
-  .logo-container-aloitussivu {
-    margin: 1rem 0 2rem;
-}
-  .logo-aloitussivu {
-    width: 250px;
   }
 
   .tiedot {
@@ -286,8 +272,10 @@ textarea.focus, textarea:focus {
 
  @media only screen and (max-width: 427px) {
 
+ 
   .otsikko {
     text-align: center;
+    justify-content: center;
   }
 
 .kysymys2 {
@@ -354,12 +342,12 @@ label {
 
     .kenttä {
       width:  22rem;
-      height: 1.5rem;
+      height: 1.9rem;
         font-size: 0.8rem;
         /* margin-top: 0.2rem; */
     }
     .button-container {
-      margin-block-end: 1rem;
+      margin-block-end: 3rem;
       
       width: 15rem;
       margin-right: 11.5rem;

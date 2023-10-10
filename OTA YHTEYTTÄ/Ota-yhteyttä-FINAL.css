@@ -21,6 +21,7 @@
     }
 
       /* .vikailmoitus-box {
+      /* .vikailmoitus-box {
         display: flex;
         flex-basis: 0;
         flex-grow: 1;
@@ -222,16 +223,15 @@
       /* TABLET */
 
 @media only screen and (max-width: 769px) {
-   .vikailmoitus {
-    margin: 0.5rem 0 0.5rem 8.5rem;
-    width: 30rem;
-   }
-
-
+   
+  .vikailmoitus-inner-box {
+    padding: 1rem 3rem;
+    margin-bottom: 4rem;
+  }
 
   .otsikko {
     font-size: 25px;
-    margin-left: 6rem;
+    margin-left: 1rem;
   }
 
   .buttonDiv {
@@ -242,13 +242,21 @@
   .yhteystiedot {
     margin-left: 3rem;
   }
-
+  .kehote {
+    margin-bottom: 1rem;
+  }
   
     .linkki-huolto {
       color: var(--black);
-      width: 30rem;
     }
     
+      
+  .logo-container-aloitussivu {
+    margin: 1rem 0 2rem;
+}
+  .logo-aloitussivu {
+    width: 250px;
+  }
 
   .tiedot {
     display: flex;
@@ -258,9 +266,16 @@
     flex-grow: 1;
     margin-right: 2rem;
 }
+   
+      #taloyhtio {
+        width:  28rem;
+         height: 1.5rem;
+          font-size: 14px;
+      }
 
     .kenttä {
       width:  30rem;
+    
         font-size: 0.8rem;
     }
 
@@ -273,100 +288,6 @@
   padding-top: 0;
 }
 }
-
-       /* MOBILE */
-
- @media only screen and (max-width: 427px) {
-  .vikailmoitus {
-    margin: 0.5rem 0 0.5rem 0;
-    width: 20rem;
-   }
-
-  .vikailmoitus-inner-box {
-    padding: 1rem 3rem;
-    margin-bottom: 4rem;
-  }
-  
-    .otsikko {
-      font-size: 25px;
-      margin: 3rem 0 2rem 0;
-    }
-  
-    .kehote {
-      margin-bottom: 1rem;
-    }
-    
-      .linkki-huolto {
-        color: var(--black);
-      }
-  
-  form {
-    justify-content:center;
-    align-items: center;
-  } 
-  .kenttä {
-    width:  22rem;
-    height: 1.9rem;
-      font-size: 0.8rem;
-      /* margin-top: 0.2rem; */
-  }
-  .tiedot > * {
-    /* padding-block-end: 1rem; */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0.3rem;
-  }
-    .tiedot {
-      flex-direction: column;
-      margin-right: 0;
-  }
-  .syöte {
-    padding-bottom: 0;
-  }
-  
-  #tyyppi {
-    width: 22rem;
-  }
-  
-  textarea {
-    width: 22rem;
-  }
-  /* .file {
-    width: 15rem;
-  
-  } */
-  
-  .ehto {
-    width: 22rem;
-  }
-  label {
-    padding: 10px 1rem;
-    margin-bottom: 0;
-  }
-     
-        #taloyhtio {
-          width:  22rem;
-           height: 1.5rem;
-            font-size: 14px;
-        }
-  
-    
-      .buttonDiv {
-        margin-block-end: 1rem;
-        margin-right: 5.5rem;
-      }
-  
-      .button {
-        margin: 0 0.5rem;
-          margin-top: 0;
-      }
-
-      .yhteystiedot {
-        margin-left: 0;
-      }
-  
-  }
 
        /* MOBILE */
 

@@ -197,6 +197,13 @@ textarea.focus, textarea:focus {
   animation: fadeOut 3s ease-in-out forwards;
 }
 
+.valinnat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -205,4 +212,140 @@ textarea.focus, textarea:focus {
     opacity: 0;
     display: none;
   }
+}
+
+/* TABLET */
+
+@media only screen and (max-width: 769px) {
+   
+  .otsikko {
+    font-size: 25px;
+    margin: 3rem 0;
+  }
+
+  .kehote {
+    margin-bottom: 1rem;
+  }
+  
+    .linkki-huolto {
+      color: var(--black);
+    }
+    
+      
+  .logo-container-aloitussivu {
+    margin: 1rem 0 2rem;
+}
+  .logo-aloitussivu {
+    width: 250px;
+  }
+
+  .tiedot {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: 2rem;
+}
+   
+      #taloyhtio {
+        width:  28rem;
+         height: 1.5rem;
+          font-size: 14px;
+      }
+
+    .kenttä {
+      width:  30rem;
+    
+        font-size: 0.8rem;
+    }
+
+  .section-2 a{
+    font-size: 20px;
+  }
+}
+.button-container {
+  margin-left: 10.5rem;
+  padding-top: 0;
+}
+
+ /* MOBILE */
+
+ @media only screen and (max-width: 427px) {
+
+.logo-container-aloitussivu {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+} 
+
+.logo-container-aloitussivu {
+    margin: 1rem 0;
+}
+  .logo-aloitussivu {
+    width: 250px;
+    display: flex;
+  }
+
+
+
+  .otsikko {
+    font-size: 25px;
+    margin: 3rem 0 2rem 0;
+  }
+
+  .kehote {
+    margin-bottom: 1rem;
+  }
+  
+    .linkki-huolto {
+      color: var(--black);
+    }
+
+form {
+  justify-content:center;
+  align-items: center;
+} 
+
+.tiedot > * {
+  /* padding-block-end: 1rem; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0.3rem;
+}
+  .tiedot {
+    flex-direction: column;
+    margin-right: 0;
+}
+.syöte {
+  padding-bottom: 0;
+}
+
+label {
+  padding: 10px 1rem;
+  margin-bottom: 0;
+}
+   
+      #taloyhtio {
+        width:  22rem;
+         height: 1.5rem;
+          font-size: 14px;
+      }
+
+    .kenttä {
+      width:  22rem;
+      height: 1.5rem;
+        font-size: 0.8rem;
+        /* margin-top: 0.2rem; */
+    }
+    .button-container {
+      margin-block-end: 1rem;
+    }
+
+    .button {
+      margin: 0 0.5rem;
+        margin-top: 0;
+    }
+
 }

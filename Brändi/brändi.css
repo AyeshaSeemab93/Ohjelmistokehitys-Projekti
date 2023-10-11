@@ -150,3 +150,136 @@
   a{
     font-size: 16px;
   }
+
+  @media screen and (max-width: 769px){
+
+    body {
+      max-width: 769px;
+    }
+    .visio{
+      padding: 0;
+      max-width: 100%;
+    }
+    .slogan {
+      margin: 2rem 0;
+     max-width: 100%;
+      font-size: 24px;
+    }
+    .main-heading {
+      font-size: 25px;
+    text-align: center;
+      margin: 2rem 0;
+      max-width: 100%;
+    }
+    H3 {
+      margin: 0 0 2rem;
+      max-width: 100%;
+    }
+
+    .visio-p {
+      margin: 0 0 2rem;
+      padding: 0 5rem;
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+    }
+
+    .arvot-heading,
+    .heading-creators {
+      font-size: 25px;
+    }
+
+    .heading-creators {
+      margin: 2rem 0 2rem;
+    }
+
+    .arvo-container {
+      padding: 0;
+      height: 18rem;
+      margin-bottom: 2rem;
+    }
+    .arvo-container h1 {
+      padding-top: 2.5rem;
+    }
+
+    .arvot-container {
+      width: 10rem;
+    }
+    .arvo {
+      font-size: 16px;
+    }
+    .arvot {
+      padding-top: 0;
+      margin: 0 5rem;
+    }
+
+    .arvo-3 {
+      width: 15rem;
+    }
+    .creators-section {
+      margin-block-end: 2rem;
+      max-width: 100%;
+    }
+  
+    .creators {
+      margin: 0;
+      padding: 1rem 0;
+    }
+    .person {
+      width: 10rem;
+      margin: 0 0.2rem;
+    }
+    .headshot {
+      width: 9rem;
+      margin: 1rem 0.5rem 0;
+      padding: 0;
+    }
+
+    .name {
+      font-size: 18px;
+      margin: 0 0 0.5rem;
+      padding: 0;
+      text-align: center;
+
+    }
+    .description {
+      margin: 1rem;
+    }
+    .icon2 {
+      width: 2rem;
+      height: 2rem;
+    }
+    .icon-text {
+      font-size: 14px;
+    }
+
+  }
+
+  @media only screen and (max-width: 426px) {
+
+    .slogan {
+      max-resolution: 2rem 0 0;
+    }
+    .arvo-container h1 {
+      padding: 2.5rem 2.5rem 1rem;
+    }
+
+    .arvo-container {
+      height: 32rem;
+      width: 426px;
+    }
+    .arvot-container {
+      width: 20rem;
+      padding: 0.5rem 2rem;
+      margin: 1rem;
+    }
+
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    .person {
+      margin-bottom: 0.5rem;
+      flex-direction: column;
+    }
+  }

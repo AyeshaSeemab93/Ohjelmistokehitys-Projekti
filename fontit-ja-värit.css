@@ -57,7 +57,7 @@ h2 {
         font-family: 'Poppins';
         font-size: 20px;
         text-transform: uppercase;
-        color: white;
+        color: var(--black);
         background-color: var(--blue);
         /* border-bottom: 1px solid black; */
         cursor: pointer;

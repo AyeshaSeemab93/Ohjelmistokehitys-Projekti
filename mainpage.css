@@ -268,6 +268,24 @@ a:hover{
   margin-block-end: 4rem;
 }
 
+.button-container {
+  /* width: 46rem; */
+  margin-block-end: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 0;
+  flex-grow: 0.5;
+  justify-content: center;
+  align-items: center;
+  /* width: 27rem; */
+  padding-top: 1.5rem;
+  
+
+}
+
+
 
 @media screen and (max-width: 1100px) {
   .title-footer li {

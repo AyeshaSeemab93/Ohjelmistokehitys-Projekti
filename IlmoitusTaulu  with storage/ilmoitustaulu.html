@@ -176,18 +176,21 @@
         function createAndDisplayNoteElement(text, name, color, opacity) {
             const newNote = document.createElement("div");
             const noteText = document.createElement("p");
-            const noteName = document.createElement("p");
+            const noteName = document.createElement("h4");
             newNote.classList.add("newNote");
             noteText.classList.add("noteText");
             noteName.classList.add("noteName");
             noteText.textContent = text;
             noteName.textContent = name;
-            newNote.appendChild(noteText);
             newNote.appendChild(noteName);
+            newNote.appendChild(noteText);
+            
             noteboard.insertBefore(newNote, noteboard.firstChild); // Add the new note to the beginning
             newNote.style.background = color;
             newNote.style.opacity = opacity;
+            
         }
+        
 
         function getNotes() {
             return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");

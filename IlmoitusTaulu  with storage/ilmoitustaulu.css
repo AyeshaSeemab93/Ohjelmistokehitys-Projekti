@@ -80,6 +80,8 @@ button {
   border-radius: 5px;
      box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
      border: none;
+   
+    
 }
 
 .oikea-palsta {
@@ -187,6 +189,5 @@ input[type='radio'] {
   height: 25rem;
   margin: 1rem;
   padding: 2rem;
-  /* display: grid; */
-
+  box-shadow: 0 0 17px rgba(0,0,0,0.55);
 }

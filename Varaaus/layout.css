@@ -67,12 +67,14 @@
   background-size: 300px;
   border-radius: 10px;
 }
-.overlay {
-  display: none;
 
-}
 .teksti {
   display: none;
+/* padding-top: 5rem; */
+
+.teksti:hover p {
+  display: none;
+}
   
 }
 .imageWrapper:hover p {
@@ -84,16 +86,7 @@
   text-decoration: underline;
   color: var(--black);
   font-family: poppins;
-  font-weight:100; 
-}
-
-.hide {
-  display: none;
-}
-
-.image:hover + .hide {
-  display: block;
-  color: red;
+  font-weight:100;
 }
 
 .image:hover {display:none;}

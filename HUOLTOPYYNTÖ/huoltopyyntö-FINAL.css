@@ -60,6 +60,7 @@ label {
 
 .asia-koskee {
   text-align: right;
+
 }
 
 .tiedot > * {
@@ -235,6 +236,10 @@ textarea.focus, textarea:focus {
     margin: 3rem 15rem;
   }
 
+ label {
+  font-size: 14px;
+ }
+
   .tiedot {
     display: flex;
     flex-direction: column;
@@ -261,7 +266,7 @@ textarea.focus, textarea:focus {
   }
 
   .button-container {
-  margin-left: 10.5rem;
+    margin-left: 9rem;
   padding-top: 0;
 }
 }

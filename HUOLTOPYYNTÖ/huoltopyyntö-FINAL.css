@@ -149,7 +149,7 @@ textarea.focus, textarea:focus {
 }
 
 .kyllä-ei {
-       margin: 1rem 0;
+       margin: 1rem 0.2rem 0 2.5rem;
        width: 30rem;
        text-align: center;
     }
@@ -221,6 +221,7 @@ textarea.focus, textarea:focus {
     display: none;
   }
 }
+
 
 /* TABLET */
 
@@ -316,9 +317,11 @@ textarea {
   width: 15rem;
 }
 
-.kyllä-ei {
-  margin: 0;
+.ei {
+  margin: 0rem 1.5rem 0rem 0rem;
 }
+
+
 
 label {
   padding: 10px 1rem;

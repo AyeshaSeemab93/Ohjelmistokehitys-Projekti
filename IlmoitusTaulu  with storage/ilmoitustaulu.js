@@ -108,7 +108,25 @@ subButton.addEventListener("click", getInput);
     }
     
 // PUBLISH NOTE
+
+ 
+
+  
+
+
 function AddNote(){
+  
+   //  ** HANNIKA ADDED following when trying to resolve the missing data issue
+//   validateTextBox()
+
+// }
+
+//   function validateTextBox() {
+
+//     if (document.getElementById("viestikenttä","").value != "" || document.querySelector('.filename').value != "") { 
+
+// HANNIKA ADDED FINISH **
+
   const noteboard = document.body.querySelector(".placeholderNotes");
   console.log("noteboard: ", noteboard);
   const newNote = document.createElement("div");
@@ -130,10 +148,24 @@ function AddNote(){
  notes.push(noteboard);
   saveNotes(notes);
   window.userInputName = document.getElementById('filename').value;
+  }
+  // **HANNIKA ADDED following when trying to resolve the missing data issue
+  
 
-}
+//  else {
+//   alert("Täytä puuttuvat kentät!");
+// }
+
+//   }
+  // HANNIKA ADDED FINISH **
+  
+
+
 
   subButton.addEventListener("click", () => {AddNote()});
+
+
+
 
 
 //delete note on double click

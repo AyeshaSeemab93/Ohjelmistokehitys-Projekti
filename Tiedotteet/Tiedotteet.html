@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <nav>
+  <!-- <nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkBtn">Menu</label>
     <ul class="title-nav">
@@ -31,7 +31,7 @@
         <li><a href="../HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
         <li><a>YHTEYDENOTTO </a></li>
     </ul>
-</nav>
+</nav> -->
 
   <!-- Navbar End -->
 
@@ -42,8 +42,8 @@
         <h3>Lukemattomia tiedotteita</h3>
         <div class="holder"><div id="notif" class="notification-num">5</div></div>
         <button class="button" onclick="ReadAll()">MERKITSE KAIKKI LUETUKSI</button>
-        <br>
-        <button>MERKITSE VALITUT LUETUKSI</button>
+        <!-- <br>
+        <button>MERKITSE VALITUT LUETUKSI</button> -->
     </section>
   <section class="box">
     <Section class="tiedote-box">
@@ -115,7 +115,7 @@
   <!-- </main> -->
 
   <!-- start Footer************************************** -->
-  <div class="section-footer">
+  <!-- <div class="section-footer">
     <div class="row for-queri-footer">
         <div class="col-md-5 color">
             <div class="row">
@@ -151,7 +151,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -182,6 +182,11 @@ function ReadAll(){
     circles.forEach(function(circle){
         circle.style.backgroundColor = "#DC7848";
     }) 
+    var elements = document.querySelectorAll(".tick-box");
+    elements.forEach(function(element){
+        element.textContent = "✔"
+    }
+    )
 }
 </script>
 </body>

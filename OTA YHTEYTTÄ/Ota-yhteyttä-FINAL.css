@@ -20,13 +20,22 @@
     color: var(--black);
     }
 
-      /* .vikailmoitus-box {
+      .vikailmoitus-box {
+        background-color: var(--orange);
+        padding: 1rem;
         display: flex;
         flex-basis: 0;
         flex-grow: 1;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
+        
+      } */
+      .vikailmoitus-inner-box {
+        width: 100%;
+        background-color: var(--orange);
+        padding: 1rem;
+        margin-bottom: 5rem;
         
       } */
       .vikailmoitus-inner-box {
@@ -277,6 +286,11 @@
        /* MOBILE */
 
  @media only screen and (max-width: 427px) {
+  
+  H1 {
+    margin: 0 0 2rem;
+  }
+  
   .vikailmoitus {
     margin: 0.5rem 0 0.5rem 0;
     width: 20rem;

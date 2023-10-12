@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YHTEISÖN ILMOITUSTAULU</title>
+    <link rel="stylesheet" href="./fontit-ja-värit.css">
+    <link rel="stylesheet" href="./header-footer.css">
+  <link rel="stylesheet" href="./ilmoitustaulu.css">
+  
+</head>
+
+
+<body>
+<section class="intro">
+  <h1>YHTEISÖN ILMOITUSTAULU</h1>
+  <h3>Foorumi, jossa voit kommunikoida naapureidesi kanssa</h3>
+  <p class="selitys">
+      Tervetuloa Yhteisönne ilmoitustaululle, digitaaliseen tilaan, jossa voit edistää naapurisuhteita ja käsitellä asuntoihin liittyviä asioita. Olitpa huolissasi, sinulla on ystävällinen pyyntö tai haluat vain olla yhteydessä naapuriisi, tämä taulu on sinun foorumisi. Jaa, yhdistä ja luo harmoninen elinympäristö. Äänelläsi on tässä väliä!
+   </p>
+</section>
+<!-- form alkaa -->
+<div action="" class="form-container">
+
+<div class="vasen-palsta">
+<label for="viestikenttä"><h3 class="kehote"required>Jätä viesti naapureillesi</h3></label>
+<br>
+<textarea name="" id="viestikenttä" cols="40" rows="13"required maxlength="450" placeholder="Enintään 450 merkkiä" ></textarea>
+<section class="button-container">
+  <input type="text" class="filename" id="filename" placeholder=”Nimesi”>
+  <button class="button" id="download">Julkaise</button>
+</section>
+</div>
+
+<div class="oikea-palsta">
+  <h3 class="valitseVäri">Valitse ilmoituksen väri aiheen mukaan</h3>
+  <label for="orange">
+
+   <input type="radio" id="orange" name="color" value="orange"> 
+    <!-- <span class="orange"></span> -->
+    <label for="orange" class="color-is-for">Kutsu</label>
+    <p class="color-explanation">Lenkkiseuraa, päiväkahvit, roskienkeruutalkoot. Kutsu naapurisi mukaan!</p>
+    </label>
+
+    <label for="blue">
+     
+      <input type="radio" id="blue" name="color" value="blue">
+      <!-- <span class="blue"></span> -->
+      <label for="blue" class="color-is-for">Ilmoitus</label>
+      <p class="color-explanation">Järjestätkö juhlat tai haluat varoittaa naapureitasi muusta meluhaitasta?</p>
+  </label>
+
+  <label for="light-blue">
+    <input type="radio" id="light-blue" name="color" value="light-blue">
+    <!-- <span class="light-blue"></span> -->
+    <label for="light-blue" class="color-is-for">Avunpyyntö</label>
+    <p class="color-explanation">Loppuiko suola kesken ruoanlaiton? 
+        Tarvitsetko lainaksi tikkaita tai ruuvimeisseliä? 
+        Tarvitsetko kantoapua? Ehkä naapurisi voivat auttaa.</p>
+</label>
+
+  <label for="pink">
+    <input type="radio" id="pink" name="color" value="pink">
+    <!-- <span class="pink"></span> -->
+    <label for="pink" class="color-is-for">Ystävällinen huomautus</label>
+    <p class="color-explanation">Yhdessäelo kerrostalossa voi joskus tuoda eteen haasteita. 
+        Jätä ystävällinen viesti, jossa kerrot toiveesi yhdessäelon helpottamiseksi.
+        </p>
+</label>
+
+</div>
+
+</div>
+<section class="placeholderContainer"> 
+  <div class="placeholderNotes"></div>
+</section>
+
+  <script>
+      const lappu = document.querySelector("textarea");
+      console.log("lappu: ", lappu);
+      const valinta = document.querySelectorAll("input[type=radio]");
+      console.log("valinta: ", valinta);
+
+      const saveButton = document.getElementById("download");
+      const noteboard = document.querySelector(".placeholderNotes");
+      let notes = getNotes() || [];
+      function updateNotesInLocalStorage() {
+            localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
+        }
+
+        function displayNotes() {
+            for (const note of notes) {
+                createAndDisplayNoteElement(note.text, note.name, note.color, note.opacity);
+            }
+        }
+
+        displayNotes(); // Display notes on page load
+
+        valinta.forEach((radio, index) => {
+            radio.addEventListener("click", () => {
+                changeColor(index + 1);
+            });
+        });
+
+        saveButton.addEventListener("click", () => {
+            const userInput = lappu.value;
+            const userInputName = document.querySelector('.filename').value;
+            const selectedColor = getSelectedColor();
+
+            const newNote = {
+                text: userInput,
+                name: userInputName,
+                color: selectedColor,
+                opacity: "0.8"
+            };
+
+            notes.unshift(newNote); // Add the new note to the beginning of the array
+            updateNotesInLocalStorage();
+            createAndDisplayNoteElement(newNote.text, newNote.name, newNote.color, newNote.opacity);
+
+            lappu.value = '';
+            document.querySelector('.filename').value = '';
+        })
+
+        function changeColor(color) {
+            lappu.style.opacity = "0.8";
+
+            switch (color) {
+                case 1:
+                    lappu.style.background = "#dc7848";
+                    break;
+                case 2:
+                    lappu.style.background = "#277bc0";
+                    break;
+                case 3:
+                    lappu.style.background = "#a7e7f6";
+                    lappu.style.opacity = "1";
+                    break;
+                case 4:
+                    lappu.style.background = "#E86594";
+                    break;
+            }
+        }
+
+        function getSelectedColor() {
+            for (let i = 0; i < valinta.length; i++) {
+                if (valinta[i].checked) {
+                    return getBackgroundColor(i + 1);
+                }
+            }
+            return getBackgroundColor(1); // Default to the first color if none selected
+        }
+
+        function getBackgroundColor(color) {
+            switch (color) {
+                case 1:
+                    return "#dc7848";
+                case 2:
+                    return "#277bc0";
+                case 3:
+                    return "#a7e7f6";
+                case 4:
+                    return "#E86594";
+                default:
+                    return "#dc7848"; // Default to the first color
+            }
+        }
+
+        function createAndDisplayNoteElement(text, name, color, opacity) {
+            const newNote = document.createElement("div");
+            const noteText = document.createElement("p");
+            const noteName = document.createElement("p");
+            newNote.classList.add("newNote");
+            noteText.classList.add("noteText");
+            noteName.classList.add("noteName");
+            noteText.textContent = text;
+            noteName.textContent = name;
+            newNote.appendChild(noteText);
+            newNote.appendChild(noteName);
+            noteboard.insertBefore(newNote, noteboard.firstChild); // Add the new note to the beginning
+            newNote.style.background = color;
+            newNote.style.opacity = opacity;
+        }
+
+        function getNotes() {
+            return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
+        }
+    </script>
+      
+    
+</body>
+</html>
+
+

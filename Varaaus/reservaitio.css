@@ -27,12 +27,12 @@ body {
   text-align: center;
 }
 .reservaition-box,
-.pesukone-box {
+.pesukone-box{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 300px;
-  background-color: var(--orange);
+  background-color: var(--blue);
   text-align: center;
   margin: 1rem;
   cursor: pointer;
@@ -41,14 +41,14 @@ body {
 .reservaition-box P {
   font-size: 30px;
 }
-.reservaition-box:hover ,
+.reservaition-box:hover,
 .pesukone-box:hover {
   background-color: var(--blue-box-1);
   box-shadow: 3px 6px 5px gainsboro;
 }
-
-
-
+.pesukone-box p {
+  font-size: 20px;
+}
 /* .pesukone-box h1 {
   font-size: 20px;
   margin: 1rem;
@@ -60,8 +60,6 @@ body {
 
 } */
 
-
-
 .pesukone_container {
   display: none;
 }
@@ -70,9 +68,11 @@ body {
   display: none;
 }
 
+
+
 .sauna-box {
   height: 100px;
-  background-color: var(--orange);
+  background-color: var(--blue);
   width: 300px;
   display: flex;
   justify-content: center;
@@ -80,6 +80,8 @@ body {
   text-align: center;
   margin: 1rem;
   cursor: pointer;
+  border-radius: 5px;
+  height: 4rem;
 }
 .sauna-box p {
   font-size: 20px;
@@ -93,7 +95,6 @@ body {
 }
 
 .omatvaraukset {
-  padding: 2rem;
   cursor: pointer;
 }
 .omatvaraukset P {
@@ -137,9 +138,7 @@ body {
   align-items: center;
   display: none;
 }
-/* .active{
-    display:flex;
-} */
+
 
 .modal-shadow {
   width: 100%;
@@ -177,17 +176,14 @@ body {
 
 /* modal-2****************************************** */
 
-.calendar-container {
-  width: 40%;
-  margin: 1rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
+
 
 .ative-calender {
   display: block;
+}
+
+.calendar-container{
+  display: none;
 }
 
 .modal-2 {
@@ -201,6 +197,11 @@ body {
 .active {
   display: block;
 }
+.active-calender{
+  display:block;
+}
+
+
 
 .modulBox-2 {
   display: flex;
@@ -221,92 +222,130 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .peruuta-btn {
   width: 50%;
   background-color: var(--blue-box);
-  padding: 1.4rem;
+  padding: 1rem;
   border: none;
   color: white;
   font-size: 1rem;
+  border-radius: 5px;
 }
 
 /* style calendar******************* */
-* {
-  box-sizing: border-box;
-}
-ul {
-  list-style-type: none;
-}
-body {
-  font-family: Verdana, sans-serif;
-}
 
-.month {
-  padding: 70px 25px;
+.calendar-box {
+  margin: 2rem 0px;
   width: 100%;
-  background: var(--orange);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.container-box-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 10px 0px;
 }
 
-.month ul {
-  margin: 0;
-  padding: 0;
+.btn-varaus-reset{
+  margin: 2rem;
+  /* font-size: 20px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--blue); */
 }
 
-.month ul li {
-  color: white;
+.btn-varaus-reset {
+  border-radius: 4px;
+  border: var(--blue);
+  padding: 0.6rem 2rem;
+  font-family: 'Poppins';
   font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  color: white;
+  background-color: var(--blue);
+  /* border-bottom: 1px solid black; */
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
 }
 
-.month .prev {
-  float: left;
-  padding-top: 10px;
+.bton-varaus-reset.active, .btn-varaus-reset:active {
+outline: 0;
+border: none;
+box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+.btn-varaus-reset.focus, .btn-varaus-reset:focus {
+outline: 0;
+border: none;
+}
+
+.box-day-color{
+  background-color: inherit !important;
+}
+
+
+
+.box-day {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: rgb(191, 191, 191);
+  padding: 15px 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.box-day span {
+  font-size: 18px;
   cursor: pointer;
 }
 
-.month .next {
-  float: right;
-  padding-top: 10px;
+.time button:hover {
+  background-color: rgb(211, 221, 229);
 }
 
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ddd;
+.time {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
+.area-7 {
+  grid-area:4/2/5/3;
+}
+.date-box {
+  font-size: 20px;
+  padding: 10px 15px;
+  border: none;
+  background-color: inherit;
+}
+.active-day {
+  background-color: #ca8d70;
 }
 
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
+
+.time button {
+  font-size: 15px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  background-color: inherit;
+  border: 1px solid rgb(215, 215, 215);
 }
 
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size: 12px;
-  color: #777;
-}
 
-.days li .active {
-  padding: 5px;
-  background: var(--orange);
-  color: white !important;
-}
 
 /* Add media queries for smaller screens */
 @media screen and (max-width: 720px) {

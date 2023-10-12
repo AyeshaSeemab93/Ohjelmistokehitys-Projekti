@@ -1,13 +1,23 @@
 const lappu = document.body.querySelector("textarea");
 
-console.log(lappu);
+console.log("lappu: ", lappu);
 
 const valinta = document.body.querySelectorAll("input");
 
-console.log(valinta);
+console.log("valinta: ", valinta);
+
+//previous notes appear on loading the page (gettNotes Method)
+// getNotes().forEach(note => {
+//   // const noteElement = createNoteElement(note.id, note.content )
+//   //insert these notes before button(addNoteButton)
+//   noteElement.insert(note);
+// });
 
 
-
+// calling local storage api to bring all the notes
+function getNotes(){
+  return JSON.parse(localStorage.getItem("stickynotes-notes")|| "[]" );
+}
 
 
 var str,
@@ -19,7 +29,7 @@ else {
     str = null;
 }
 
-console.log(str);
+console.log("str: ", str);
 
 
 
@@ -74,7 +84,7 @@ function getInput() {
 
   window.userInput = document.getElementById('viestikenttä').value;
   window.userInputName = document.querySelector('.filename').value;
-  console.log(userInput);
+  console.log("userInput: ", userInput);
   console.log(userInputName);
   // alertUserInput();
 }
@@ -93,14 +103,14 @@ subButton.addEventListener("click", getInput);
 
 
 
-    // PUBLISH NOTE
-
-  validateTextBox();
+ function saveNotes(notes){
+      localStorage.setItem("stickynotes-notes", JSON.stringify(notes) );
+    }
+    
+// PUBLISH NOTE
+function AddNote(){
   const noteboard = document.body.querySelector(".placeholderNotes");
-  console.log(noteboard);
-
-  subButton.addEventListener("click", () => {
-
+  console.log("noteboard: ", noteboard);
   const newNote = document.createElement("div");
   const noteText = document.createElement("p");
   const noteName = document.createElement("p");
@@ -115,9 +125,26 @@ subButton.addEventListener("click", getInput);
   newNote.style.background = lappu.style.background;
   newNote.style.opacity = "0.8";
 
+
+ const notes = getNotes();
+ notes.push(noteboard);
+  saveNotes(notes);
   window.userInputName = document.getElementById('filename').value;
 
-});
+}
+
+  subButton.addEventListener("click", () => {AddNote()});
+
+
+//delete note on double click
+// element.addEventListener("dblclick", ()=>{
+//   const doDelete = confirm("Are you sure you want to delete this note?");
+//   if(doDelete){
+//     deleteNote(id,element);
+//   }
+//   })
+//   return element;
+// }
 
 
 // Make radio required

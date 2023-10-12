@@ -47,6 +47,7 @@ li a {
 }
 a:hover{
   color: var(--purple);
+  text-decoration: none;
 }
 .linkki-iso {
   font-size: 26px;
@@ -64,11 +65,12 @@ a:hover{
   text-transform: uppercase;
   border-bottom: 1px solid black;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--black);
   text-align: center;
   list-style: none;
 }
+
 
 .button {
   border-radius: 4px;
@@ -95,6 +97,7 @@ a:hover{
   outline: 0;
   border: none;
 }
+
 
 .slogan {
   color: var(--blue);

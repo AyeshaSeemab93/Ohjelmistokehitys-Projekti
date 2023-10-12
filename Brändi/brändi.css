@@ -18,6 +18,7 @@
     text-align: center;
   }
 
+
   .visio {
     padding: 0 10rem;
   }
@@ -37,6 +38,9 @@
   
   .visio-p {
     margin: 0 0 5rem;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: center;
   }
 
   .arvo-container {
@@ -88,12 +92,29 @@
     width: 18rem;
   }
 
+
+  .käyttäjä-teksti {
+    /* font-size: 1.3rem; */
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 26px;
+    font-style: italic;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: center;
+    line-height: 2.7rem;
+    font-weight: 100;
+  }
+
   .heading-creators {
-    margin-block-end: 3rem;
+    margin: 8rem 0 1rem;
+    padding-top: 6rem;
+    font-size: 32px;
   }
   .creators-section {
     width: 100%;
     margin-block-end: 5rem;
+    background-color: var(--orange);
   }
   .creators {
     display: flex;
@@ -101,7 +122,7 @@
     flex-wrap: wrap;
     flex-grow: 1;
     flex-basis: 0;
-    padding: 1rem 0 1rem 1.8rem;
+    padding: 1rem 0 3rem 1.8rem;
     margin: 0 3rem;
     border-radius: 5px;
     justify-content: center;
@@ -112,7 +133,7 @@
   }
 
   .person {
-    width: 18rem;
+    width: 20rem;
     font-size: 18px;
     text-align: center;
     background-color: var(--blue);
@@ -188,14 +209,22 @@
       font-size: 25px;
     }
 
-    .heading-creators {
-      margin: 2rem 0 2rem;
-    }
-
     .arvo-container {
       padding: 0;
       height: 18rem;
       margin-bottom: 2rem;
+    }
+
+    .käyttäjä-teksti {
+      text-align: center;
+      margin: 3rem 0;
+      font-size: 20px;
+      font-style: italic;
+      padding: 0 10rem;
+      display: flex;
+      justify-content: center;
+      line-height: 2rem;
+      font-weight: 100;
     }
     .arvo-container h1 {
       padding-top: 2.5rem;
@@ -216,16 +245,22 @@
       width: 15rem;
     }
     .creators-section {
-      margin-block-end: 2rem;
+      margin-block-end: 4rem;
+      padding-bottom: 2rem;
       max-width: 100%;
     }
+    .heading-creators {
+      margin: 2rem 0 2rem;
+      padding-top: 3rem;
+    }
+
   
     .creators {
       margin: 0;
       padding: 1rem 0;
     }
     .person {
-      width: 10rem;
+      width: 11rem;
       margin: 0 0.2rem;
     }
     .headshot {
@@ -260,19 +295,32 @@
       max-resolution: 2rem 0 0;
     }
     .arvo-container h1 {
-      padding: 2.5rem 2.5rem 1rem;
+      padding: 2.5rem 4rem 1rem;
+      display: flex;
+      justify-content: center;
     }
 
     .arvo-container {
       height: 32rem;
       width: 426px;
     }
+ 
     .arvot-container {
       width: 20rem;
       padding: 0.5rem 2rem;
       margin: 1rem;
+     
     }
+.käyttäjä-teksti {
+  padding: 2rem;
+  font-size: 20px;
+}
 
+
+.visio {
+  padding: 0;
+  margin: 0;
+}
     .flex {
       flex-direction: column;
       align-items: center;

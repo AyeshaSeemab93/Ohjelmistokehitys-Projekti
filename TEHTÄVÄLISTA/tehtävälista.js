@@ -28,9 +28,10 @@ function createNoteElement(id, content){
   element.classList.add("note");
   element.value = content;
   element.placeholder = "Add Note";
-  var colors = ['#b1cdd6', '#eed594', '#ec99ae'];
-  var random_color = colors[Math.floor(Math.random() * colors.length)];
-  element.style.backgroundColor = random_color;
+    var colors = ['#277bc0', '#f4b63f', '#dc7848', '#fdf5d3', '#a7e7f6'];
+//if want to give random color from array:
+   var random_color = colors[Math.floor(Math.random() * colors.length)];
+   element.style.backgroundColor = random_color;
   element.style.boxShadow = "0px 10px 24px 0px rgba(0,0,0,0.65)";
 
   //when there is any "change in the text, update notes"
@@ -38,11 +39,10 @@ function createNoteElement(id, content){
 
   //delete note on double click
   element.addEventListener("dblclick", ()=>{
-  const doDelete = confirm("Are you sure you want to delete this sticky note?");
+  const doDelete = confirm("Are you sure you want to delete this note?");
   if(doDelete){
     deleteNote(id,element);
   }
-
   })
   return element;
 }

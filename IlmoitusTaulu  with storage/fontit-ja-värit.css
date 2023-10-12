@@ -1,7 +1,7 @@
 /* FONTIT */
 
 h1 {
-    font-size: 32px;
+    font-size: 26px;
     text-transform: uppercase;
     font-weight: 500;
   }
@@ -31,10 +31,6 @@ h2 {
   li a {
     color: var(--black);
   }
-
-  a:hover{
-    color: var(--purple);
-  }
   
   .linkki-iso {
     font-size: 26px;
@@ -50,7 +46,7 @@ h2 {
     text-transform: uppercase;
     border-bottom: 1px solid black;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--black);
   }
 
@@ -69,16 +65,25 @@ h2 {
         text-align: center;
         box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
     }
-  
+
     .button.active, .button:active {
+
       outline: 0;
+
       border: none;
+
       box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+
    }
+
     .button.focus, .button:focus {
+
       outline: 0;
+
       border: none;
+
    }
+  
 
   .slogan {
     color: var(--blue);
@@ -107,11 +112,4 @@ h2 {
     }
       
 
-    @media only screen and (max-width: 769px) {
-  
-      .button {
-        padding: 0.4rem 1.7rem;
-        font-size: 18px;
-
-    }
-  }
+   

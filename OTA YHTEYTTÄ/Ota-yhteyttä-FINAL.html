@@ -10,8 +10,9 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800">
 
-  <link rel="stylesheet" href="../Varaaus/fontit-ja-värit.css">
-  <link rel="stylesheet" href="../Varaaus/header-footer.css">
+  <link rel="stylesheet" href="../Style/reset.css">
+  <link rel="stylesheet" href="../Style/fontit-ja-värit.css">
+  <link rel="stylesheet" href="../Style/header-footer.css">
   <link rel="stylesheet" href="../Varaaus/layout.css">
   <link rel="stylesheet" href="./Ota-yhteyttä-FINAL.css">
 
@@ -20,7 +21,25 @@
 </head>
 
 <body>
+<!-- ==================================Start Header========================= -->
+<nav>
 
+  <input type="checkbox" id="check">
+  <label for="check" class="checkBtn">Menu</label>
+  <ul class="title-nav">
+    <li> <a href="../Tiedotteet/Tiedotteet.html">TIEDOTTEET </a> </li>
+    <li> <a href="../Brändi/HappyNest-Brändi.html"> MEISTÄ</a> </li>
+    <li> <a href="../TEHTÄVÄLISTA/tehtävälista.html">TEHTÄVÄT</a> </li>
+    <li> <a href="../YHTEISÖN ILMOITUSTAULU copy/ilmoitustaulu.html">ILMOITUSTAULU </a> </li>
+    <li><a href="../mainPage/mainpage.html"><img src="../Logos/HappyNest_logo.png" class="logo"></a></li>
+    <li> <a href="../Varaaus/reservaition.html">VARAUSKALENTERI </a> </li>
+    <li> <a href="../HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ </a> </li>
+    <li> <a href="../OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO </a> </li>
+    <li> <a href="../OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">Log Out </a> </li>
+
+  </ul>
+</nav>
+<!-- ==================================Finish Header========================= -->
 
 
   
@@ -97,6 +116,37 @@
       <p>Puhelimitse palvelemme arkisin klo 9-15</p>
         <p class="viimeinen-kappale"><img class="ikoni" src="../icons/phone-solid.svg" alt="">+358 2 123 4567</p>
     </section>
+
+    <!-- ===============================start Footer=============================== -->
+  <div class="section-footer">
+    <div class="row for-queri-footer">
+      <div class="col-md-5 color">
+        <div class="row">
+          <ul class="title-footer">
+            <li><a href="./mainpage.html">KOTI</a></li>
+            <li><a href="./Tiedotteet/Tiedotteet.html">TIEDOTTEET</a></li>
+            <li><a href="./TEHTÄVÄLISTA/tehtävälista.html">TEHTÄVÄT</a></li>
+            <li><a href="./YHTEISÖN ILMOITUSTAULU copy/ilmoitustaulu.html">ILMOITUSTAULU</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 my-sm-5 text-center img-section-footer">
+        <a href="./mainpage.html"><img class="img-footer" src="../Logos/HappyNest_logo.png" alt=""></a>
+      </div>
+      <div class="col-md-5 color creat-margin-right">
+        <div class="row">
+          <ul class="title-footer">
+            <li><a href="./Brändi/HappyNest-Brändi.html">MEISTÄ</a></li>
+            <li><a href="./HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ</a></li>
+            <li><a href="./Varaaus/reservaition.html">VARAUKSET</a></li>
+            <li><a href="./OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ===============================start Footer=============================== -->
 
 
 

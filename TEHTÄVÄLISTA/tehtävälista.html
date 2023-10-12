@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YHTEISÖN ILMOITUSTAULU</title>
 
-  <link rel="stylesheet" href="../Varaaus/fontit-ja-värit.css">
-  <link rel="stylesheet" href="../Varaaus/header-footer.css">
+  <link rel="stylesheet" href="../Style/reset.css">
+  <link rel="stylesheet" href="../Style/fontit-ja-värit.css">
+  <link rel="stylesheet" href="../Style/header-footer.css">
   <link rel="stylesheet" href="../Varaaus/layout.css">
   <link rel="stylesheet" href="./tehtävälista.css">
   <script src="./tehtävälista.js" defer></script>
@@ -21,21 +21,25 @@
 
 <body>
 
+  <!-- ==================================Start Header========================= -->
   <nav>
 
     <input type="checkbox" id="check">
     <label for="check" class="checkBtn">Menu</label>
     <ul class="title-nav">
-      <li> <a>Koti </a> </li>
-      <li> <a>Tiedottet </a> </li>
-      <li> <a>Dokomenti </a> </li>
-      <li><img src="../Logos/HappyNest_logo.png" class="logo"></li>
-      <li> <a>Koti </a> </li>
-      <li> <a>Tiedottet </a> </li>
-      <li> <a>Dokomenti </a> </li>
+      <li> <a href="../Tiedotteet/Tiedotteet.html">TIEDOTTEET </a> </li>
+      <li> <a href="../Brändi/HappyNest-Brändi.html"> MEISTÄ</a> </li>
+      <li> <a href="../TEHTÄVÄLISTA/tehtävälista.html">TEHTÄVÄT</a> </li>
+      <li> <a href="../YHTEISÖN ILMOITUSTAULU copy/ilmoitustaulu.html">ILMOITUSTAULU </a> </li>
+      <li><a href="../mainPage/mainpage.html"><img src="../Logos/HappyNest_logo.png" class="logo"></a></li>
+      <li> <a href="../Varaaus/reservaition.html">VARAUSKALENTERI </a> </li>
+      <li> <a href="../HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ </a> </li>
+      <li> <a href="../OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO </a> </li>
+      <li> <a href="../OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">Log Out </a> </li>
 
     </ul>
   </nav>
+  <!-- ==================================Finish Header========================= -->
 
 
 
@@ -50,90 +54,41 @@
   <div id="app">
     <button type="button" class="add-note">+</button>
   </div>
-  <!-- start footer -->
-
-
+  
+  <!-- ===============================start Footer=============================== -->
   <div class="section-footer">
-
     <div class="row for-queri-footer">
-
-
-
-        <div class="col-md-5 color">
-
-            <div class="row">
-
-                <ul class="title-footer">
-
-                    <li>KOTI</li>
-
-                    <li>TIEDOTTEET</li>
-
-                    <li>DOKUMENTIT</li>
-
-                </ul>
-
-            </div>
-
-            <div class="row mt-3">
-
-                <ul class="title-footer">
-
-                    <li>HAPPYNESTIN VISIO</li>
-
-                    <li>MUUTA</li>
-
-                </ul>
-
-            </div>
-
+      <div class="col-md-5 color">
+        <div class="row">
+          <ul class="title-footer">
+            <li><a href="./mainpage.html">KOTI</a></li>
+            <li><a href="./Tiedotteet/Tiedotteet.html">TIEDOTTEET</a></li>
+            <li><a href="./TEHTÄVÄLISTA/tehtävälista.html">TEHTÄVÄT</a></li>
+            <li><a href="./YHTEISÖN ILMOITUSTAULU copy/ilmoitustaulu.html">ILMOITUSTAULU</a></li>
+          </ul>
         </div>
-
-
-
-        <div class="col-md-2 my-sm-5 text-center img-section-footer"><img class="img-footer"
-
-                src="/Logos/HappyNest_logo.png" alt="">
-
+      </div>
+      <div class="col-md-2 my-sm-5 text-center img-section-footer">
+        <a href="./mainpage.html"><img class="img-footer" src="../Logos/HappyNest_logo.png" alt=""></a>
+      </div>
+      <div class="col-md-5 color creat-margin-right">
+        <div class="row">
+          <ul class="title-footer">
+            <li><a href="./Brändi/HappyNest-Brändi.html">MEISTÄ</a></li>
+            <li><a href="./HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ</a></li>
+            <li><a href="./Varaaus/reservaition.html">VARAUKSET</a></li>
+            <li><a href="./OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO</a></li>
+          </ul>
         </div>
-
-
-
-        <div class="col-md-5 color creat-margin-right">
-
-            <div class="row">
-
-                <ul class="title-footer">
-
-                    <li>VARAUKSET</li>
-
-                    <li>ILMOITUSTAULU</li>
-
-                    <li><a href="./Lomakeet/Huoltopyynto-FINAL.html">Huoltopyyntö</a></li>
-
-                </ul>
-
-            </div>
-
-            <div class="row mt-3">
-
-                <ul class="title-footer">
-
-                    <li><a href="./Lomakeet/Ota-yhteyttä-FINAL.html">Yhteydenotto</a></li>
-
-                    <li>MUUTA</li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
+      </div>
     </div>
+  </div>
+  <!-- ===============================start Footer=============================== -->
 
-    </div>
 
-<!-- end footer -->
+
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 crossorigin="anonymous"></script>

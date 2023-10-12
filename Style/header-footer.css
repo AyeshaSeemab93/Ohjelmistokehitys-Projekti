@@ -52,11 +52,15 @@ nav {
   font-size: 20px;
 }
 .title-nav li a {
-  font-size: 15px;
+  font-size: 13px;
 }
 .title-nav li a:hover {
   border-bottom: 2px solid white;
   transition: all 0.8ms ease-in;
+}
+
+.title-footer li a{
+  font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -113,8 +117,7 @@ nav {
 }
 
 .title-footer li {
-  font-size: 15px;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .color {
@@ -136,4 +139,9 @@ nav {
   .title-footer li {
     font-size: 12px;
   }
+
+  .title-footer li a{
+    font-size: 10px;
+  }
+
 }

@@ -92,7 +92,7 @@
       const noteboard = document.querySelector(".placeholderNotes");
       let notes = getNotes() || [];
       function updateNotesInLocalStorage() {
-            localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
+            localStorage.setItem("notes", JSON.stringify(notes));
         }
 
         function displayNotes() {
@@ -110,10 +110,11 @@
         });
 
         saveButton.addEventListener("click", () => {
-            const userInput = lappu.value;
-            const userInputName = document.querySelector('.filename').value;
-            const selectedColor = getSelectedColor();
+        const userInput = lappu.value;
+        const userInputName = document.querySelector('.filename').value;
+        const selectedColor = getSelectedColor();
 
+        if (userInput.trim() !== "" || userInputName.trim() !== "") {
             const newNote = {
                 text: userInput,
                 name: userInputName,
@@ -122,12 +123,15 @@
             };
 
             notes.unshift(newNote); // Add the new note to the beginning of the array
-            updateNotesInLocalStorage();
+            updateNotesInLocalStorage(notes);
             createAndDisplayNoteElement(newNote.text, newNote.name, newNote.color, newNote.opacity);
 
             lappu.value = '';
             document.querySelector('.filename').value = '';
-        })
+        } else {
+            alert("Täytä puuttuvat kentät!");
+        }
+    });
 
         function changeColor(color) {
             lappu.style.opacity = "0.8";
@@ -188,13 +192,23 @@
             noteboard.insertBefore(newNote, noteboard.firstChild); // Add the new note to the beginning
             newNote.style.background = color;
             newNote.style.opacity = opacity;
-            
+            newNote.addEventListener("dblclick", () => {
+            const doDelete = confirm("Are you sure you want to delete this sticky note?");
+            if (doDelete) {
+                deleteNote(newNote);
+            }
+        });
         }
-        
 
         function getNotes() {
-            return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
+            return JSON.parse(localStorage.getItem("notes") || "[]");
         }
+        function deleteNote(newNote) {
+        console.log("Deleting Note");
+        const targetNotes = notes.filter(note => note !== newNote);
+        noteboard.removeChild(newNote);
+        updateNotesInLocalStorage(targetNotes);
+    }
     </script>
       
     

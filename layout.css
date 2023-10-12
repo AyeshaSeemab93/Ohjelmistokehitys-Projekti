@@ -45,6 +45,9 @@
 .section-2 {
   margin: 1rem 0;
 }
+a:hover {
+  text-decoration:none;
+}
 
 
 
@@ -55,6 +58,10 @@
   flex-direction: column;
   margin: 10px 20px;
   box-shadow: 0 3px 7px 3px rgb(131, 130, 130);
+}
+
+.box-section-2 img:hover{
+  opacity: 0.30;
 }
 .box-section {
   display: flex;

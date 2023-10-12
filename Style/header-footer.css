@@ -9,6 +9,10 @@ ul li {
   margin: 0 1rem;
 }
 
+.title-nav li {
+  font-size: 13px;
+}
+
 nav {
   width: 100%;
   background-color: var(--yellow);

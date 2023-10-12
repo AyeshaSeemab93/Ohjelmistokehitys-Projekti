@@ -4,6 +4,7 @@ label, .file {
   line-height: 1.5rem;
   text-align: center;
   font-family: Poppins;
+  font-family: Poppins;
 }
 .linkki-huolto {
   color: var(--black);
@@ -12,6 +13,9 @@ label, .file {
   cursor: pointer;
   width: 30rem;
 
+}
+  width: 30rem;.lataaKuva {
+  padding-right: 1rem;
 }
 
 .lataaKuva {
@@ -56,6 +60,7 @@ label {
 
 .asia-koskee {
   text-align: right;
+
 }
 
 .tiedot > * {
@@ -104,7 +109,7 @@ textarea {
   border-radius: 5px;
   width: 30rem;
   font-family: "Poppins";
-  padding: 0.5rem 1rem;
+  padding-left: 1rem;
 }
 .kenttä {
   height: 1.9rem;
@@ -145,7 +150,7 @@ textarea.focus, textarea:focus {
 }
 
 .kyllä-ei {
-       margin: 1rem 0;
+       margin: 1rem 0.2rem 0 2.5rem;
        width: 30rem;
        text-align: center;
     }
@@ -201,6 +206,13 @@ textarea.focus, textarea:focus {
 }
 
 
+.valinnat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -210,6 +222,7 @@ textarea.focus, textarea:focus {
     display: none;
   }
 }
+
 
 /* TABLET */
 
@@ -222,6 +235,10 @@ textarea.focus, textarea:focus {
 
     margin: 3rem 15rem;
   }
+
+ label {
+  font-size: 16px;
+ }
 
   .tiedot {
     display: flex;
@@ -249,7 +266,7 @@ textarea.focus, textarea:focus {
   }
 
   .button-container {
-  margin-left: 10.5rem;
+    margin-left: 10.5rem;
   padding-top: 0;
 }
 }
@@ -305,9 +322,11 @@ textarea {
   width: 15rem;
 }
 
-.kyllä-ei {
-  margin: 0;
+.ei {
+  margin: 0rem 1.5rem 0rem 0rem;
 }
+
+
 
 label {
   padding: 10px 1rem;

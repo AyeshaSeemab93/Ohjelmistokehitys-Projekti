@@ -32,8 +32,11 @@
             <li> <a href="./Varaaus/reservaition.html">VARAUSKALENTERI </a> </li>
             <li> <a href="./HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ </a> </li>
             <li> <a href="./OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO </a> </li>
-
+            <a class="button-container" href="./index.html">
+                <button id="logoutButton" class="button">Logout</button>
+            </a>
         </ul>
+    
     </nav>
 
 
@@ -220,7 +223,24 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                 crossorigin="anonymous"></script>
-
+                <script>
+                    document.getElementById("logoutButton").addEventListener("click", function(event) {
+                        // Prevent the default anchor tag behavior
+                        event.preventDefault();
+                        
+                        // Display a confirmation message
+                        var confirmLogout = confirm("Are you sure you want to logout?");
+                        
+                        if (confirmLogout) {
+                            alert("Logged out successfully!");
+                            window.location.href = "./index.html"; // Change to the appropriate logout page.
+                        } else {
+                            // If the user cancels the logout, you stay on the current page.
+                            // No need for additional action here.
+                        }
+                    });
+                </script>
 </body>
+
 
 </html>

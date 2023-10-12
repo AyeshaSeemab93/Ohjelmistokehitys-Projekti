@@ -24,6 +24,12 @@ H3 {
 
 .selitys {
   margin: 0 5rem 2rem;
+  width: 70rem;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* FORM */
@@ -35,6 +41,7 @@ H3 {
   flex-basis: 0;
   flex-grow: 1;
   padding: 4rem 4rem;
+  justify-content: center;
 }
 
 .form-container > * {
@@ -70,6 +77,18 @@ button {
   margin-left: 4rem;
   border: none;
 }
+
+.button.active, .button:active {
+  outline: 0;
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.button.focus, .button:focus {
+  outline: 0;
+  border: none;
+}
+
 .kehote {
   margin-bottom: 2rem;
 }
@@ -80,10 +99,32 @@ button {
   border-radius: 5px;
      box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
      border: none;
-   
-    
+}
+input.active, input:active {
+  outline: 0;
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
 }
 
+input.focus, input:focus {
+  outline: 0;
+  border: none;
+}
+
+ .oikea-palsta {
+  width: 50rem;
+ }
+
+textarea.active, textarea:active {
+  outline: 0;
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+textarea.focus, textarea:focus {
+  outline: 0;
+  border: none;
+}
 .oikea-palsta {
   padding-top: 4rem;
 }
@@ -101,9 +142,7 @@ button {
   margin: 1rem 0;
 }
 
-h4{
-  margin-bottom: 1.5rem;
-}
+
 
 
 /* RADIO BUTTONS STYLE */
@@ -169,26 +208,125 @@ input[type='radio'] {
 /* END RADIO BUTTON */
 
 .placeholderContainer {
+  width: 100%;
+  margin: 0 10rem;
   display: flex;
   justify-content: center;
+
 }
 
 .placeholderNotes {
+  margin: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
- justify-content: center;
- align-items: center;
-
+  flex-grow: 1;
+  flex-basis: 0;
+  /* justify-content: center; */
 }
+
+
+
 .newNote{
   text-align: left;
-  width: calc(33.33% - 2rem);
-  width: 25rem; 
-  height: 25rem; 
-  margin: 2.5rem; 
+  width: 30rem;
+  height: 30rem;
+  margin: 1rem;
   padding: 2rem;
-  box-shadow: 0 0 17px rgba(0,0,0,0.55);
+  /* display: grid; */
+}
 
-  
+
+
+
+@media only screen and (max-width: 769px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  .selitys {
+   width: 40rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ .kehote {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  /* text-align: center; */
+ }
+
+ .oikea-palsta {
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+ }
+
+ .placeholderContainer {
+  margin: 0rem;
+ }
+ .newNote {
+  width: 20rem;
+  height: 20rem;
+ }
+}
+
+@media only screen and (max-width: 427px) {
+
+  H1 {
+    margin-top: 2rem;
+  }
+  .placeholderContainer{
+    margin: 0 9rem;;
+  }
+
+  .newNote {
+    height: 25rem;
+  width: 25rem;
+  }
+
+  .selitys {
+    width: 22rem;
+    margin-bottom: 0;
+  }
+
+  .form-container {
+    align-items: center;
+  }
+
+ .form-container > * {
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+  #viestikenttä {
+    width: 24rem;
+    height: 24rem;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    margin: 2rem 0;
+  }
+
+  .oikea-palsta {
+    width: 25rem;
+  }
+
+  .placeholderContainer {
+    margin: 0;
+  }
+  .newNote {
+    width: 24rem;
+    height: 24rem;
+  }
 }

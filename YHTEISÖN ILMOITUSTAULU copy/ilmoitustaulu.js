@@ -134,9 +134,94 @@ subButton.addEventListener("click", getInput);
 // STORING DATA
 
 localStorage.setItem('userInput','userInputName');
+<<<<<<< HEAD
 
 localStorage.getItem('userInput','userInputName');
 
+// localStorage.removeItem('userInput','userInputName');
+// localStorage.clear();
+
+const getTodos = () => {
+  let todos;
+  if(localStorage.getItem('todos') === null){
+      todos = [];
+  }else {
+      todos = JSON.parse(localStorage.getItem('todos'));
+  }
+  return todos;
+}
+
+const saveTodos = inputData => {
+  const todos = getTodos();
+  todos.push(inputData);
+  localStorage.setItem('todos', JSON.stringify(todos));
+}
+
+saveTodos(input.value);
+
+const addTodos = e => {
+  e.preventDefault();
+
+  let li = document.createElement('li');
+  li.textContent =  input.value;
+  saveTodos(input.value);
+  todosUl.appendChild(li);
+  input.value = '';
+}
+
+const deleteTodos = (todos, e) => {
+  const targetLi = todos.indexOf(e.target.textContent);
+  todos.splice(targetLi, 1);
+  localStorage.setItem('todos', JSON.stringify(todos));
+}
+=======
+>>>>>>> 36fb100 (required fields and radio button function added)
+
+localStorage.getItem('userInput','userInputName');
+
+<<<<<<< HEAD
+//   const notes = getNotes();  
+//   notes.push(userInput, userInputName);     //TARVII onclick?   noteObject?
+//   saveNotes(notes); 
+
+
+// function getNotes(){
+//   return JSON.parse(localStorage.getItem("stickynotes-notes")|| "[]" );
+// }
+
+// function saveNotes(notes){
+//   localStorage.setItem("stickynotes-notes", JSON.stringify(notes) );
+// }
+
+
+
+function getNotes(){
+  return JSON.parse(localStorage.getItem("stickynotes-notes")|| "[]" );
+}
+
+
+function saveNotes(notes){
+  localStorage.setItem("stickynotes-notes", JSON.stringify(notes) );
+}
+
+//adding new note to the existing array of notes
+function addNote(){
+//get the existing array and add into it
+const notes = getNotes();
+//creating new note
+const noteObject = {
+  id:  Math.floor(Math.random()*1000), //generating random id
+  content: "" //default content is empty string
+};
+//call the fucntion to create elements for it
+const noteElement = createNoteElement(noteObject.id, noteObject.content);
+//insert new note before button(addNoteButton)
+notesContainer.insertBefore(noteElement, addNoteButton);
+
+notes.push(noteObject);
+saveNotes(notes);
+}
+=======
 // localStorage.removeItem('userInput','userInputName');
 // localStorage.clear();
 
@@ -188,6 +273,7 @@ const deleteTodos = (todos, e) => {
 //   localStorage.setItem("stickynotes-notes", JSON.stringify(notes) );
 // }
 
+>>>>>>> 36fb100 (required fields and radio button function added)
 
 
 // Make radio required

@@ -76,7 +76,7 @@ a:hover{
   font-family: "Poppins";
   font-size: 20px;
   text-transform: uppercase;
-  color: white;
+  color: var(--white);
   background-color: var(--blue);
   border-bottom: 1px solid black;
   cursor: pointer;

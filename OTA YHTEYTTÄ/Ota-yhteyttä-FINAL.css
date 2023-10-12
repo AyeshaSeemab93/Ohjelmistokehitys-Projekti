@@ -21,6 +21,7 @@
     }
 
       /* .vikailmoitus-box {
+      /* .vikailmoitus-box {
         display: flex;
         flex-basis: 0;
         flex-grow: 1;
@@ -277,6 +278,11 @@
        /* MOBILE */
 
  @media only screen and (max-width: 427px) {
+  
+  H1 {
+    margin: 0 0 2rem;
+  }
+  
   .vikailmoitus {
     margin: 0.5rem 0 0.5rem 0;
     width: 20rem;

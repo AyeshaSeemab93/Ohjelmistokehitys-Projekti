@@ -112,9 +112,11 @@ a:hover{
   --yellow: #f4b63f;
   --orange: #dc7848;
   --beige: #fdf5d3;
-  --blue-box: #407abb;
+  /* --blue-box: #407abb; */
   --blue-box-1: #a7e7f6;
   --black: #212121;
+  --purple: #ad5fc9;
+  --pink: #E86594;
 }
 
 body {

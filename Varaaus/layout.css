@@ -52,6 +52,14 @@
   margin: 10px 20px;
   box-shadow: 0 3px 7px 3px rgb(131, 130, 130);
 }
+.box-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 20px;
+  box-shadow: 0 3px 7px 3px rgb(131, 130, 130);
+}
 
 .box-image {
   height: 400px;
@@ -75,15 +83,15 @@
 }
 
 .image {
-  height: 410px;
+  height: 400px;
   background-size: 300px;
   border-radius: 10px;
   position: relative;
 }
 
-.image:hover {
+/* .image:hover {
   visibility: hidden;
-}
+} */
 
 
 .teksti:hover {
@@ -106,21 +114,21 @@ position: relative;
 
   
 }
-.imageWrapper:hover p {
-  /* display: unset; */
+/* .imageWrapper:hover p {
+
   font-size: 26px;
   text-transform: uppercase;
-  /* border-bottom: 1px solid black; */
+ 
   cursor: pointer;
   text-decoration: underline;
   color: var(--black);
   font-family: poppins;
   font-weight:100;
-}
+} */
 
-.image:hover {display:none;}
+/* .image:hover {display:none;} */
 
-.box-section-2:hover {
+.blue:hover {
   background-color: var(--blue-box-1);
   box-shadow: 3px 6px 5px gainsboro;
 }

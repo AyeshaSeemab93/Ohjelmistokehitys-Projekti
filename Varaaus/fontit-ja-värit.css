@@ -65,7 +65,7 @@ a:hover{
   text-transform: uppercase;
   border-bottom: 1px solid black;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--black);
   text-align: center;
   list-style: none;

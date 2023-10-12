@@ -10,7 +10,7 @@
 }
 
 body{
-  margin: 20px;
+  margin: 0px;
   background-color: var(--beige);
   text-align: center;
 }
@@ -94,6 +94,7 @@ button {
 }
 
 #viestikenttä {
+  height: 450px;
   padding: 2.5rem 2.5rem;
   font-size: 20px;
   border-radius: 5px;

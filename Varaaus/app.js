@@ -78,7 +78,7 @@ showReservaition.forEach((day) => {
       divElem.className = "omat-box";
   
       let h2Elem = document.createElement("h2");
-      h2Elem.innerHTML = 'PYYKKITUA 1'
+      h2Elem.innerHTML = 'PYYKKITUPA 1'
   
       let pday = document.createElement("p");
       pday.innerHTML = `PÄIVÄ: ${today}`;

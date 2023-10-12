@@ -8,7 +8,6 @@
 }
 
 body{
-  margin: 20px;
   background-color: var(--beige);
   text-align: center;
 }
@@ -54,7 +53,7 @@ p{
  
 }
 .add-note{
-  height: 200px;
+  height: 350px;
   border: none;
   outline: none;
   background: rgba(0,0,0,0.1);
@@ -73,3 +72,21 @@ p{
 .container-box{
   margin-top: 3rem;
 }
+
+.note.active, .note:active, .add-note.active, .add-note:active  {
+  outline: 0;
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+ 
+
+ 
+
+.note.focus, .note:focus .add-note.focus, .add-note:focus {
+  outline: 0;
+  border: none;
+}
+
+
+

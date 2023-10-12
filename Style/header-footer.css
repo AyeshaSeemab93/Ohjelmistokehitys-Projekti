@@ -103,9 +103,10 @@ nav {
 }
 
 .img-footer {
-  width: 200px;
+  width: 220px;
   object-fit: cover;
   text-align: left;
+padding-right: 4rem;
 }
 
 .title-footer {
@@ -141,7 +142,13 @@ nav {
   }
 
   .title-footer li a{
-    font-size: 10px;
+    font-size: 15px;
+  }
+  .img-footer {
+    width: 220px;
+    object-fit: cover;
+    text-align: left;
+  padding-right: 1rem;
   }
 
 }

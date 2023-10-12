@@ -9,7 +9,7 @@
   --pink: #E86594;
 }
 
-body{
+box-containet{
   margin: 20px;
   background-color: var(--beige);
   text-align: center;

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800">
     <link rel="stylesheet" href="./Style/reset.css">
     <link rel="stylesheet" href="./Style/fontit-ja-värit.css">
-<link rel="stylesheet" href="./Style/header-footer.css">
+    <link rel="stylesheet" href="./Style/header-footer.css">
     <link rel="stylesheet" href="./layout.css">
 
     <title>HappyNest</title>
@@ -33,10 +33,10 @@
             <li> <a href="./Tiedotteet/Tiedotteet.html">TIEDOTTEET </a> </li>
             <li> <a href="./TEHTAVALISTA/tehtavalista.html">TEHTÄVÄT</a> </li>
             <li> <a href="./Brändi/HappyNest-Brändi.html"> MEISTÄ</a> </li>
-            
+
             <li> <a href="./OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO </a> </li>
             <li> <a id="logoutButton" href="">Logout
-            </a></li>
+                </a></li>
 
         </ul>
     </nav>
@@ -87,7 +87,8 @@
                         <p class="tähän-lyhyt">Täällä voit suunnitella arkeasi, luoda itsellesi muistilappuja
                             helpottamaan arjen tehtävien organisointia.
                         </p>
-                        <a href="./TEHTAVALISTA/tehtavalista.html" class="linkki linkki">Linkki muistilappujen tekoon</a>
+                        <a href="./TEHTAVALISTA/tehtavalista.html" class="linkki linkki">Linkki muistilappujen
+                            tekoon</a>
                     </div>
                     <div class="section-4 section-4-pink">
                     </div>
@@ -155,23 +156,23 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                 crossorigin="anonymous"></script>
-                <script>
-                    document.getElementById("logoutButton").addEventListener("click", function(event) {
-                        // Prevent the default anchor tag behavior
-                        event.preventDefault();
-                        
-                        // Display a confirmation message
-                        var confirmLogout = confirm("Are you sure you want to logout?");
-                        
-                        if (confirmLogout) {
-                            alert("Logged out successfully!");
-                            window.location.href = "./index.html"; // Change to the appropriate logout page.
-                        } else {
-                            // If the user cancels the logout, you stay on the current page.
-                            // No need for additional action here.
-                        }
-                    });
-                </script>
+            <script>
+                document.getElementById("logoutButton").addEventListener("click", function (event) {
+                    // Prevent the default anchor tag behavior
+                    event.preventDefault();
+
+                    // Display a confirmation message
+                    var confirmLogout = confirm("Are you sure you want to logout?");
+
+                    if (confirmLogout) {
+                        alert("Logged out successfully!");
+                        window.location.href = "./index.html"; // Change to the appropriate logout page.
+                    } else {
+                        // If the user cancels the logout, you stay on the current page.
+                        // No need for additional action here.
+                    }
+                });
+            </script>
 
 </body>
 

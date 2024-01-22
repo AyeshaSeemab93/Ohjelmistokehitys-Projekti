@@ -1,3 +1,6 @@
+<!-- Include Axios from CDN (Add this in your <head> section) -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,28 +22,9 @@
 </head>
 
 <body>
-
-    <nav>
-
-        <input type="checkbox" id="check">
-        <label for="check" class="checkBtn">Menu</label>
-        <ul class="title-nav">
-            <li> <a href="./mainpage.html"></a>KOTI</li>
-            <li> <a href="./HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ </a> </li>
-            <li> <a href="./Varaaus/reservaition.html">VARAUSKALENTERI </a> </li>
-            <li> <a href="./IlmoitusTaulu  with storage/ilmoitustaulu.html">ILMOITUSTAULU </a> </li>
-            <li><a href="./mainpage.html"><img src="./Logos/HappyNest_logo.png" class="logo"></a></li>
-            <li> <a href="./Tiedotteet/Tiedotteet.html">TIEDOTTEET </a> </li>
-            <li> <a href="./TEHTAVALISTA/tehtavalista.html">TEHTÄVÄT</a> </li>
-            <li> <a href="./Brändi/HappyNest-Brändi.html"> MEISTÄ</a> </li>
-
-            <li> <a href="./OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO </a> </li>
-            <li> <a id="logoutButton" href="">Logout
-                </a></li>
-
-        </ul>
-    </nav>
-    <!-- Navbar End -->
+ <!-- Use a container div to load the navbar dynamically -->
+ <div id="navbar-container"></div>
+   
     <!-- Section-2 -->
     <div class="Wrapper">
         <div class="slog-part row">
@@ -173,7 +157,7 @@
                     }
                 });
             </script>
-
+ <script src="script.js"></script>
 </body>
 
 </html>
